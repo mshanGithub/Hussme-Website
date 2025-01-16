@@ -1,5 +1,10 @@
-.App {
+.container {
   text-align: center;
   font-family: "Teachers", serif;
+  min-height: 100vh;
+  display: flex;
+
+  flex-direction: column;
   }
+
 
