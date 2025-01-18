@@ -2,7 +2,6 @@
   width: 100%;
 }
 .logo {
-  padding-left: 50px;
   width: 200px;
   align-content: center;
 }
@@ -14,46 +13,94 @@
 }
 
 header {
+  margin: 0;
+  padding: 0;
   width: 100%;
   position: fixed;
   top: 0;
   height: 10vh;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  box-shadow:#282829 0px 0px 5px 0px;
+  box-shadow: #282829 0px 0px 5px 0px;
 }
 nav {
-  width: 65%;
+  min-width: 95%;
   padding-right: 25px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-
 }
 nav ul {
   width: 100%;
-  margin: 0;
-  padding: 0;
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 nav ul li {
+  height: fit-content;
   list-style: none;
   display: flex;
   align-items: center;
 }
 nav ul li a {
+  height: 100%;
+  padding: 0 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: x-large;
   font-weight: 450;
   text-decoration: none;
   color: black;
+}
+nav ul li a:hover {
+  background: #f08143;
+  background: linear-gradient(to right, #f08143 26%, #9747ff 58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  padding: 20px 0px 20px 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.427);
+  box-shadow: -10px 0 10px rgb(255, 255, 255);
+  backdrop-filter: blur(30px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.sidebar a {
+  width: 100%;
+}
+.sidebar li {
+  display: flex;
+  justify-content: center;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .hideWhileMobileOn {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+.sidebar li:last-child {
+  padding-left: 60px;
 }
 .login-button {
   display: flex;
@@ -65,5 +112,7 @@ nav ul li a {
   background-color: rgb(0, 0, 0);
 }
 .login-button a {
-  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
 }

@@ -36,7 +36,7 @@ export function Footer() {
               <a href="">Privacy policy</a>
             </li>
             <li>
-              <a href="">Terms&Condition</a>
+              <a href="">Terms & Condition</a>
             </li>
             <li>
               <a href="">Partners</a>
@@ -45,9 +45,10 @@ export function Footer() {
         </div>
         <div className="col-4">
           <div className="cover">
-            <div className="contact-btn">
+            <div className="con"><div className="contact-btn">
               <a href="">Contact Us</a>
-            </div>
+            </div></div>
+            
             <div className="mobile">
               <a href="tel:+1 803 803 9889">+1 803 803 9889</a>
             </div>
@@ -55,18 +56,28 @@ export function Footer() {
               <a href="mailto:support@hussme.com">support@hussme.com</a>
             </div>
 
-          <div className="social-media">
-            <div className="insta-icn"><a href=""></a></div>
-          </div>
-
-
-
-
+            <div className="social-media">
+              <a href="">
+                <div className="x-icn"></div>
+              </a>
+              <a href="">
+                <div className="insta-icn"></div>
+              </a>
+              <a href="">
+                <div className="fb-icn"></div>
+              </a>
+              <a href="">
+                <div className="linkedin-icn"></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <div className="copyright">
-        <h4>©All Copyrights 2025 by Husssme</h4>
+        {/* <div className="line"> jhbjh</div> */}
+        <hr />
+        <div className="copy-container"> <h4>©All Copyrights 2025 by Husssme</h4></div>
+       
       </div>
     </div>
   );
