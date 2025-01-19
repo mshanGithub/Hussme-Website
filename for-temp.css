@@ -1,87 +1,500 @@
-.nav-bar {
+import "../Components/Footer.css";
+import logofooter from "../Components/Assets/hussme Logo-2 2-black.jpg";
+export function Footer() {
+  return (
+    <div className="footer">
+      <div className="footer-col">
+        <div className="col-1">
+          <img src={logofooter} alt="" />
+          <p>
+            Streaming the business process for growth and bring in the out of
+            the box solution to reduce expenses
+          </p>
+        </div>
+        <div className="col-2">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Business</a>
+            </li>
+            <li>
+              <a href="">Talent</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact US</a>
+            </li>
+          </ul>
+        </div>
+        <div className="col-3">
+          <ul>
+            <li>
+              <a href="">Privacy policy</a>
+            </li>
+            <li>
+              <a href="">Terms & Condition</a>
+            </li>
+            <li>
+              <a href="">Partners</a>
+            </li>
+          </ul>
+        </div>
+        <div className="col-4">
+          <div className="cover">
+            <div className="con"><div className="contact-btn">
+              <a href="">Contact Us</a>
+            </div></div>
+            
+            <div className="mobile">
+              <a href="tel:+1 803 803 9889">+1 803 803 9889</a>
+            </div>
+            <div className="mail">
+              <a href="mailto:support@hussme.com">support@hussme.com</a>
+            </div>
+
+            <div className="social-media">
+              <a href="">
+                <div className="x-icn"></div>
+              </a>
+              <a href="">
+                <div className="insta-icn"></div>
+              </a>
+              <a href="">
+                <div className="fb-icn"></div>
+              </a>
+              <a href="">
+                <div className="linkedin-icn"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="copyright">
+        {/* <div className="line"> jhbjh</div> */}
+        <hr />
+        <div className="copy-container"> <h4>©All Copyrights 2025 by Husssme</h4></div>
+       
+      </div>
+    </div>
+  );
+}
+
+
+
+
+
+.footer-col {
+    margin-top: auto;
     width: 100%;
-  }
-  .logo {
-    /* padding-left: 50px; */
-    width: 200px;
-    align-content: center;
-  }
-  .logo img {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    width: 200px;
-  }
-  
-  headmer {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    height: 10vh;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: #282829 0px 0px 5px 0px;
-  }
-  nav {
-    width: 100%;
-    padding-right: 25px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  nav ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 280px;
+    border-radius: 20px 5px 0px 0px;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-  }
-  nav ul li {
-    height: fit-content;
-    list-style: none;
-    display: flex;
     align-items: center;
-  }
-  nav ul li a {
-    height: 100%;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: x-large;
-    font-weight: 450;
-    text-decoration: none;
-    color: black;
-  }
-  nav ul li a:hover {
-    background: #f08143;
-    background: linear-gradient(to right, #F08143 26%, #9747FF 58%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .nav li:first-child{
-    margin-right: auto;
+    justify-content: space-evenly;
   }
   
-  .login-button {
+  .col-1 {
+    width: 8%;
+    height: 150px;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 45px;
-    width: 150px;
-    border-radius: 15px;
-    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
-  .login-button a {
+  
+  .col-1 img {
+    height: 90px;
+    width: 250px;
+  }
+  .col-1 p {
+    width: 300px;
+    margin: 0;
+    padding-left: 70px;
+    font-size: 17px;
+    color: aliceblue;
+    text-align: left;
+  }
+  
+  .col-2 {
+    width: max-content;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .col-2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .col-2 ul li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .col-2 ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+  }
+  
+  .col-3 {
+    width: max-content;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-3 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .col-3 ul li {
+    display: flex;
+    justify-content: left;
+  }
+  .col-3 ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+  }
+  .col-4 {
+    width: 8%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: left;
+    /* gap: 10px; */
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  
+    gap: 5px;
+  }
+  .con {
+    display: flex;
+    /* justify-content: center; */
+  }
+  .contact-btn {
+    height: 50px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f08143;
+    border-radius: 24px;
+  }
+  .contact-btn:hover {
+    background-color: #8a2be2;
+  }
+  .contact-btn a {
+    font-size: 21px;
+    font-weight: 600;
+    font-style: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .mobile {
+    display: flex;
+    /* justify-content: center; */
+  }
+  .mobile a {
+    font-size: 19px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .mail {
+    display: flex;
+    /* justify-content: center; */
+  }
+  .mail a {
+    font-size: 19px;
+    text-decoration: none;
     color: rgb(255, 255, 255);
   }
   
+  .social-media {
+    display: flex;
+    flex-direction: row;
+  }
+  .x-icn {
+    height: 50px;
+    width: 50px;
+    background-image: url("../Components/Assets/svg/x-icn-pink.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .x-icn:hover {
+    background-color: #8a2be2;
+    color: aquamarine;
+    background-image: url("../Components/Assets/svg/x-icn-white.svg");
+  }
+  .insta-icn {
+    height: 50px;
+    width: 50px;
+    background-image: url("../Components/Assets/svg/iiinsta.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .insta-icn:hover {
+    background-color: #8a2be2;
+    color: aquamarine;
+    background-image: url("../Components/Assets/svg/iinsta-white.svg");
+  }
+  .fb-icn {
+    height: 50px;
+    width: 50px;
+    background-image: url("../Components/Assets/svg/fb-icn-pink.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fb-icn:hover {
+    background-color: #8a2be2;
+    color: aquamarine;
+    background-image: url("../Components/Assets/svg/fb-icn-white.svg");
+  }
+  .linkedin-icn {
+    height: 50px;
+    width: 50px;
+    background-image: url("../Components/Assets/linkedin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .linkedin-icn:hover {
+    background-color: #8a2be2;
+    color: aquamarine;
+    background-image: url("../Components/Assets/linkedin-white.png");
+  }
+  
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    height: 63px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 1.5px;
+    width: 10%;
+    color: aliceblue;
+  }
+  
+  .copy-container h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: rgb(109, 109, 109);
+  }
+  hr{
+    
+    width: 70%;
+    
+  }
 
 
-  <div className="logo">
-                  <img src={logo} alt="" />
-                </div>
+
+
+  for try -->
+  https://www.youtube.com/watch?v=_NPzWvTD2w8
+
+
+
+
+  .section_padding{
+    padding:4rem 4rem;
+  }
+  .footer{
+    background-color: black;
+  
+  }
+  .sb_footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .sb_footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .sb_footer-links-div{
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+  
+  
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  .socialmedia{
+    display: flex;
+    flex-direction: row;
+  
+  
+  }
+  .socialmedia a{
+    width: 80%;
+  
+  }
+  .sb_footer-links_div p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 05rem 0;
+    cursor: pointer;
+  }
+  .sb-footer-below{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+  
+  }
+  hr{
+    color: white !important;
+    width: 100%;
+  }
+  @media scren and(max-width:550px){
+    .sb_footer-link div{
+      margin: 1rem 0;
+  
+    }
+    .sb_footer-below{
+      flex-direction: column;
+      justify-content: left;
+    }
+  
+  }
+  
+  import "../Components/Footer.css";
+  import logofooter from "../Components/Assets/hussme Logo-2 2-black.jpg";
+  export function Footer() {
+    return (
+      <div className="footer">
+        <div className="sb_footer section_padding">
+          <div className="sb_footer-links">
+            <div className="sb_footer-links-div">
+              <img src="" alt="" />
+              <p>
+                Streaming the business process for growth and bring in the out of
+                the box solution to reduce expenses
+              </p>
+            </div>
+          </div>
+  
+          <div className="sb_footer-links-div">
+            <a href="">
+              <p>Home</p>
+            </a>
+            <a href="">
+              {" "}
+              <p>Business</p>
+            </a>
+            <a href="">
+              <p>Talent</p>
+            </a>
+            <a href="">
+              <p>Blog</p>
+            </a>
+            <a href="">
+              <p>Contact US</p>
+            </a>
+          </div>
+          <div className="sb_footer-links-div">
+            <a href="">
+              <p>Privacy policy</p>
+            </a>
+            <a href="">
+              <p>Terms & Condition</p>
+            </a>
+            <a href="">
+              <p>Partners</p>
+            </a>
+          </div>
+          <div className="sb_footer-links-div">
+            <div className="contact-btn">
+              <a href="">Contact Us</a>
+            </div>
+  
+            <div className="mobile">
+              <a href="tel:+1 803 803 9889">+1 803 803 9889</a>
+            </div>
+  
+            <div className="mail">
+              <a href="mailto:support@hussme.com">support@hussme.com</a>
+            </div>
+  
+            <div className="socialmedia">
+              <a href="">
+                <div className="x-icn"></div>
+              </a>
+              <a href="">
+                <div className="insta-icn"></div>
+              </a>
+              <a href="">
+                <div className="fb-icn"></div>
+              </a>
+              <a href="">
+                <div className="linkedin-icn"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="sb_footer-below">
+          <div className="sb_footer-copyright">
+            <p>©All Copyrights {new Date().getFullYear()} by Husssme</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
