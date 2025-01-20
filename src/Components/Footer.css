@@ -1,6 +1,9 @@
+.footer{
+  margin-top: auto;
+}
 .footer-col {
   padding-top:25px;
-  margin-top: auto;
+  /* margin-top: auto; */
   width: 100%;
   height: fit-content;
   border-radius: 20px 5px 0px 0px;

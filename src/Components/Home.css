@@ -1,6 +1,162 @@
-.home{
-    width: 100%;
-    transition-timing-function: ease-in;
-    height: 1200px;
-    background-color: rgb(255, 255, 255);
+.home {
+  padding-top: 71px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.slider {
+  width: 95%; /* Close to the frame for larger size */
+  max-width: 1200px; /* Bigger frame size for desktop */
+  height: auto;
+  max-height: 700px; /* Restricts height */
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+
+  transition: 2s all ease-out;
+}
+.slides input {
+  display: none;
+}
+.slide {
+  position: relative; /* Enables text overlay */
+  flex: 0 0 100%; /* Ensures each slide takes full width */
+}
+.slide-text {
+  position: absolute;
+  bottom: 20%; /* Adjust vertical position */
+  right: 0%; /* Adjust horizontal position */
+  color: white; /* Text color */
+  text-align: right; /* Align text to the right */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 8px 0px 0px 8px; /* Optional: Rounded corners */
+  width: auto; /* Automatically adjust width based on content */
+}
+.slide-text h2 {
+  font-size: 22px; /* Heading size */
+  margin: 0 0 5px 0; /* Bottom margin for spacing */
+}
+.slide-text p {
+  font-size: 16px; /* Paragraph size */
+  margin: 0;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Ensures image fits the frame */
+  object-fit: cover; /* Ensures proper cropping */
+  border-radius: 15px; /* Optional for rounded corners */
+}
+
+.navigation-manual {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.manual-btn {
+  width: 80px;
+	height: 0px;
+  transform: skew(20deg);
+  border: 1.5px solid rgb(255, 255, 255);
+  padding: 4px 5px 4px 4px; /* Bigger buttons for larger frame */
+  border-radius: 1%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.manual-btn:not(:last-child) {
+  margin-right: 15px;
+}
+.manual-btn:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0%;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navigation-auto div {
+  width: 85px;
+	height: 5px;
+  transform: skew(20deg);
+  border: 1.5px solid rgb(255, 255, 255);
+  padding: 2px;
+  border-radius: 1%;
+  transition: background-color 0.3s ease;
+}
+.navigation-auto div:not(:last-child) {
+  margin-right: 15px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: rgb(255, 255, 255);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .slider {
+    max-width: 900px; /* Smaller size for tablets */
+    max-height: 500px;
+  }
+  .manual-btn {
+    padding: 4px;
+  }
+  .navigation-auto div {
+    padding: 1.5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 700px; /* Smaller size for smaller devices */
+    max-height: 400px;
+  }
+  .manual-btn {
+    padding: 4px;
+  }
+  .navigation-auto div {
+    padding: 1.5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider {
+    max-width: 90%; /* Take up most of the width on mobile */
+    max-height: 300px;
+  }
+  .manual-btn {
+    padding: 4px;
+  }
+  .navigation-auto div {
+    padding: 2px;
+  }
 }
