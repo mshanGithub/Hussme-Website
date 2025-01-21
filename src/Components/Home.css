@@ -1,16 +1,16 @@
 .home {
-  padding-top: 71px;
+  margin-top: 80px;
   width: 100%;
-  margin: 0;
   padding: 0;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 .slider {
+  /* margin-top: 100px; */
   width: 95%; /* Close to the frame for larger size */
   max-width: 1200px; /* Bigger frame size for desktop */
   height: auto;
@@ -22,40 +22,109 @@
 .slides {
   display: flex;
 
-  transition: 2s all ease-out;
+  transition: 12s;
 }
 .slides input {
   display: none;
 }
 .slide {
+  height: 80%;
   position: relative; /* Enables text overlay */
   flex: 0 0 100%; /* Ensures each slide takes full width */
 }
 .slide-text {
   position: absolute;
-  bottom: 20%; /* Adjust vertical position */
-  right: 0%; /* Adjust horizontal position */
-  color: white; /* Text color */
-  text-align: right; /* Align text to the right */
+  bottom: 20%; /* Adjusts position for better spacing */
+  right: 0%; /* Adjusts for padding from the edge */
+  color: white;
+  text-align: left;
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 15px;
-  border-radius: 8px 0px 0px 8px; /* Optional: Rounded corners */
-  width: auto; /* Automatically adjust width based on content */
+  border-radius: 8px 0px 0px 8px;
+  width: auto;
+  max-width: 80%; /* Prevents text from stretching too wide */
+  font-size: 1.2vw; /* Adjust size relative to viewport width */
 }
+
 .slide-text h2 {
-  font-size: 22px; /* Heading size */
-  margin: 0 0 5px 0; /* Bottom margin for spacing */
+  max-width: 800px ;
+  font-style: italic;
+  font-size: larger; /* Dynamic heading size */
+  margin: 0 0 5px 0;
 }
-.slide-text p {
-  font-size: 16px; /* Paragraph size */
-  margin: 0;
+
+
+
+/* Adjust styles for larger screens */
+@media screen and (max-width: 1440px) {
+  .slide-text {
+    bottom: 25%; /* Adjust vertical position */
+    right: 0px;
+  }
+  .slide-text h2 {
+    font-size: medium;
+  }
+  .slide-text p {
+    font-size: 1.2vw;
+  }
+}
+
+/* For tablets and medium devices */
+@media screen and (max-width: 1024px) {
+  .slide-text {
+    /* bottom: 20%; */
+    margin-left: 50px;
+    display: flex;
+text-align: left;
+  }
+  .slide-text h2 {
+    color: gold;
+    font-size: medium;
+  }
+
+}
+
+/* For smaller devices */
+@media screen and (max-width: 768px) {
+  .slide-text {
+    bottom: 22%;
+    right: 0%;
+    font-size: medium;
+    text-align: center; /* Center aligns for smaller screens */
+    width: 90%; /* Wider text container */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide-text h2 {
+    font-size: 3.5vw;
+  }
+
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+  .slide-text {
+    bottom: 20%;
+
+    text-align: left;
+    padding: 0px;
+
+    /* right: 0%; */
+    /* transform: translateX(-50%); */
+    /* right: 100px; */
+  }
+  .slide-text h2 {
+    color: brown;
+    font-size: small;
+  }
+
 }
 
 
 .slide img {
   width: 100%;
-  height: 100%; /* Ensures image fits the frame */
-  object-fit: cover; /* Ensures proper cropping */
+  height: 100%;
+  object-fit: contain; /* Ensures proper cropping */
   border-radius: 15px; /* Optional for rounded corners */
 }
 
@@ -69,7 +138,7 @@
 
 .manual-btn {
   width: 80px;
-	height: 0px;
+  height: 0px;
   transform: skew(20deg);
   border: 1.5px solid rgb(255, 255, 255);
   padding: 4px 5px 4px 4px; /* Bigger buttons for larger frame */
@@ -104,7 +173,7 @@
 }
 .navigation-auto div {
   width: 85px;
-	height: 5px;
+  height: 5px;
   transform: skew(20deg);
   border: 1.5px solid rgb(255, 255, 255);
   padding: 2px;
@@ -122,7 +191,28 @@
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1440px) {
+  .home
+  {
+    background-color: rgb(166, 0, 255);
+  }
+  .slider {
+    max-width: 900px; /* Smaller size for tablets */
+    max-height: 500px;
+  }
+  .manual-btn {
+    padding: 4px;
+  }
+  .navigation-auto div {
+    padding: 1.5px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+  .home
+  {
+    background-color: rgb(120, 11, 97);
+  }
   .slider {
     max-width: 900px; /* Smaller size for tablets */
     max-height: 500px;
@@ -136,7 +226,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .home {
+    background-color: blue;
+  }
   .slider {
+
     max-width: 700px; /* Smaller size for smaller devices */
     max-height: 400px;
   }
@@ -149,6 +243,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .home {
+    background-color: rgb(46, 213, 88);
+  }
   .slider {
     max-width: 90%; /* Take up most of the width on mobile */
     max-height: 300px;

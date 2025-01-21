@@ -29,22 +29,22 @@ export function Home() {
           <div className="slide first">
   <img src={s1} alt="" />
   <div className="slide-text">
-    <h2>Sample Heading 1</h2>
-    <p>This is the first sample text. It spans two lines for display purposes.</p>
+    <h2>ONE PLATFORM FOR BUSINESS AND TALENT</h2>
+    
   </div>
 </div>
 <div className="slide">
   <img src={s2} alt="" />
   <div className="slide-text">
-    <h2>Sample Heading 2</h2>
-    <p>This is the second sample text. It spans two lines for display purposes.</p>
+    <h2>BUSINESS LEVERAGE US FOR ON DEMAND STAFFING AND DIGITAL MARKETINGSINESS AND TALENT </h2>
+    
   </div>
 </div>
 <div className="slide">
   <img src={s3} alt="" />
   <div className="slide-text">
-    <h2>Sample Heading 3</h2>
-    <p>This is the third sample text. It spans two lines for display purposes.</p>
+    <h2>TALENT LEVERAGE  US FOR FLEXIBLE WORK SCHEDULE AND CAREER ASSISTANCE</h2>
+    
   </div>
 </div>
 
