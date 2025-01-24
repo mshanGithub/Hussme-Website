@@ -3,6 +3,9 @@ import React, { useEffect } from "react";
 import s1 from "../Components/Assets/Carousal/slide-1.jpg";
 import s2 from "../Components/Assets/Carousal/slide-2.jpg";
 import s3 from "../Components/Assets/Carousal/slide-3.jpg";
+import hand from "../Components/Assets/handshake.jpg";
+import c1 from "../Components/Assets/c1.jpg";
+
 export function Home() {
   useEffect(() => {
     let counter = 1;
@@ -21,7 +24,7 @@ export function Home() {
   }, []);
   return (
     <div className="home">
-      <div className="slider">
+      {/* <div className="slider">
         <div className="slides">
           <input type="radio" name="radio-btn" id="radio1" />
           <input type="radio" name="radio-btn" id="radio2" />
@@ -62,7 +65,55 @@ export function Home() {
           <label htmlFor="radio2" className="manual-btn"></label>
           <label htmlFor="radio3" className="manual-btn"></label>
         </div>
+      </div> */}
+
+      <div className="our-levers">
+        <div className="levers">
+          <div className="tex">Our Levers</div>
+        </div>
+        <div className="row-container">
+          <div className="img-container">
+            <img src={hand} alt="" />
+          </div>
+          <div className="container-2">
+            <div className="card">
+              <div className="default-content">
+                <div className="card-heading">
+                  <h2>Digital Marketing</h2>
+                </div>
+                <div className="default-circle">
+                  <img src={c1} alt="" />{" "}
+                </div>
+              </div>
+              <div className="hover-content">
+                <div className="hover-circle">
+                  <img src={c1} alt="" />{" "}
+                </div>
+                <div className="hover-describe"><h4>
+                  Enhance the website and utilize social platforms (Facebook,
+                  Instagram, X) for branding and generating leads for business
+                  growth.
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="circle"></div>
+              <div className="content">Digital Marketing</div>
+            </div>
+          </div>
+          <div className="play-button"></div>
+          <div className="container-1">
+            <div className="card">
+              <div className="circle"></div>
+              <div className="content">Digital Marketing</div>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      
     </div>
   );
 }
