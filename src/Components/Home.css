@@ -84,13 +84,13 @@
 @media screen and (max-width: 768px) {
   .slide-text {
     /* <--For blue background--> */
-    bottom: 25%;
+    bottom: 10%;
     right: 0%;
   }
   .slide-text h2 {
-    max-width: 500px;
+    max-width: 450px;
     font-size: medium;
-    color: rgb(0, 0, 0);
+    color: rgb(6, 6, 6);
   }
 }
 
@@ -128,7 +128,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 15px;
+  border-radius: 15px; 
 }
 
 .navigation-manual {
@@ -140,6 +140,7 @@
 }
 
 .manual-btn {
+
   width: 47px;
   max-width: 85px;
   height: 0px;
