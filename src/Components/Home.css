@@ -83,13 +83,14 @@
 /* For smaller devices */
 @media screen and (max-width: 768px) {
   .slide-text {
+    /* Foem my mobile */
     /* <--For blue background--> */
     bottom: 10%;
     right: 0%;
   }
   .slide-text h2 {
     max-width: 450px;
-    font-size: medium;
+    font-size: small;
     color: rgb(6, 6, 6);
   }
 }
