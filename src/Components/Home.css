@@ -10,122 +10,125 @@
 }
 
 .slider {
-  /* margin-top: 100px; */
-  width: 95%; /* Close to the frame for larger size */
-  max-width: 1200px; /* Bigger frame size for desktop */
+  width: 95%;
+  max-width: 1200px;
   height: auto;
-  max-height: 700px; /* Restricts height */
+  max-height: 700px;
   border-radius: 15px;
   overflow: hidden;
   position: relative;
 }
 .slides {
   display: flex;
-
   transition: 12s;
 }
+
 .slides input {
   display: none;
 }
 .slide {
   height: 80%;
-  position: relative; /* Enables text overlay */
-  flex: 0 0 100%; /* Ensures each slide takes full width */
+  position: relative;
+  flex: 0 0 100%;
 }
 .slide-text {
-  position: absolute;
-  bottom: 20%; /* Adjusts position for better spacing */
-  right: 0%; /* Adjusts for padding from the edge */
-  color: white;
-  text-align: left;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 15px;
-  border-radius: 8px 0px 0px 8px;
+  min-height: auto;
   width: auto;
-  max-width: 80%; /* Prevents text from stretching too wide */
-  font-size: 1.2vw; /* Adjust size relative to viewport width */
+  max-width: 750px;
+  position: absolute;
+  bottom: 20%;
+  right: 0%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  background: rgba(255, 255, 255, 0.621);
+  padding: 8px;
+  border-radius: 8px 0px 0px 8px;
 }
 
 .slide-text h2 {
-  max-width: 800px ;
+  padding-left: 5px;
+  max-width: 800px;
   font-style: italic;
-  font-size: larger; /* Dynamic heading size */
-  margin: 0 0 5px 0;
+  text-align: left;
+  margin: 0 0 0 0;
 }
-
-
 
 /* Adjust styles for larger screens */
 @media screen and (max-width: 1440px) {
   .slide-text {
-    bottom: 25%; /* Adjust vertical position */
+    bottom: 25%;
     right: 0px;
   }
   .slide-text h2 {
     font-size: medium;
-  }
-  .slide-text p {
-    font-size: 1.2vw;
+    color: #000000;
   }
 }
 
-/* For tablets and medium devices */
 @media screen and (max-width: 1024px) {
+  /* <--mobile view--> */
   .slide-text {
-    /* bottom: 20%; */
-    margin-left: 50px;
-    display: flex;
-text-align: left;
+    bottom: 25%;
+    right: 0%;
+    width: auto;
+    text-align: left;
   }
   .slide-text h2 {
-    color: gold;
+    max-width: 500px;
     font-size: medium;
+    color: rgb(0, 0, 0);
   }
-
 }
 
 /* For smaller devices */
 @media screen and (max-width: 768px) {
   .slide-text {
-    bottom: 22%;
+    /* <--For blue background--> */
+    bottom: 25%;
     right: 0%;
-    font-size: medium;
-    text-align: center; /* Center aligns for smaller screens */
-    width: 90%; /* Wider text container */
-    left: 50%;
-    transform: translateX(-50%);
   }
   .slide-text h2 {
-    font-size: 3.5vw;
+    max-width: 500px;
+    font-size: medium;
+    color: rgb(0, 0, 0);
   }
-
 }
 
 /* For mobile devices */
 @media screen and (max-width: 480px) {
   .slide-text {
-    bottom: 20%;
-
+    bottom: 15%;
     text-align: left;
-    padding: 0px;
-
-    /* right: 0%; */
-    /* transform: translateX(-50%); */
-    /* right: 100px; */
+    border-radius: 3px 0px 0px 3px;
+    margin: 0px 0px 0px 12px;
   }
   .slide-text h2 {
-    color: brown;
-    font-size: small;
+    width: 500px;
+    max-width: 800px;
+    font-size: medium;
+    padding: 0;
+    color: rgb(0, 0, 0);
   }
-
 }
-
+@media screen and (max-width: 480px) {
+  .slide-text {
+    bottom: 15%;
+    text-align: left;
+    width: auto;
+  }
+  .slide-text h2 {
+    font-size: xx-small;
+    width: auto;
+    max-width: 240px;
+    color: rgb(0, 0, 0);
+  }
+}
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures proper cropping */
-  border-radius: 15px; /* Optional for rounded corners */
+  object-fit: contain;
+  border-radius: 15px;
 }
 
 .navigation-manual {
@@ -137,11 +140,13 @@ text-align: left;
 }
 
 .manual-btn {
-  width: 80px;
+  width: 47px;
+  max-width: 85px;
   height: 0px;
+  max-height: 5px;
   transform: skew(20deg);
   border: 1.5px solid rgb(255, 255, 255);
-  padding: 4px 5px 4px 4px; /* Bigger buttons for larger frame */
+  padding: 4px 5px 4px 4px;
   border-radius: 1%;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -167,15 +172,17 @@ text-align: left;
   position: absolute;
   display: flex;
   justify-content: center;
-  bottom: 10px;
+  bottom: 9px;
   left: 50%;
   transform: translateX(-50%);
 }
 .navigation-auto div {
-  width: 85px;
+  width: 51px;
+  max-width: 80px;
   height: 5px;
+  max-height: 5px;
   transform: skew(20deg);
-  border: 1.5px solid rgb(255, 255, 255);
+  border: 2.1px solid rgb(255, 255, 255);
   padding: 2px;
   border-radius: 1%;
   transition: background-color 0.3s ease;
@@ -192,12 +199,11 @@ text-align: left;
 
 /* Responsive Design */
 @media screen and (max-width: 1440px) {
-  .home
-  {
-    background-color: rgb(166, 0, 255);
+  .home {
+    background-color: rgb(255, 255, 255);
   }
   .slider {
-    max-width: 900px; /* Smaller size for tablets */
+    max-width: 900px;
     max-height: 500px;
   }
   .manual-btn {
@@ -209,12 +215,11 @@ text-align: left;
 }
 
 @media screen and (max-width: 1024px) {
-  .home
-  {
-    background-color: rgb(120, 11, 97);
+  .home {
+    background-color: rgb(255, 255, 255);
   }
   .slider {
-    max-width: 900px; /* Smaller size for tablets */
+    max-width: 900px;
     max-height: 500px;
   }
   .manual-btn {
@@ -227,11 +232,10 @@ text-align: left;
 
 @media screen and (max-width: 768px) {
   .home {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
   }
   .slider {
-
-    max-width: 700px; /* Smaller size for smaller devices */
+    max-width: 700px;
     max-height: 400px;
   }
   .manual-btn {
@@ -244,16 +248,21 @@ text-align: left;
 
 @media screen and (max-width: 480px) {
   .home {
-    background-color: rgb(46, 213, 88);
+    background-color: rgb(255, 255, 255);
   }
   .slider {
-    max-width: 90%; /* Take up most of the width on mobile */
+    max-width: 90%;
     max-height: 300px;
   }
   .manual-btn {
     padding: 4px;
   }
   .navigation-auto div {
+    /* for mobile  */
+    width: 50px;
+    max-width: 80px;
+    height: 5px;
+    max-height: 5px;
     padding: 2px;
   }
 }
