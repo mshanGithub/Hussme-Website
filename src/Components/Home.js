@@ -24,7 +24,7 @@ export function Home() {
   }, []);
   return (
     <div className="home">
-      {/* <div className="slider">
+      <div className="slider">
         <div className="slides">
           <input type="radio" name="radio-btn" id="radio1" />
           <input type="radio" name="radio-btn" id="radio2" />
@@ -65,7 +65,7 @@ export function Home() {
           <label htmlFor="radio2" className="manual-btn"></label>
           <label htmlFor="radio3" className="manual-btn"></label>
         </div>
-      </div> */}
+      </div>
 
       <div className="our-levers">
         <div className="levers">
