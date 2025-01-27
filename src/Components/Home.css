@@ -84,7 +84,7 @@
 /* For smaller devices */
 @media screen and (max-width: 768px) {
   .slide-text {
-    /* Foem my mobile */
+    /* For my mobile */
     /* <--For blue background--> */
     bottom: 10%;
     right: 0%;
@@ -482,7 +482,7 @@
 .card:hover .hover-content {
   opacity: 1;
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
   .row-container{
     flex-direction: column;
     height: fit-content;
