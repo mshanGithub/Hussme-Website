@@ -12,6 +12,8 @@ import c1 from "../Components/Assets/Our Levers/consultation.jpg";
 import c2 from "../Components/Assets/Our Levers/cons-back.png";
 import play1 from "../Components/Assets/Our Levers/our-ser.png";
 import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
+import b1 from "../Components/Assets/Bus-Talent/business-img.jpg"
+import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg"
 
 export function Home() {
   useEffect(() => {
@@ -31,6 +33,7 @@ export function Home() {
   }, []);
   return (
     <div className="home">
+      {/* Start of Carousal Section  */}
       <div className="slider">
         <div className="slides">
           <input type="radio" name="radio-btn" id="radio1" />
@@ -73,7 +76,9 @@ export function Home() {
           <label htmlFor="radio3" className="manual-btn"></label>
         </div>
       </div>
+      {/* End of Carousal Section  */}
 
+      {/* Start of Our Levers Section  */}
       <div className="our-levers">
         <div className="levers">
           <div className="tex">Our Levers</div>
@@ -176,6 +181,24 @@ export function Home() {
           </div>
         </div>
       </div>
+      {/* End of Our Levers Section  */}
+      <div className="business-container">
+        <div className="content-section">
+        <ul>
+          <li><h4>Business profiling and plan</h4></li>
+          <li><h4>Quick on-demand staff selection on contract basis</h4></li>
+          <li><h4>Dedicated recruitment team for full-time hiring</h4></li>
+          <li><h4>New hire online training</h4></li>
+          <li><h4>Website hosting and regular maintenance</h4></li>
+          <li><h4>Facebook, Instagram, and X marketing</h4></li>
+        </ul>
+        </div>
+        <div className="img-section">
+          <img src={b1} alt="" />
+
+        </div>
+      </div>
+      {/* Start of Business & Talent Card Section  */}
     </div>
   );
 }
