@@ -12,8 +12,8 @@ import c1 from "../Components/Assets/Our Levers/consultation.jpg";
 import c2 from "../Components/Assets/Our Levers/cons-back.png";
 import play1 from "../Components/Assets/Our Levers/our-ser.png";
 import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
-import b1 from "../Components/Assets/Bus-Talent/business-img.jpg"
-import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg"
+import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
+import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg";
 
 export function Home() {
   useEffect(() => {
@@ -182,23 +182,48 @@ export function Home() {
         </div>
       </div>
       {/* End of Our Levers Section  */}
+      {/* Start of Business & Talent Card Section  */}
       <div className="business-container">
-        <div className="content-section">
-        <ul>
-          <li><h4>Business profiling and plan</h4></li>
-          <li><h4>Quick on-demand staff selection on contract basis</h4></li>
-          <li><h4>Dedicated recruitment team for full-time hiring</h4></li>
-          <li><h4>New hire online training</h4></li>
-          <li><h4>Website hosting and regular maintenance</h4></li>
-          <li><h4>Facebook, Instagram, and X marketing</h4></li>
-        </ul>
-        </div>
         <div className="img-section">
           <img src={b1} alt="" />
-
+        </div>
+        <div className="content-section">
+          <div className="content-list">
+            <div className="content-heading">Business</div>
+            <ul>
+              <li>Business profiling and plan</li>
+              <li>Quick on-demand staff selection on contract basis</li>
+              <li>Dedicated recruitment team for full-time hiring</li>
+              <li>New hire online training</li>
+              <li>Website hosting and regular maintenance</li>
+              <li>Facebook, Instagram, and X marketing</li>
+            </ul>
+            <button>Package & Pricing</button>
+          </div>
         </div>
       </div>
-      {/* Start of Business & Talent Card Section  */}
+
+      {/* Talent Card */}
+      <div className="business-container">
+        <div className="img-section">
+          <img src={b1} alt="" />
+        </div>
+        <div className="content-section">
+          <div className="content-list">
+            <div className="content-heading">Business</div>
+            <ul>
+              <li>Business profiling and plan</li>
+              <li>Quick on-demand staff selection on contract basis</li>
+              <li>Dedicated recruitment team for full-time hiring</li>
+              <li>New hire online training</li>
+              <li>Website hosting and regular maintenance</li>
+              <li>Facebook, Instagram, and X marketing</li>
+            </ul>
+            <button>Package & Pricing</button>
+          </div>
+        </div>
+      </div>
+      {/* End of Business & Talent Card Section  */}
     </div>
   );
 }
