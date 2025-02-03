@@ -581,24 +581,44 @@
 /* End of Our Levers Section */
 
 /* !<--Start of Business & Talent Card Section-->! */
+.bus-tal-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  max-height: 800px;
+  align-self: center;
+  gap: 40px;
+}
 
 .business-container {
   position: relative;
   width: 100%;
   height: 400px;
+}
+.business-content-section {
+  display: flex;
+  top: 70px;
+  position: relative;
+  height: fit-content;
+  width: 65%;
+  border-radius: 15px;
+  background-color: #9747ff;
+  padding: 10px 0px 0px 0px;
+}
+.talent-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
 }
-.content-section {
+.talent-content-section {
   display: flex;
-  top: 10%;
-  position: absolute;
-  /* left:5%; */
-  margin-right: 25%;
-  min-height: fit-content;
-  width: 40%;
+  height: fit-content;
+  position: relative;
+  width: 65%;
+  top: 70px;
+  right: 5%;
   border-radius: 15px;
   background-color: #9747ff;
   padding: 10px 0px 0px 0px;
@@ -608,6 +628,8 @@
   border-radius: 20px 20px 15px 15px;
   width: 100%;
   background-color: #eeeeee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 3px 3px 7px -3px;
 }
 .content-heading {
   display: flex;
@@ -617,9 +639,11 @@
   font-size: xx-large;
   font-weight: 600;
 }
-
+.content-list ul {
+  padding-left: 70px;
+}
 .content-list ul li {
-  width: 100%;
+  width: fit-content;
   list-style-type: disc;
   text-align: left;
   margin: 0;
@@ -628,7 +652,7 @@
   font-size: large;
 }
 .content-list button {
-  min-height: 35px;
+  min-height: 40px;
   width: fit-content;
   background-color: #9747ff;
   font-size: larger;
@@ -636,17 +660,229 @@
   border-radius: 8px;
   border: none;
 }
-.img-section {
-  width: 25%;
+
+/* Start CSS for Package & Pricing Button */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: auto;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: auto;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  width: 100%;
+  height: fit-content;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+/* End of CSS for Package & Pricing Button */
+
+.business-img-section {
+  width: 30%;
   height: 70%;
   position: absolute;
-  margin-left: 25%;
+  right: 10%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 5px 5px 11px -1px;
 }
-.img-section img {
+.talent-img-section {
+  width: 30%;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 5px 5px 11px -1px;
+}
+
+.business-img-section img,
+.talent-img-section img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
 }
 
+/* For Responsive */
+
+@media screen and (max-width: 1170px) {
+  .bus-tal-container {
+    width: 90%;
+    /* background-color: #c00e55; */
+    min-height: fit-content;
+  }
+  .business-container,
+  .talent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    min-height: fit-content;
+  }
+  .business-content-section,
+  .talent-content-section {
+    /* padding: 8px 0px 0px 0px; */
+    width: 100%;
+    position: static;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  }
+
+  .business-img-section,
+  .talent-img-section {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 6px, rgba(0, 0, 0, 0.7) 0px 5px 10px;
+    position: static;
+    height: 30%;
+    width: 80%;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .business-img-section img,
+  .talent-img-section img {
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px 15px 0px 0px;
+  }
+
+  .content-list ul {
+    padding-left: 10%;
+  }
+}
 /* !<--End of Business & Talent Card Section-->! */
+/* Start of Start of Company Work Progress Count */
+
+.work-status-container {
+  /* background-color: blueviolet; */
+  height: fit-content;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+.status-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+.progress-name {
+  max-width: 140px;
+  text-align: center;
+  font-family: "poppins";
+  font-size: x-large;
+  font-weight: 600;
+}
+.count {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "poppins", serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #9747ff;
+}
+.icon {
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 19px 5px #b6afaf;
+  -moz-box-shadow: 0 0 19px 5px #b6afaf;
+  box-shadow: 0 0 19px 5px #b6afaf;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  background-color: #ffffff;
+}
+.icon-4 {
+  background-size: 50%;
+}
+.icon-1:hover,
+.icon-2:hover,
+.icon-3:hover,
+.icon-4:hover {
+  background-color: #9747ff;
+}
+.icon-1 {
+  background-image: url("../Components/Assets/For-status/prjp.svg");
+}
+.icon-1:hover {
+  background-image: url("../Components/Assets/For-status/prjw.svg");
+}
+.icon-2 {
+  background-image: url("../Components/Assets/For-status/empp.svg");
+}
+.icon-2:hover {
+  background-image: url("../Components/Assets/For-status/empw.svg");
+}
+.icon-3 {
+  background-image: url("../Components/Assets/For-status/jobp.svg");
+}
+.icon-3:hover {
+  background-image: url("../Components/Assets/For-status/jobw.svg");
+}
+.icon-4 {
+  background-image: url("../Components/Assets/For-status/happyp.svg");
+}
+.icon-4:hover {
+  background-image: url("../Components/Assets/For-status/happyw.svg");
+  background-size:50%;
+}
+
+/* End of Company Work Progress Count */
