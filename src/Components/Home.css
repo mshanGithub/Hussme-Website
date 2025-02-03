@@ -585,7 +585,7 @@
   display: flex;
   flex-direction: column;
   width: 70%;
-  max-height: 800px;
+  min-height: 700px;
   align-self: center;
   gap: 40px;
 }
@@ -801,7 +801,7 @@
 /* Start of Start of Company Work Progress Count */
 
 .work-status-container {
-  /* background-color: blueviolet; */
+  padding-top: 20px;
   height: fit-content;
   width: 95%;
   display: flex;
@@ -833,9 +833,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  font-family: "poppins", serif;
+  /* font-family: "poppins", serif; */
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 600;
   color: #9747ff;
 }
 .icon {
@@ -882,7 +882,46 @@
 }
 .icon-4:hover {
   background-image: url("../Components/Assets/For-status/happyw.svg");
-  background-size:50%;
+  background-size: 50%;
+}
+@media screen and (max-width: 1170px) {
+  .work-status-container {
+    margin-bottom: 20px;
+  }
+  .status-list {
+    padding-top: 0;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .box {
+    width: 100%;
+  }
+  .count {
+    font-weight: 700;
+    font-size: 60px;
+  }
+  .icon {
+    background-size: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+/* End of Company Work Progress Count */
+/* Start of Home Blog */
+
+.blog-cards-container{
+  width:fit-content;
+  background-color: chocolate;
+  height: 500px;
+  display: flex;
+  overflow-y:scroll;
+
+  
+}
+.blog-card{
+  height: 250px;
+  width: 550px;
+  background-color: #9747ff;
 }
 
-/* End of Company Work Progress Count */
+/* End of Home Blog */

@@ -302,6 +302,29 @@ export function Home() {
         </div>
       </div>
       {/* End of Company Work Progress Count */}
+      {/*Start of Home Blog */}
+
+        <div className="blog-cards-container">
+          <div className="blog-card">1</div>
+          <div className="blog-card">2</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">5</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">3</div>
+          <div className="blog-card">5</div>
+       
+       
+      </div>
+      {/*End of Home Blog */}
     </div>
   );
 }
