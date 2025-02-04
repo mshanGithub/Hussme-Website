@@ -304,25 +304,20 @@ export function Home() {
       {/* End of Company Work Progress Count */}
       {/*Start of Home Blog */}
 
-        <div className="blog-cards-container">
-          <div className="blog-card">1</div>
-          <div className="blog-card">2</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">5</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">3</div>
-          <div className="blog-card">5</div>
-       
-       
+      <div className="blog-cards-container">
+        <div className="blog-card">
+          <div className="background-img">
+            <div className="btm-card">
+              <div className="date-comment">
+                <div className="date">
+                  <div className="date-icn"></div>
+                </div>
+              </div>
+              <div className="blog-title">wdscwsd</div>
+              <div className="more-info">cwsdc</div>
+            </div>
+          </div>
+        </div>
       </div>
       {/*End of Home Blog */}
     </div>
