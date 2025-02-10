@@ -14,6 +14,7 @@ import play1 from "../Components/Assets/Our Levers/our-ser.png";
 import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
 import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
 import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg";
+import arrow from "./Assets/For-status/Arrow.svg";
 
 export function Home() {
   // Function For Carousal auto slide change
@@ -304,20 +305,104 @@ export function Home() {
       {/* End of Company Work Progress Count */}
       {/*Start of Home Blog */}
 
+        <div className="blog-heading">
+          Blog
+        </div>
       <div className="blog-cards-container">
         <div className="blog-card">
-          <div className="background-img">
+          <div className="background-img cr-1">
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
                   <div className="date-icn"></div>
+                  15,Feb, 2024
+                </div>
+                <div className="comment">
+                  <div className="comment-icn"></div>
+                  05, Comments
                 </div>
               </div>
-              <div className="blog-title">wdscwsd</div>
-              <div className="more-info">cwsdc</div>
+              <div className="blog-title">Digital Marketing</div>
+              <div className="last-box">
+                <div className="more-info">Get more info</div>
+                <div className="arrow arrow-1">
+                  <img src={arrow} alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div className="blog-card">
+          <div className="background-img cr-2">
+            <div className="btm-card">
+              <div className="date-comment">
+                <div className="date">
+                  <div className="date-icn"></div>
+                  18,Feb, 2024
+                </div>
+                <div className="comment">
+                  <div className="comment-icn"></div>
+                  09 Comments
+                </div>
+              </div>
+              <div className="blog-title">Hire easily HR candidates in few seconds</div>
+              <div className="last-box">
+                <div className="more-info">Get more info</div>
+                <div className="arrow arrow-1">
+                  <img src={arrow} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card">
+          <div className="background-img cr-3">
+            <div className="btm-card">
+              <div className="date-comment">
+                <div className="date">
+                  <div className="date-icn"></div>
+                  01,Aug, 2024
+                </div>
+                <div className="comment">
+                  <div className="comment-icn"></div>
+                  02 Comments
+                </div>
+              </div>
+              <div className="blog-title">Get few solution to hire a best candidate </div>
+              <div className="last-box">
+                <div className="more-info">Get more info</div>
+                <div className="arrow arrow-1">
+                  <img src={arrow} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="blog-card">
+          <div className="background-img cr-4">
+            <div className="btm-card">
+              <div className="date-comment">
+                <div className="date">
+                  <div className="date-icn"></div>
+                  18,Mar, 2024
+                </div>
+                <div className="comment">
+                  <div className="comment-icn"></div>
+                  05 Comments
+                </div>
+              </div>
+              <div className="blog-title">Capitalize on low 
+              hanging fruit</div>
+              <div className="last-box">
+                <div className="more-info">Get more info</div>
+                <div className="arrow arrow-1">
+                  <img src={arrow} alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
       {/*End of Home Blog */}
     </div>
