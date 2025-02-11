@@ -305,9 +305,7 @@ export function Home() {
       {/* End of Company Work Progress Count */}
       {/*Start of Home Blog */}
 
-        <div className="blog-heading">
-          Blog
-        </div>
+      <div className="blog-heading">Blog</div>
       <div className="blog-cards-container">
         <div className="blog-card">
           <div className="background-img cr-1">
@@ -322,7 +320,9 @@ export function Home() {
                   05, Comments
                 </div>
               </div>
-              <div className="blog-title">Digital Marketing</div>
+              <div className="blog-title">
+                <h2>Digital Marketing</h2>
+              </div>
               <div className="last-box">
                 <div className="more-info">Get more info</div>
                 <div className="arrow arrow-1">
@@ -345,7 +345,9 @@ export function Home() {
                   09 Comments
                 </div>
               </div>
-              <div className="blog-title">Hire easily HR candidates in few seconds</div>
+              <div className="blog-title">
+                <h2>Hire easily HR candidates in few seconds</h2>
+              </div>
               <div className="last-box">
                 <div className="more-info">Get more info</div>
                 <div className="arrow arrow-1">
@@ -368,7 +370,9 @@ export function Home() {
                   02 Comments
                 </div>
               </div>
-              <div className="blog-title">Get few solution to hire a best candidate </div>
+              <div className="blog-title">
+                <h2>Get few solution to hire a best candidate </h2>
+              </div>
               <div className="last-box">
                 <div className="more-info">Get more info</div>
                 <div className="arrow arrow-1">
@@ -391,8 +395,9 @@ export function Home() {
                   05 Comments
                 </div>
               </div>
-              <div className="blog-title">Capitalize on low 
-              hanging fruit</div>
+              <div className="blog-title">
+                <h2>Capitalize on low hanging fruit</h2>
+              </div>
               <div className="last-box">
                 <div className="more-info">Get more info</div>
                 <div className="arrow arrow-1">
@@ -402,8 +407,12 @@ export function Home() {
             </div>
           </div>
         </div>
-
       </div>
+        <div className="scroll-dot">
+          <div className="dot-1">/--</div>
+          <div className="dot-2"></div>
+          <div className="dot-3">--/</div>
+        </div>
       {/*End of Home Blog */}
     </div>
   );
