@@ -317,7 +317,7 @@ export function Home() {
         <div className="right-detail">
           <div className="line-1"> Have any questions?</div>
           <div className="line-2">
-            Call us <a href="tel:+1 803 803 9889">+1 803 803 9889</a>  
+            Call Us <a href="tel:+1 803 803 9889">+1 803 803 9889</a>  
           </div>
         </div>
       </div>
