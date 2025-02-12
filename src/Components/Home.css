@@ -1204,10 +1204,13 @@
   }
   .blog-card {
     height: 550px;
-    width: 70%;
+    width: 80%;
   }
   .btm-card{
-    height: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    gap: 5px;
   }
   .date-comment{
     height: fit-content;
