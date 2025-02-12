@@ -1,5 +1,6 @@
 import logo from "../Components/Assets/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
+import { Business } from "./Pages/Business";
 export function Header() {
   function showSidebar(event) {
     event.preventDefault();
@@ -34,7 +35,7 @@ export function Header() {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/">Business</a>
+              <a href="/Business">Business</a>
             </li>
             <li>
               <a href="/">Talent</a>
