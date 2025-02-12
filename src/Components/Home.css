@@ -905,6 +905,9 @@
     height: 200px;
     width: 200px;
   }
+  .work-status-container:focus{
+    background-color: #b6afaf;
+  } 
 }
 /* End of Company Work Progress Count */
 
@@ -913,7 +916,7 @@
   width: 95%;
   margin-top: 25px;
   font-weight: 500;
-
+  font-size: 30px;
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -937,7 +940,6 @@
 .left-detail,
 .right-detail {
   width: 40%;
-  font-size: 30px;
 }
 .center-icn {
   width: 20%;
@@ -961,15 +963,23 @@
 .right-detail .line-1 {
   color: white;
 }
+.right-detail .line-2 a{
+  text-decoration: none;
+  color: white;
+}
 @media screen and (max-width: 1170px) {
   .contact-card {
     flex-direction: column;
     height: fit-content;
     justify-content: center;
+    font-size: larger;
     align-items: center;
     gap: 20px;
     width: 80%;
     background: linear-gradient(185deg, #9747ff 8%, #f08143 96%);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
   .left-detail,
   .right-detail {
@@ -982,6 +992,12 @@
   }
   .center-icn img {
     width: 20%;
+  }
+  .left-detail .line-1 {
+    color: white;
+  }
+  .right-detail .line-2 {
+    color: white;
   }
 }
 
@@ -1189,6 +1205,21 @@
   .blog-card {
     height: 550px;
     width: 70%;
+  }
+  .btm-card{
+    height: 30%;
+  }
+  .date-comment{
+    height: fit-content;
+    padding-left: 30px;
+    padding-right: 5px;
+    width: 100%;
+  }
+  .blog-title h2 {
+   width: fit-content;
+  }
+  .blog-card .arrow{
+    width: 40%;
   }
 }
 /* End of Home Blog */

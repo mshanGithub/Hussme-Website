@@ -40,7 +40,6 @@ export function Home() {
     const nums = document.querySelectorAll(".count");
     const container = document.querySelector(".work-status-container");
 
-    // Ensure container exists before adding the scroll event
     if (!container) {
       console.error("Container not found");
       return;
@@ -303,6 +302,7 @@ export function Home() {
           </div>
         </div>
       </div>
+
       {/* End of Company Work Progress Count */}
 
       {/*Start of Home Contact card */}
@@ -316,7 +316,9 @@ export function Home() {
         </div>
         <div className="right-detail">
           <div className="line-1"> Have any questions?</div>
-          <div className="line2">Call us +1 803 803 9889</div>
+          <div className="line-2">
+            Call us <a href="tel:+1 803 803 9889">+1 803 803 9889</a>  
+          </div>
         </div>
       </div>
       {/* End of  of Home Contact card */}
