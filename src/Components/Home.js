@@ -15,6 +15,7 @@ import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
 import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
 import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg";
 import arrow from "./Assets/For-status/Arrow.svg";
+import mes from "./Assets/message-color.png";
 
 export function Home() {
   // Function For Carousal auto slide change
@@ -303,8 +304,24 @@ export function Home() {
         </div>
       </div>
       {/* End of Company Work Progress Count */}
-      {/*Start of Home Blog */}
 
+      {/*Start of Home Contact card */}
+      <div className="contact-card">
+        <div className="left-detail">
+          <div className="line-1">Trusted source for</div>
+          <div className="line-2">business growth</div>
+        </div>
+        <div className="center-icn">
+          <img src={mes} alt="" />
+        </div>
+        <div className="right-detail">
+          <div className="line-1"> Have any questions?</div>
+          <div className="line2">Call us +1 803 803 9889</div>
+        </div>
+      </div>
+      {/* End of  of Home Contact card */}
+
+      {/*Start of Home Blog */}
       <div className="blog-heading">Blog</div>
       <div className="blog-cards-container">
         <div className="blog-card">
@@ -408,11 +425,11 @@ export function Home() {
           </div>
         </div>
       </div>
-        <div className="scroll-dot">
+      {/* <div className="scroll-dot">
           <div className="dot-1">/--</div>
           <div className="dot-2"></div>
           <div className="dot-3">--/</div>
-        </div>
+        </div> */}
       {/*End of Home Blog */}
     </div>
   );
