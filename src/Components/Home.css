@@ -798,9 +798,10 @@
   .business-img-section img,
   .talent-img-section img {
     height: 100%;
+
     /* background-size: contain; */
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     border-radius: 15px 15px 0px 0px;
   }
 
