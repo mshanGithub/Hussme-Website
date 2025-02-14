@@ -1,8 +1,197 @@
-.business-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #9f3131;
+.business-page {
+  margin-top: 70px;
+  width: 100%;
+  /* height: 500vh; */
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(255, 183, 157); */
 }
+/* Start of Business Front Detail Section */
+.bus-title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "poppins";
+}
+.img-content {
+  margin-top: 30px;
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+}
+.img-detail {
+  width: 60%;
+  height: 100%;
+}
+.blog-img {
+  background-image: url("/src/Components/Assets/svg/Blog-img-1.svg");
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5%;
+}
+.blog-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+.blog-detail p {
+  padding: 0;
+  margin: 0;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  max-width: 60%;
+}
+.blog-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 80%;
+}
+.blog-text-box {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.blog-line-1,
+.blog-line-2,
+.blog-line-3 {
+  margin: 0;
+  width: 70%;
+  height: 70px;
+  text-align: left;
+  font-family: "poppins";
+  font-size: 65px;
+}
+
+.blog-line-3 {
+  color: #9747ff;
+}
+/* End of Business Front Detail Section */
+
+/* Start of Business Content Section */
+.bus-blog-card-back {
+  background: rgb(240, 129, 67);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 129, 67, 1) 2%,
+    rgba(158, 75, 241, 1) 43%,
+    rgba(151, 71, 255, 1) 52%,
+    rgba(255, 255, 255, 1) 52%
+  );
+  height: 650px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bus-blog-card {
+  height: 500px;
+  width: 30%;
+  border-radius: 15px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* position: relative; */
+}
+
+.bus-blog-card:hover .bus-card-img {
+  transition: all 1s ease-in-out;
+  transform: translateY(10%);
+  filter: grayscale(100%);
+}
+
+
+.bus-card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+.card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-img img {
+  width: 90%;
+  border-radius: 15px;
+  height: 400px;
+  object-fit: cover;
+}
+.bus-blog-card:hover .card-img img {
+  height: 400px;
+}
+
+.card-img p {
+  opacity: 0;
+  visibility: auto;
+  height: fit-content;
+  bottom: -100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.66);
+  font-size: medium;
+  font-weight: 450;
+  transition: all 0s ease-out;
+}
+
+.bus-blog-card:hover .card-img p {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+  height: fit-content;
+  bottom: 0;
+  display: flex;
+  width: 90%;
+}
+
+.static-card-title {
+  margin-top: 10px;
+  margin-left: 40px;
+  line-height:30px;
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.bus-blog-card:hover .static-card-title {
+  line-height:30px;
+  transition: all 1.5s ease-in-out;
+  transform: translateY(-420px);
+  background: #f08143;
+  background: linear-gradient(to right, #f08143 26%, #9747ff 58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* End of Business Content Section */

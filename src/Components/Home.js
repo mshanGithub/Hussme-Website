@@ -1,8 +1,8 @@
 import "../Components/Home.css";
 import React, { useEffect } from "react";
 import s1 from "../Components/Assets/Carousal/slide-1.jpg";
-import s2 from "../Components/Assets/Carousal/slide-2.jpg";
-import s3 from "../Components/Assets/Carousal/slide-3.jpg";
+import s2 from "../Components/Assets/Carousal/slide-2.png";
+import s3 from "../Components/Assets/Carousal/slide-3.png";
 import hand from "../Components/Assets/handshake.jpg";
 import d1 from "../Components/Assets/Our Levers/digital.jpg";
 import d2 from "../Components/Assets/Our Levers/dig-back.png";
@@ -13,7 +13,7 @@ import c2 from "../Components/Assets/Our Levers/cons-back.png";
 import play1 from "../Components/Assets/Our Levers/our-ser.png";
 import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
 import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
-import t1 from "../Components/Assets/Bus-Talent/talent-img.jpg";
+import t1 from "../Components/Assets/Bus-Talent/talent-img.png";
 import arrow from "./Assets/For-status/Arrow.svg";
 import mes from "./Assets/message-color.png";
 

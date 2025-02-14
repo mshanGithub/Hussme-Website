@@ -1,5 +1,6 @@
 .nav-bar {
   width: 100%;
+  height: fit-content;
 }
 .logo {
   width: 200px;
@@ -18,7 +19,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  height: 72px;;
+  max-height: 72px;
   z-index: 100;
   display: flex;
   align-items: center;
