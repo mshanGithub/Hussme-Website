@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../Components/Assets/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
+import cross from '../Components/Assets/cross.png';
 import { Business } from "./Pages/Business";
 export function Header() {
   function showSidebar(event) {
@@ -20,34 +21,24 @@ export function Header() {
         <nav>
           <ul className="sidebar">
             <li onClick={hideSidebar}>
-              
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="40px"
-                  viewBox="0 -960 960 960"
-                  width="40px"
-                  fill="#9747ff"
-                >
-                  <path d="M317.33-285.33 80-522.67 317.33-760 365-712.67l-190 190 190 190-47.67 47.34ZM812.67-200v-157.33q0-56.67-37.67-94.34-37.67-37.66-94.33-37.66H395l156.67 156.66L504-285.33 266.67-522.67 504-760l47.67 47.33L395-556h285.67q84.33 0 141.5 57.17 57.16 57.16 57.16 141.5V-200h-66.66Z" />
-                </svg>
-              
+              <img className='cross-icn' src={cross} alt="" />
             </li>
-            <li>
-              <Link to="/">Home</Link>  
+            <li onClick={hideSidebar}>
+              <Link to="/" >Home</Link>  
             </li>
-            <li>
+            <li onClick={hideSidebar}>
               <Link to="/business">Business</Link>
             </li>
-            <li>
+            <li onClick={hideSidebar}>
               <Link to="/talent">Talent</Link>
             </li>
-            <li>
+            <li onClick={hideSidebar}>
               <Link to="/blog">Blog</Link>
             </li>
-            <li>
+            <li onClick={hideSidebar}>
               <Link to="/contact">Contact US</Link>
             </li>
-            <li>
+            <li onClick={hideSidebar}>
               <div className="login-button">
                 <Link to="/login">Login</Link>
               </div>

@@ -38,6 +38,11 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
 }
+.cross-icn{
+  padding-left: 15px;
+  height: 50px;
+  width: 50px;
+}
 
 nav ul li {
   height: fit-content;

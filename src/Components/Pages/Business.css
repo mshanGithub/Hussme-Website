@@ -1,11 +1,9 @@
 .business-page {
   margin-top: 70px;
   width: 100%;
-  /* height: 500vh; */
   height: fit-content;
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(255, 183, 157); */
 }
 /* Start of Business Front Detail Section */
 .bus-title {
@@ -17,15 +15,12 @@
   font-size: 50px;
   font-weight: bold;
   font-family: "poppins";
-  /* background-color: aqua; */
 }
 .img-content {
   margin-top: 30px;
   width: 100%;
-  height: 550px;
+  height: 630px;
   display: flex;
-  /* background-color: #542b14; */
-  /* flex-direction: row; */
 }
 
 .blog-slogan {
@@ -62,10 +57,8 @@
 .img-detail {
   width: 60%;
   height: 100%;
-  /* background-color: #f08143; */
 }
 .blog-img {
-  /* background-image: url("/src/Components/Assets/svg/Blog-img-1.svg"); */
   width: 100%;
   height: 80%;
 
@@ -114,7 +107,7 @@
     rgba(151, 71, 255, 1) 52%,
     rgba(255, 255, 255, 1) 52%
   );
-  height: 650px;
+  height: 550px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -146,11 +139,9 @@
   }
   .blog-slogan {
     width: 100%;
-    /* background-color: aqua; */
   }
   .blog-text-box {
     width: 95%;
-    /* background-color: rgb(47, 19, 113); */
   }
   .blog-line-1,
   .blog-line-2,
@@ -224,7 +215,7 @@
   position: absolute;
   padding: 0;
   margin: 0;
-  width: 90%;
+  max-width: 90%;
   background: rgba(255, 255, 255, 0.66);
   font-size: medium;
   font-weight: 450;
@@ -243,7 +234,6 @@
 
 .static-card-title {
   margin-top: 10px;
-
   line-height: 30px;
   width: 90%;
   text-align: left;
@@ -264,3 +254,174 @@
 }
 
 /* End of Business Content Section */
+/*  Start of Package and pricing */
+
+.package-pricing {
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.package-title {
+  width: 93%;
+  text-align: left;
+  font-size: 40px;
+  font-family: "poppins";
+  background: #f08143;
+  background: linear-gradient(to bottom, #f08143 45%, #9747ff 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.package-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+}
+@media screen and (max-width: 1170px) {
+  .package-cards {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+}
+.cat-tag {
+  margin-left: -15px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.cat-label {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../Assets/Business-page/Icn/basic.png");
+}
+.cat-icn {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../Assets/Business-page/Icn/stairs.png");
+}
+.price-title {
+  font-family: "poppins";
+  font-size: 45px;
+  text-align: left;
+  margin-left: 25px;
+  background: #f08143;
+  background: linear-gradient(to top, #f08143 30%, #9747ff 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+/* .price-card-1,
+.price-card-2,
+.price-card-3 {
+  border-image: linear-gradient(to bottom, #f08143 0%, #9747ff 100%) 1;
+ 
+  border-width: 2.5px;
+  border-style: solid;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 30%;
+  border-radius: 50px;
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+} */
+.price-card-1,
+.price-card-2,
+.price-card-3 {
+  position: relative;
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 30%;
+  border-radius: 15px;
+  height: fit-content;
+  background-color: white;
+  border: 2.5px solid transparent;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.price-card-1::before,
+.price-card-2::before,
+.price-card-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2.5px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #f08143 0%, #9747ff 100%);
+  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+  clip-path: polygon(
+    0% 10%,  /* Left side of cat-tag */
+    15% 10%, /* Start cutting around cat-tag */
+    15% 0%,  /* Exclude cat-tag */
+    85% 0%,  /* Exclude cat-tag */
+    85% 10%, /* End cutting around cat-tag */
+    100% 10%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+
+.consultation,
+.staffing,
+.digital-marketing {
+  font-size: xx-large;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 25px;
+
+}
+.package-cards ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.package-cards ul li {
+  margin-bottom: 5px;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  text-align: left;
+  font-size: large;
+  font-weight: 500;
+}
+.tick-icn {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../Assets/Business-page/Icn/green\ icn.png");
+}
+.tick-icn-e {
+  width: 20px;
+  height: 20px;
+}
+/* End of Package and pricing  */

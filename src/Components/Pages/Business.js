@@ -17,7 +17,9 @@ export function Business() {
           </div>
         </div>
         <div className="img-detail">
-          <div className="blog-img"> <img src={blogImg} alt="" /></div>
+          <div className="blog-img">
+            <img src={blogImg} alt="" />
+          </div>
           <div className="blog-detail">
             <p>
               We partner with you to understand your business needs, providing
@@ -72,6 +74,55 @@ export function Business() {
         </div>
       </div>
       {/* End of Business Content Section */}
+      {/* Start of Package and pricing */}
+      <div className="package-pricing">
+        <div className="package-title">Package and Pricing</div>
+        <div className="package-cards">
+          
+          <div className="price-card-1">
+            <div className="cat-tag">
+              <div className="cat-label"></div>
+              <div className="cat-icn"></div>
+            </div>
+            <div className="price-title">Free</div>
+            <div className="consultation">Consultation
+
+              <ul>
+                <li><div className="tick-icn"></div>Business Profiling</li>
+                <li><div className="tick-icn-e"></div>Business plan</li>
+                <li><div className="tick-icn-e"></div>Defining the business process</li>
+                <li><div className="tick-icn-e"></div>Social Media strategy</li>
+              </ul>
+            </div>
+            <div className="staffing">Staffing
+
+              <ul>
+                <li><div className="tick-icn"></div>Portal access for on-demand hiring</li>
+                <li><div className="tick-icn"></div>Payment processing</li>
+                <li><div className="tick-icn"></div>Chat support for hiring</li>
+                <li><div className="tick-icn-e"></div>Recruitment team</li>
+                <li><div className="tick-icn-e"></div>Full time hiring</li>
+                <li><div className="tick-icn-e"></div>Online Training for new hire</li>
+                <li><div className="tick-icn-e"></div>Online Training portal</li>
+              </ul>
+            </div>
+            <div className="digital-marketing">Digital Marketing
+              <ul>
+                <li><div className="tick-icn-e"></div>Website Hosting</li>
+                <li><div className="tick-icn-e"></div>Website Maintenance</li>
+                <li><div className="tick-icn-e"></div>Facebook Marketing (upto 3 post per week)</li>
+                <li><div className="tick-icn-e"></div>Instagram Marketing (upto 3 post per week)</li>
+                <li><div className="tick-icn-e"></div>X Marketing (upto 3 post per week)</li>
+                <li><div className="tick-icn-e"></div>Online review responses (including Google)</li>
+                <li><div className="tick-icn-e"></div>Analytics reports every week</li>
+              </ul>
+            </div>
+          </div>
+          <div className="price-card-1"></div>
+          <div className="price-card-1"></div>
+        </div>
+      </div>
+      {/* End of Package and pricing */}
     </div>
   );
 }
