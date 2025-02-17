@@ -228,7 +228,7 @@
 .linkedin-icn {
   height: 50px;
   width: 50px;
-  background-image: url("../Components/Assets/linkedin.png");
+  background-image: url("../Components/Assets/Home-Header-Footer/linkedin.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70%;
@@ -240,7 +240,7 @@
 .linkedin-icn:hover {
   background-color: #8a2be2;
   color: aquamarine;
-  background-image: url("../Components/Assets/linkedin-white.png");
+  background-image: url("../Components/Assets/Home-Header-Footer/linkedin-white.png");
 }
 
 .copyright {

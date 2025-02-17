@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import s1 from "../Components/Assets/Carousal/slide-1.jpg";
 import s2 from "../Components/Assets/Carousal/slide-2.png";
 import s3 from "../Components/Assets/Carousal/slide-3.png";
-import hand from "../Components/Assets/handshake.jpg";
+import hand from "../Components/Assets/Home-Header-Footer/handshake.jpg";
 import d1 from "../Components/Assets/Our Levers/digital.jpg";
 import d2 from "../Components/Assets/Our Levers/dig-back.png";
 import staff1 from "../Components/Assets/Our Levers/staff.jpg";
@@ -15,7 +15,7 @@ import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
 import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
 import t1 from "../Components/Assets/Bus-Talent/talent-img.png";
 import arrow from "./Assets/For-status/Arrow.svg";
-import mes from "./Assets/message-color.png";
+import mes from "./Assets/Home-Header-Footer/message-color.png";
 
 export function Home() {
   // Function For Carousal auto slide change

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import logo from "../Components/Assets/hussme Logo-2 1-white.jpg";
+import logo from "../Components/Assets/Home-Header-Footer/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
-import cross from '../Components/Assets/cross.png';
-import { Business } from "./Pages/Business";
+import cross from '../Components/Assets/Home-Header-Footer/cross.png';
 export function Header() {
   function showSidebar(event) {
     event.preventDefault();

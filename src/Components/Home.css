@@ -788,11 +788,11 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 6px, rgba(0, 0, 0, 0.7) 0px 5px 10px;
     position: static;
     background-color: #dddddd;
-    height:250px;
+    height: 250px;
     width: 80%;
     border-radius: 15px 15px 0px 0px;
   }
-  .talent-img-section{
+  .talent-img-section {
     max-height: 200px;
   }
   .business-img-section img,
@@ -1124,7 +1124,7 @@
 }
 
 .btm-card {
-  height: 20%;
+  height: 25%;
   width: 100%;
   border-radius: 0px 25px 10px 10px;
   background-color: #000000;
@@ -1140,7 +1140,7 @@
 }
 .date-comment {
   width: 90%;
-  height: 20%;
+  height: fit-content;
   color: #666464;
   display: flex;
   flex-direction: row;
@@ -1186,7 +1186,7 @@
   font-size: 23px;
   text-align: left;
   line-height: 25px;
-  width: 75%;
+  width: 100%;
 }
 .last-box {
   width: 90%;
@@ -1258,17 +1258,24 @@
   .btm-card {
     padding-top: 10px;
     padding-bottom: 10px;
-    height: auto;
+    height:fit-content ;
+    width: 100%;
     gap: 5px;
   }
   .date-comment {
     height: fit-content;
-    padding-left: 70px;
+    /* padding-left: 70px; */
     padding-right: 5px;
-    width: 100%;
+    width: 90%;
+    gap: 15%;
+  }
+  .blog-title{
+    height: fit-content;
+    
   }
   .blog-title h2 {
     width: fit-content;
+    
   }
   .blog-card .arrow {
     width: 40%;

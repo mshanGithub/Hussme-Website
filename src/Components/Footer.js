@@ -1,7 +1,7 @@
 import "../Components/Footer.css";
-import logofooter from "../Components/Assets/hussme Logo-2 2-black.jpg";
-import mobile from "../Components/Assets/envelope (1).png";
-import mail from "../Components/Assets/outgoing.png";
+import logofooter from "../Components/Assets/Home-Header-Footer/hussme Logo-2 2-black.jpg";
+import mobile from "../Components/Assets/Home-Header-Footer/envelope (1).png";
+import mail from "../Components/Assets/Home-Header-Footer/outgoing.png";
 export function Footer() {
   return (
     <div className="footer">

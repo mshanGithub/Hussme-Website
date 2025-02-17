@@ -1,6 +1,80 @@
-.talent-page{
-    margin-top: 80px;
-    height: 500px;
-    width: 100%;
-    background-color: aqua;
+.talent-page {
+  margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.talent-title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "poppins";
+}
+.tal-content {
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  height: fit-content;
+}
+.left-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.talent-slogan {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tal-line-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tal-line-1,
+.tal-line-2,
+.tal-line-3 {
+  width: 85%;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "poppins";
+  line-height: 51px;
+  text-align: left;
+}
+.work-wrd,
+.tal-line-3 {
+  color: #f08143;
+}
+.tal-define {
+  /* margin-top: 40px; */
+  width: 85%;
+  text-align: left;
+  font-size: larger;
+  font-weight: 500;
+  line-height: 20px;
+}
+.right-section {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Assets/Talent-page/Tal-icn.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
