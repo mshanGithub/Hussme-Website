@@ -258,16 +258,17 @@
 
 .package-pricing {
   width: 100%;
-  height: 1200px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .package-title {
-  width: 93%;
+  width: 95%;
   text-align: left;
-  font-size: 40px;
+  font-size: 37px;
   font-family: "poppins";
   background: #f08143;
   background: linear-gradient(to bottom, #f08143 45%, #9747ff 70%);
@@ -275,8 +276,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-weight: 900;
-  margin-bottom: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .package-cards {
   display: flex;
@@ -284,39 +285,59 @@
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
 }
-@media screen and (max-width: 1170px) {
-  .package-cards {
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-  }
-}
+
 .cat-tag {
-  margin-left: -15px;
   height: 100px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 .cat-label {
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.l-1 {
   background-image: url("../Assets/Business-page/Icn/basic.png");
 }
+.l-2 {
+  background-image: url("../Assets/Business-page/Icn/pro.png");
+}
+.l-3 {
+  background-image: url("../Assets/Business-page/Icn/elite.png");
+}
 .cat-icn {
-  width: 100%;
+  width: 50%;
   height: 100%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.i-1 {
   background-image: url("../Assets/Business-page/Icn/stairs.png");
 }
+.i-2 {
+  background-image: url("../Assets/Business-page/Icn/premium.png");
+}
+.i-3 {
+  background-image: url("../Assets/Business-page/Icn/flag_3965243.png");
+}
 .price-title {
-  font-family: "poppins";
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.price-title h2 {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: underline #0000003c 1.5px;
+  text-underline-offset: 10px;
+  text-shadow: #9747ff 0px 1px 10px 0px, #f08243 0px 1px 3px 2px;
   font-size: 45px;
   text-align: left;
   margin-left: 25px;
@@ -327,34 +348,22 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-/* .price-card-1,
-.price-card-2,
-.price-card-3 {
-  border-image: linear-gradient(to bottom, #f08143 0%, #9747ff 100%) 1;
- 
-  border-width: 2.5px;
-  border-style: solid;
-  padding: 5px;
-  padding-top: 15px;
-  padding-bottom: 30px;
-  width: 30%;
-  border-radius: 50px;
-  height: fit-content;
-  background-color: rgb(255, 255, 255);
-} */
+.price-title h5 {
+  padding: 0%;
+  margin: 0%;
+  font-size: large;
+  color: rgba(128, 128, 128, 0.795);
+}
 .price-card-1,
 .price-card-2,
 .price-card-3 {
   position: relative;
-  padding: 5px;
   padding-top: 15px;
   padding-bottom: 30px;
   width: 30%;
   border-radius: 15px;
   height: fit-content;
   background-color: white;
-  border: 2.5px solid transparent;
-  background-clip: padding-box;
   overflow: hidden;
 }
 
@@ -364,25 +373,22 @@
   content: "";
   position: absolute;
   inset: 0;
-  padding: 2.5px;
-  border-radius: 15px;
-  background: linear-gradient(to bottom, #f08143 0%, #9747ff 100%);
-  -webkit-mask: linear-gradient(white, white) content-box, linear-gradient(white, white);
-  -webkit-mask-composite: destination-out;
+  padding: 3px;
+  border-radius: 13px;
+  background: linear-gradient(to bottom, #f08243be 0%, #9747ffbe 100%);
+  -webkit-mask: linear-gradient(white, white) content-box,
+    linear-gradient(white, white);
   mask-composite: exclude;
-  pointer-events: none;
-  clip-path: polygon(
-    0% 10%,  /* Left side of cat-tag */
-    15% 10%, /* Start cutting around cat-tag */
-    15% 0%,  /* Exclude cat-tag */
-    85% 0%,  /* Exclude cat-tag */
-    85% 10%, /* End cutting around cat-tag */
-    100% 10%, 
-    100% 100%, 
-    0% 100%
-  );
 }
-
+.price-card-1:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
+.price-card-2:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
+.price-card-3:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
 
 .consultation,
 .staffing,
@@ -391,17 +397,16 @@
   font-weight: 500;
   text-align: left;
   padding-left: 25px;
-
 }
 .package-cards ul {
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 .package-cards ul li {
   margin-bottom: 5px;
   padding: 0;
-
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -418,10 +423,50 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.t-1 {
   background-image: url("../Assets/Business-page/Icn/green\ icn.png");
+}
+.t-2 {
+  background-image: url("../Assets/Business-page/Icn/yellow\ icn.png");
+}
+.t-3 {
+  background-image: url("../Assets/Business-page/Icn/red\ icn.png");
 }
 .tick-icn-e {
   width: 20px;
   height: 20px;
+}
+@media screen and (max-width: 1170px) {
+  .package-pricing {
+    height: fit-content;
+  }
+  .package-title {
+    margin-top: 30px;
+    width: 90%;
+    background: #f08143;
+    background: linear-gradient(to right, #f08143 5%, #9747ff 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .package-cards {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .price-card-1,
+  .price-card-2,
+  .price-card-3 {
+    min-width: 90%;
+  }
+  .tick-icn{
+    min-width:25px;
+    min-height: 25px;
+  }
 }
 /* End of Package and pricing  */

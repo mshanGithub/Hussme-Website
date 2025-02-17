@@ -78,48 +78,263 @@ export function Business() {
       <div className="package-pricing">
         <div className="package-title">Package and Pricing</div>
         <div className="package-cards">
-          
           <div className="price-card-1">
             <div className="cat-tag">
-              <div className="cat-label"></div>
-              <div className="cat-icn"></div>
+              <div className="cat-label l-1"></div>
+              <div className="cat-icn i-1"></div>
             </div>
-            <div className="price-title">Free</div>
-            <div className="consultation">Consultation
-
+            <div className="price-title">
+              <h2>Free</h2>
+            </div>
+            <div className="consultation">
+              Consultation
               <ul>
-                <li><div className="tick-icn"></div>Business Profiling</li>
-                <li><div className="tick-icn-e"></div>Business plan</li>
-                <li><div className="tick-icn-e"></div>Defining the business process</li>
-                <li><div className="tick-icn-e"></div>Social Media strategy</li>
+                <li>
+                  <div className="tick-icn t-1"></div>Business Profiling
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Business plan
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Defining the business
+                  process
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Social Media strategy
+                </li>
               </ul>
             </div>
-            <div className="staffing">Staffing
-
+            <div className="staffing">
+              Staffing
               <ul>
-                <li><div className="tick-icn"></div>Portal access for on-demand hiring</li>
-                <li><div className="tick-icn"></div>Payment processing</li>
-                <li><div className="tick-icn"></div>Chat support for hiring</li>
-                <li><div className="tick-icn-e"></div>Recruitment team</li>
-                <li><div className="tick-icn-e"></div>Full time hiring</li>
-                <li><div className="tick-icn-e"></div>Online Training for new hire</li>
-                <li><div className="tick-icn-e"></div>Online Training portal</li>
+                <li>
+                  <div className="tick-icn t-1"></div>Portal access for
+                  on-demand hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-1"></div>Payment processing
+                </li>
+                <li>
+                  <div className="tick-icn t-1"></div>Chat support for hiring
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Recruitment team
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Full time hiring
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Online Training for new hire
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Online Training portal
+                </li>
               </ul>
             </div>
-            <div className="digital-marketing">Digital Marketing
+            <div className="digital-marketing">
+              Digital Marketing
               <ul>
-                <li><div className="tick-icn-e"></div>Website Hosting</li>
-                <li><div className="tick-icn-e"></div>Website Maintenance</li>
-                <li><div className="tick-icn-e"></div>Facebook Marketing (upto 3 post per week)</li>
-                <li><div className="tick-icn-e"></div>Instagram Marketing (upto 3 post per week)</li>
-                <li><div className="tick-icn-e"></div>X Marketing (upto 3 post per week)</li>
-                <li><div className="tick-icn-e"></div>Online review responses (including Google)</li>
-                <li><div className="tick-icn-e"></div>Analytics reports every week</li>
+                <li>
+                  <div className="tick-icn-e"></div>Website Hosting
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Website Maintenance
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Facebook Marketing (upto 3
+                  post per week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Instagram Marketing (upto 3
+                  post per week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>X Marketing (upto 3 post per
+                  week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Online review responses
+                  (including Google)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Analytics reports every week
+                </li>
               </ul>
             </div>
           </div>
-          <div className="price-card-1"></div>
-          <div className="price-card-1"></div>
+
+          <div className="price-card-2">
+            <div className="cat-tag">
+              <div className="cat-label l-2"></div>
+              <div className="cat-icn i-2"></div>
+            </div>
+            <div className="price-title">
+              <h2>$99</h2>
+              <h5>/month</h5>
+            </div>
+            <div className="consultation">
+              Consultation
+              <ul>
+                <li>
+                  <div className="tick-icn t-2"></div>Business Profiling
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Business plan
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Defining the business
+                  process
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Social Media strategy
+                </li>
+              </ul>
+            </div>
+            <div className="staffing">
+              Staffing
+              <ul>
+                <li>
+                  <div className="tick-icn t-2"></div>Portal access for
+                  on-demand hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Payment processing
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Chat support for hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Recruitment team
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Full time hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Online Training for new
+                  hire
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Online Training portal
+                </li>
+              </ul>
+            </div>
+            <div className="digital-marketing">
+              Digital Marketing
+              <ul>
+                <li>
+                  <div className="tick-icn t-2"></div>Website Hosting
+                </li>
+                <li>
+                  <div className="tick-icn t-2"></div>Website Maintenance
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Facebook Marketing (upto 3
+                  post per week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Instagram Marketing (upto 3
+                  post per week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>X Marketing (upto 3 post per
+                  week)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Online review responses
+                  (including Google)
+                </li>
+                <li>
+                  <div className="tick-icn-e"></div>Analytics reports every week
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="price-card-2">
+            <div className="cat-tag">
+              <div className="cat-label l-3"></div>
+              <div className="cat-icn i-3"></div>
+            </div>
+            <div className="price-title">
+              <h2>$199</h2> <h5>/month</h5>
+            </div>
+            <div className="consultation">
+              Consultation
+              <ul>
+                <li>
+                  <div className="tick-icn t-3"></div>Business Profiling
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Business plan
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Defining the business
+                  process
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Social Media strategy
+                </li>
+              </ul>
+            </div>
+            <div className="staffing">
+              Staffing
+              <ul>
+                <li>
+                  <div className="tick-icn t-3"></div>Portal access for
+                  on-demand hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Payment processing
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Chat support for hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Recruitment team
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Full time hiring
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Online Training for new
+                  hire
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Online Training portal
+                </li>
+              </ul>
+            </div>
+            <div className="digital-marketing">
+              Digital Marketing
+              <ul>
+                <li>
+                  <div className="tick-icn t-3"></div>Website Hosting
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Website Maintenance
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Facebook Marketing (upto 3
+                  post per week)
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Instagram Marketing (upto
+                  3 post per week)
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>X Marketing (upto 3 post
+                  per week)
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Online review responses
+                  (including Google)
+                </li>
+                <li>
+                  <div className="tick-icn t-3"></div>Analytics reports every
+                  week
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       {/* End of Package and pricing */}
