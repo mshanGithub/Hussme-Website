@@ -14,7 +14,7 @@
   align-items: center;
   font-size: 50px;
   font-weight: bold;
-  font-family: "poppins";
+  font-family: "poppins",sans-serif;
 }
 .img-content {
   margin-top: 30px;
@@ -46,7 +46,7 @@
   width: 70%;
   height: 70px;
   text-align: left;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   font-size: 65px;
 }
 
@@ -271,7 +271,7 @@
   width: 95%;
   text-align: left;
   font-size: 37px;
-  font-family: "poppins";
+  font-family: "poppins",sans-serif;
   background: #f08143;
   background: linear-gradient(to bottom, #f08143 45%, #9747ff 70%);
   background-clip: text;
