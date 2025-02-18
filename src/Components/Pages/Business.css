@@ -134,7 +134,7 @@
       rgba(158, 75, 241, 1) 55%,
       rgba(255, 255, 255, 1) 35%
     );
-    min-height: fit-content;
+    min-height: 1500px;
     flex-direction: column;
   }
   .blog-slogan {
