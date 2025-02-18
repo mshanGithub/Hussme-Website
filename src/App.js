@@ -5,6 +5,8 @@ import { Header } from "./Components/Header";
 import { Home } from "./Components/Home";
 import { Business } from "./Components/Pages/Business";
 import { Talent } from "./Components/Pages/Talent";
+import { Blog } from "./Components/Pages/Blog";
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/business" element={<Business />} />
             <Route path="/talent" element={<Talent />} />
+            <Route path="/blog" element={<Blog/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />

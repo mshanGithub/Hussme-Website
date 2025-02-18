@@ -427,11 +427,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="scroll-dot">
-          <div className="dot-1">/--</div>
-          <div className="dot-2"></div>
-          <div className="dot-3">--/</div>
-        </div> */}
+
       {/*End of Home Blog */}
     </div>
   );
