@@ -13,8 +13,9 @@
   justify-content: center;
   align-items: center;
   font-size: 50px;
+
   font-weight: bold;
-  font-family: "poppins",sans-serif;
+  font-family: "Poppins";
 }
 .img-content {
   margin-top: 30px;
@@ -30,6 +31,7 @@
   justify-content: center;
   width: 40%;
   height: 80%;
+  font-weight: 600;
 }
 .blog-text-box {
   width: 100%;
@@ -134,7 +136,7 @@
       rgba(158, 75, 241, 1) 55%,
       rgba(255, 255, 255, 1) 35%
     );
-    min-height: 1500px;
+    min-height: 1600px;
     flex-direction: column;
   }
   .blog-slogan {
@@ -428,13 +430,13 @@
   background-position: center;
 }
 .t-1 {
-  background-image: url("../Assets/Business-page/Icn/green\ icn.png");
+  background-image: url("../Assets/Business-page/Icn/tick-1.png");
 }
 .t-2 {
-  background-image: url("../Assets/Business-page/Icn/yellow\ icn.png");
+  background-image: url("../Assets/Business-page/Icn/tick-2.png");
 }
 .t-3 {
-  background-image: url("../Assets/Business-page/Icn/red\ icn.png");
+  background-image: url("../Assets/Business-page/Icn/tick-3.png");
 }
 .tick-icn-e {
   width: 20px;
