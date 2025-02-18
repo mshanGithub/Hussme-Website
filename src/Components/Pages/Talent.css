@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: row;
   width: 99%;
+  align-items: center;
   height: fit-content;
 }
 .left-section {
@@ -31,11 +32,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .talent-slogan {
   width: 100%;
-  height: 40%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,3 +268,226 @@
 }
 
 /* End of talent card Section*/
+
+
+/*  Start of Package and pricing */
+
+.package-pricing {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.package-title {
+  width: 95%;
+  text-align: left;
+  font-size: 37px;
+  font-family: "poppins",sans-serif;
+  background: #f08143;
+  background: linear-gradient(to bottom, #f08143 45%, #9747ff 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.package-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.cat-tag {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.cat-label {
+  width: 90%;
+  height: 90%;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.l-1 {
+  background-image: url("../Assets/Business-page/Icn/basic.png");
+}
+.l-2 {
+  background-image: url("../Assets/Business-page/Icn/pro.png");
+}
+.l-3 {
+  background-image: url("../Assets/Business-page/Icn/elite.png");
+}
+.cat-icn {
+  width: 70%;
+  height: 70%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.i-1 {
+  background-image: url("../Assets/Business-page/Icn/pricing-icon-1.png.png");
+}
+.i-2 {
+  background-image: url("../Assets/Business-page/Icn/pricing-icon-2.png.png");
+}
+.i-3 {
+  background-image: url("../Assets/Business-page/Icn/pricing-icon-3.png.png ");
+}
+.price-title {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.price-title h2 {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: underline #0000003c 1.5px;
+  text-underline-offset: 10px;
+  text-shadow: #9747ff 0px 1px 10px 0px, #f08243 0px 1px 3px 2px;
+  font-size: 45px;
+  text-align: left;
+  margin-left: 25px;
+  background: #f08143;
+  background: linear-gradient(to top, #f08143 30%, #9747ff 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.price-title h5 {
+  padding: 0%;
+  margin: 0%;
+  font-size: large;
+  color: rgba(128, 128, 128, 0.795);
+}
+.price-card-1,
+.price-card-2 {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 40%;
+  border-radius: 15px;
+  height: fit-content;
+  background-color: white;
+  overflow: hidden;
+}
+
+.price-card-1::before,
+.price-card-2::before,
+.price-card-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 13px;
+  background: linear-gradient(to bottom, #f08243be 0%, #9747ffbe 100%);
+  -webkit-mask: linear-gradient(white, white) content-box,
+    linear-gradient(white, white);
+  mask-composite: exclude;
+}
+.price-card-1:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
+.price-card-2:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
+.price-card-3:hover {
+  box-shadow: #f08243 0px 1px 10px 0px, #9747ff 0px 1px 3px 2px;
+}
+
+.consultation,
+.staffing,
+.digital-marketing {
+  font-size: xx-large;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 25px;
+}
+.package-cards ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.package-cards ul li {
+  margin-bottom: 5px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  text-align: left;
+  font-size: large;
+  font-weight: 500;
+}
+.tick-icn {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.t-1 {
+  background-image: url("../Assets/Business-page/Icn/tick-1.png");
+}
+.t-2 {
+  background-image: url("../Assets/Business-page/Icn/tick-2.png");
+}
+.t-3 {
+  background-image: url("../Assets/Business-page/Icn/tick-3.png");
+}
+.tick-icn-e {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 1170px) {
+  .package-pricing {
+    min-height: fit-content;
+  }
+  .package-title {
+    margin-top: 30px;
+    width: 90%;
+    background: #f08143;
+    background: linear-gradient(to right, #f08143 5%, #9747ff 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .package-cards {
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .price-card-1,
+  .price-card-2 {
+    min-width: 90%;
+  }
+  .cat-label{
+    width: 95%;
+    height: 80%;
+    background-size: contain;
+  }
+  .tick-icn, .tick-icn-e{
+    min-width:22px;
+    min-height: 22px;
+  }
+}
+/* End of Package and pricing  */

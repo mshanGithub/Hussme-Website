@@ -249,7 +249,7 @@ export function Business() {
               </ul>
             </div>
           </div>
-          <div className="price-card-2">
+          <div className="price-card-3">
             <div className="cat-tag">
               <div className="cat-label l-3"></div>
               <div className="cat-icn i-3"></div>
