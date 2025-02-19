@@ -214,12 +214,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* background-color: #9747ff; */
-    /* height: fit-content; */
-    /* padding-left: 0px; */
-    /* justify-content: center; */
     align-items: center;
-    /* grid-template-columns: repeat(auto-fit,100%); */
     gap: 20px;
   }
   .blog-name {

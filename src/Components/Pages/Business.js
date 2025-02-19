@@ -1,4 +1,5 @@
 import "./Business.css";
+
 import blogImg from "../Assets/svg/Blog-img-1.svg";
 import card1 from "../Assets/Business-page/card-1.png";
 import card2 from "../Assets/Business-page/card-2.png";
