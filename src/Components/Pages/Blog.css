@@ -211,12 +211,15 @@
 
 @media screen and (max-width: 1170px) {
   .blog-cards-container {
+    display: flex;
     flex-direction: column;
     width: 100%;
-    height: fit-content;
-    padding-left: 0px;
-    justify-content: center;
+    /* background-color: #9747ff; */
+    /* height: fit-content; */
+    /* padding-left: 0px; */
+    /* justify-content: center; */
     align-items: center;
+    /* grid-template-columns: repeat(auto-fit,100%); */
     gap: 20px;
   }
   .blog-name {
@@ -226,8 +229,9 @@
     width: 90%;
   }
   .blog-card {
-    height: 500px;
-    width: 98%;
+
+    height: 550px;
+    width: 92%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
