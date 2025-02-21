@@ -7,8 +7,8 @@ export function ContactUs() {
         <div className="left-contact"></div>
         <div className="right-contact">
           <div className="contact-slogan">
-            <div className="line-1">Get in</div>
-            <div className="line-2">Touch <span>!</span></div>
+            <div className="contact-line-1">Get in</div>
+            <div className="contact-line-2">Touch <span className="symbol-color">!</span></div>
           </div>
           <div className="contact-detail">
             Have questions or need assistance? We're here to help! Reach out to
