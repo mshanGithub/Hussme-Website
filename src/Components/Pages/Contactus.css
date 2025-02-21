@@ -14,67 +14,93 @@
 }
 .contact-intro {
   width: 100%;
-  height: 700px;
+  height: 600px;
   /* background-color: antiquewhite; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width:1140px) {
-    .contact-intro{
-        flex-direction: column;
-    }
-    .left-contact{
-        width: 100%;
-    }
-    .right-contact{
-        width: 100%;
-    }
-    
+@media screen and (max-width: 1140px) {
+  .contact-intro {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    /* background-color: aquamarine; */
+  }
+  .left-contact {
+    min-width: 100%;
+    background-size: cover;
+    min-height: 200px;
+    /* background-color: antiquewhite; */
+    /* min-height: 250px; */
+  }
+  .right-contact {
+    height: 400px;
+    min-width: 80%;
+    /* background-color: orange; */
+  }
 }
 .left-contact {
   width: 50%;
-  height: 500px;
+  min-height: 500px;
   background-image: url("../Assets/Home-Blog/contactus.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  /* background-color: aqua; */
 }
 .right-contact {
   width: 50%;
-  height: fit-content;
+  max-height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color:gray ; */
+  gap: 30px;
 }
-.contact-slogan{
-    width: 70%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    /* background-color: blue; */
+.contact-slogan {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
 }
-.contact-line-1,.contact-line-2{
-    text-align: left;
-    width: fit-content;
-    height: fit-content;
-    font-family: "poppins";
-    font-size: 65px;
-    line-height: 70px;
-    font-weight: 700;
+.contact-line-1,
+.contact-line-2 {
+  text-align: left;
+  width: fit-content;
+  height: fit-content;
+  font-family: "poppins";
+  font-size: 65px;
+  line-height: 70px;
+  font-weight: 700;
 }
-.contact-line-2{
-    display: flex;
-    flex-direction: row;
-} 
-.symbol-color{
-    color: blueviolet;
+.contact-line-2 {
+  display: flex;
+  flex-direction: row;
+}
+.symbol-color {
+  color: blueviolet;
+}
+.contact-detail {
+  width: 80%;
+  font-size: large;
+  font-weight: 500;
+  text-align: left;
+}
+.contact-button {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
 
-}
-.contact-detail{
-    width: 80%;
-    font-size: large;
-    font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  border-radius: 3px;
+  background-color: #9747ff;
 }
