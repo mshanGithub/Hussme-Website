@@ -20,22 +20,25 @@
 .img-content {
   margin-top: 30px;
   width: 100%;
-  height: 630px;
+ min-height: 800px;
   display: flex;
+  align-items: center;
 }
 
 .blog-slogan {
+  /* background-color: #9747ffbe; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 40%;
-  height: 80%;
+  /* min-width: none; */
+  /* height: 50%; */
   font-weight: 600;
 }
 .blog-text-box {
   width: 100%;
-  height: 50%;
+  max-height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,6 +98,10 @@
   }
   .blog-slogan {
     width: 100%;
+  }
+  .img-content{
+    min-height: fit-content;
+    margin-bottom: 50px;
   }
 }
 /* End of Business Front Detail Section */

@@ -77,7 +77,7 @@ export function Talent() {
       <div className="package-pricing">
         <div className="package-title">Package and Pricing</div>
         <div className="package-cards">
-          <div className="price-card-1">
+          <div className="talent-price-card-1">
             <div className="cat-tag">
               <div className="cat-label l-1"></div>
               <div className="cat-icn i-1"></div>
@@ -162,7 +162,7 @@ export function Talent() {
             </div>
           </div>
 
-          <div className="price-card-2">
+          <div className="talent-price-card-2">
             <div className="cat-tag">
               <div className="cat-label l-2"></div>
               <div className="cat-icn i-2"></div>
