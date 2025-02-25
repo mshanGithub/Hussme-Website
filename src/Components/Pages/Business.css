@@ -18,9 +18,8 @@
   font-family: "Poppins";
 }
 .img-content {
-  margin-top: 30px;
   width: 100%;
- min-height: 800px;
+  min-height: 650px;
   display: flex;
   align-items: center;
 }
@@ -99,7 +98,7 @@
   .blog-slogan {
     width: 100%;
   }
-  .img-content{
+  .img-content {
     min-height: fit-content;
     margin-bottom: 50px;
   }
@@ -183,7 +182,6 @@
   .static-card-title {
     line-height: 5px;
   }
- 
 }
 
 .bus-blog-card:hover .bus-card-img {
@@ -281,7 +279,7 @@
   width: 95%;
   text-align: left;
   font-size: 37px;
-  font-family: "poppins",sans-serif;
+  font-family: "poppins", sans-serif;
   background: #f08143;
   background: linear-gradient(to bottom, #f08143 45%, #9747ff 70%);
   background-clip: text;
@@ -472,14 +470,15 @@
     gap: 20px;
     margin-bottom: 30px;
   }
-  
+
   .price-card-1,
   .price-card-2,
   .price-card-3 {
     min-width: 90%;
   }
-  .tick-icn, .tick-icn-e{
-    min-width:22px;
+  .tick-icn,
+  .tick-icn-e {
+    min-width: 22px;
     min-height: 22px;
   }
 }

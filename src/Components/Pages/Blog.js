@@ -1,13 +1,15 @@
 import "./Blog.css";
 import arrow from "../Assets/For-status/Arrow.svg";
+import { Link } from "react-router-dom";
 export function Blog() {
   return (
     <div className="blog-container">
       <div className="blog-frame">
-        <div className="blog-name"><h2>Blog</h2></div>
+        <div className="blog-name">
+          <h2>Blog</h2>
+        </div>
         <div className="cards-container">
           <div className="blog-cards-container">
-
             <div className="blog-card">
               <div className="background-img cr-1">
                 <div className="btm-card">
@@ -22,7 +24,9 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Digital Marketing</h2>
+                    <Link to="/digital">
+                      <h2>Digital Marketing</h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>
@@ -163,7 +167,6 @@ export function Blog() {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

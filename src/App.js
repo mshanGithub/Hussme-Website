@@ -8,6 +8,7 @@ import { Talent } from "./Components/Pages/Talent";
 import { Blog } from "./Components/Pages/Blog";
 import { ContactUs } from "./Components/Pages/Contactus";
 import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
+import ScrollToTop from "./ScrollToTop";
 
 
 function App() {
@@ -16,13 +17,14 @@ function App() {
       <div className="container">
         <BrowserRouter>
           <Header />
+          <ScrollToTop />
           <Routes>
             <Route index element={<Home />} />
             <Route path="/business" element={<Business />} />
             <Route path="/talent" element={<Talent />} />
             <Route path="/blog" element={<Blog/>}/>
-            {/* <Route path="/contact" element={<ContactUs/>}/> */}
-            <Route path="/contact" element={<Digital/>}/>
+            <Route path="/contact" element={<ContactUs/>}/>
+            {/* <Route path="/contact" element={<Digital/>}/> */}
             <Route path="/digital" element={<Digital/>}/>
           </Routes>
         </BrowserRouter>
