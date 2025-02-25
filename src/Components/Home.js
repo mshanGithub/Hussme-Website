@@ -408,7 +408,7 @@ export function Home() {
             </div>
           </div>
         </div>
-        <div className="blog-card">
+        {/* <div className="blog-card">
           <div className="background-img cr-4">
             <div className="btm-card">
               <div className="date-comment">
@@ -434,7 +434,7 @@ export function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/*End of Home Blog */}
