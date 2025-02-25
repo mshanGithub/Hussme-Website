@@ -52,7 +52,9 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Hire easily HR candidates in few seconds</h2>
+                    <Link to="/digital">
+                      <h2>Hire easily HR candidates in few seconds</h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>
@@ -78,7 +80,10 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Get few solution to hire a best candidate </h2>
+                    <Link to="/digital">
+                      {" "}
+                      <h2>Get few solution to hire a best candidate </h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>
@@ -104,7 +109,9 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Capitalize on low hanging fruit</h2>
+                    <Link to="/digital">
+                      <h2>Capitalize on low hanging fruit</h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>
@@ -130,7 +137,9 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Hire easily HR candidates in few seconds</h2>
+                    <Link to="/digital">
+                      <h2>Hire easily HR candidates in few seconds</h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>
@@ -156,7 +165,9 @@ export function Blog() {
                     </div>
                   </div>
                   <div className="blog-title">
-                    <h2>Digital Marketing</h2>
+                    <Link to="/digital">
+                      <h2>Digital Marketing</h2>
+                    </Link>
                   </div>
                   <div className="last-box">
                     <div className="more-info">Get more info</div>

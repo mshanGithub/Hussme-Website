@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../Components/Assets/Home-Header-Footer/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
-import cross from '../Components/Assets/Home-Header-Footer/cross.png';
+import cross from "../Components/Assets/Home-Header-Footer/cross.png";
 export function Header() {
   function showSidebar(event) {
     event.preventDefault();
@@ -20,10 +20,10 @@ export function Header() {
         <nav>
           <ul className="sidebar">
             <li onClick={hideSidebar}>
-              <img className='cross-icn' src={cross} alt="" />
+              <img className="cross-icn" src={cross} alt="" />
             </li>
             <li onClick={hideSidebar}>
-              <Link to="/" >Home</Link>  
+              <Link to="/">Home</Link>
             </li>
             <li onClick={hideSidebar}>
               <Link to="/business">Business</Link>
@@ -39,7 +39,7 @@ export function Header() {
             </li>
             <li onClick={hideSidebar}>
               <div className="login-button">
-                <Link to="/login">Login</Link>
+                <Link to="#">Login</Link>
               </div>
             </li>
           </ul>
@@ -47,7 +47,9 @@ export function Header() {
           <ul>
             <li>
               <div className="logo">
-                <img src={logo} alt="" />
+                <Link to="/">
+                  <img src={logo} alt="" />
+                </Link>
               </div>
             </li>
             <li className="hideWhileMobileOn">
@@ -67,7 +69,7 @@ export function Header() {
             </li>
             <li className="hideWhileMobileOn">
               <div className="login-button ">
-                <Link to="/login">Login</Link>
+                <Link to="#">Login</Link>
               </div>
             </li>
             <li className="menu-button" onClick={showSidebar}>

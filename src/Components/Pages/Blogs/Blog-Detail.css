@@ -15,15 +15,14 @@
 .des-heading {
   width: 90%;
   font-size: 35px;
+  line-height: 40px;
   font-weight: 600;
   text-align: left;
   background: #f08143;
   background: linear-gradient(
-    to right,
-    #f08143 0%,
-    #9747ffe3 15%,
+    to bottom,
     #f08143 50%,
-    #9747ff 75%
+    #9747ffe3 70%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -34,7 +33,7 @@
   margin-top: 10px;
   width: 90%;
   height: 650px;
-  background-image: url("/src/Components/Assets/Home-Blog/2149241214.jpg");
+  background-image: url("/src/Components/Assets/Home-Blog/digital-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -43,21 +42,34 @@
   filter: drop-shadow(1px 2px 4px hsl(0, 0%, 8%));
 }
 @media screen and (max-width: 1200px) {
+  .des-heading{
+    background: #f08143;
+    background: linear-gradient(
+      to bottom,
+      #f08143 10%,
+      #9747ffe3 40%,
+      #f08143 70%,
+      #9747ff 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
   .des-img {
     max-height: 350px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-top-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .intro-description{
+  .intro-description {
     line-height: 25px;
   }
   .des-point {
     margin-bottom: 15px;
   }
-  .spl-point{
-    
+  .spl-point {
   }
   .des-heading {
     font-size: 27px;
@@ -70,8 +82,6 @@
     line-height: 25px;
     margin-top: 0px;
   }
-
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -120,7 +130,6 @@
   font-size: 40px;
   font-weight: 600;
   font-family: "poppins";
-  
 }
 .intro-description {
   margin-top: 15px;
@@ -129,7 +138,6 @@
   font-size: larger;
   font-weight: 500;
   text-indent: 25px;
-  /* text-wrap: 2; */
   text-align: left;
 }
 
@@ -153,16 +161,12 @@
 .point-des {
   text-align: left;
   margin-top: 5px;
-  /* margin-left: 5px; */
   font-size: larger;
   font-weight: 500;
 }
 .spl-point {
-
   min-width: fit-content;
- 
   margin-top: 10px;
-
   display: flex;
 }
 .icn-bold-title {

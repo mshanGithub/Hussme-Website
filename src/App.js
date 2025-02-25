@@ -10,7 +10,6 @@ import { ContactUs } from "./Components/Pages/Contactus";
 import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
 import ScrollToTop from "./ScrollToTop";
 
-
 function App() {
   return (
     <>
@@ -22,10 +21,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/business" element={<Business />} />
             <Route path="/talent" element={<Talent />} />
-            <Route path="/blog" element={<Blog/>}/>
-            <Route path="/contact" element={<ContactUs/>}/>
-            {/* <Route path="/contact" element={<Digital/>}/> */}
-            <Route path="/digital" element={<Digital/>}/>
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/digital" element={<Digital />} />
           </Routes>
         </BrowserRouter>
         <Footer />
