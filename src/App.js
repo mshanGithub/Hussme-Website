@@ -7,6 +7,7 @@ import { Business } from "./Components/Pages/Business";
 import { Talent } from "./Components/Pages/Talent";
 import { Blog } from "./Components/Pages/Blog";
 import { ContactUs } from "./Components/Pages/Contactus";
+import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
 
 
 function App() {
@@ -20,7 +21,9 @@ function App() {
             <Route path="/business" element={<Business />} />
             <Route path="/talent" element={<Talent />} />
             <Route path="/blog" element={<Blog/>}/>
-            <Route path="/contact" element={<ContactUs/>}/>
+            {/* <Route path="/contact" element={<ContactUs/>}/> */}
+            <Route path="/contact" element={<Digital/>}/>
+            <Route path="/digital" element={<Digital/>}/>
           </Routes>
         </BrowserRouter>
         <Footer />
