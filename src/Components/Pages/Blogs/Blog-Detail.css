@@ -44,12 +44,32 @@
 }
 @media screen and (max-width: 1200px) {
   .des-img {
-    max-height: 400px;
+    max-height: 350px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .intro-description{
+    line-height: 25px;
+  }
+  .des-point {
+    margin-bottom: 15px;
   }
   .des-heading {
     font-size: 27px;
   }
+  .spl-point-des {
+    margin-left: 0px;
+    line-height: 25px;
+  }
+  .point-des {
+    line-height: 25px;
+    margin-top: 0px;
+  }
+
 }
+
 @media screen and (max-width: 1000px) {
   .spl-point {
     flex-direction: column;
@@ -58,7 +78,7 @@
     height: fit-content;
   }
   .spl-point-des {
-    text-indent: 40px;
+    text-indent: 30px;
     min-height: fit-content;
   }
   .des-point {
@@ -86,6 +106,7 @@
   justify-content: left;
 }
 .t-line {
+  max-height: 60px;
   width: 3.5px;
   background-color: #9747ff;
   margin-right: 5px;
@@ -119,10 +140,12 @@
 .des-point {
   font-size: xx-large;
   color: rgb(109, 109, 109);
+  line-height: 30px;
 }
 .point-des {
   text-align: left;
-  margin-left: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
   font-size: larger;
   font-weight: 500;
 }
