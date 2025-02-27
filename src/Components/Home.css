@@ -1255,7 +1255,7 @@
   .blog-cards-container {
     flex-direction: column;
     width: 100%;
-    min-height: fit-content;
+    height: fit-content;
     padding-left: 0px;
     justify-content: center;
     align-items: center;
