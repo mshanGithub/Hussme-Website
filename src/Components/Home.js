@@ -201,8 +201,8 @@ export function Home() {
                 <div class="face face1 ">
                   <div class="content">
                     <p>
-                    Streaming the business process for growth and bring in the
-                    out of the box solution to reduce expenses.
+                      Streaming the business process for growth and bring in the
+                      out of the box solution to reduce expenses.
                     </p>
                   </div>
                 </div>
@@ -213,8 +213,6 @@ export function Home() {
                   <h2>Consultation</h2>
                 </div>
               </div>
-
-              
 
               {/* <div className="card">
                 <div className="default-content">
@@ -353,7 +351,7 @@ export function Home() {
       <div className="blog-heading">Blog</div>
       <div className="blog-cards-container">
         <div className="blog-card">
-          <div className="background-img cr-1" loading='lazy'>
+          <div className="background-img cr-1" loading="lazy">
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
@@ -371,16 +369,20 @@ export function Home() {
                 </Link>
               </div>
               <div className="last-box">
-                <div className="more-info">Get more info</div>
+                <div className="more-info">
+                  <Link to="/digital">Get more info</Link>
+                </div>
                 <div className="arrow arrow-1">
-                  <img src={arrow} alt="" />
+                  <Link to="/digital">
+                    <img src={arrow} alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="blog-card">
-          <div className="background-img cr-2"loading='lazy'>
+          <div className="background-img cr-2" loading="lazy">
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
@@ -398,16 +400,20 @@ export function Home() {
                 </Link>
               </div>
               <div className="last-box">
-                <div className="more-info">Get more info</div>
+                <div className="more-info">
+                  <Link to="/digital">Get more info</Link>
+                </div>
                 <div className="arrow arrow-1">
-                  <img src={arrow} alt="" />
+                  <Link to="/digital">
+                    <img src={arrow} alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="blog-card">
-          <div className="background-img cr-3"loading='lazy'>
+          <div className="background-img cr-3">
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
@@ -425,9 +431,13 @@ export function Home() {
                 </Link>
               </div>
               <div className="last-box">
-                <div className="more-info">Get more info</div>
+                <div className="more-info">
+                  <Link to="/digital">Get more info</Link>
+                </div>
                 <div className="arrow arrow-1">
-                  <img src={arrow} alt="" />
+                  <Link to="/digital">
+                    <img src={arrow} alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
