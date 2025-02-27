@@ -5,11 +5,8 @@ import s2 from "../Components/Assets/Carousal/slide-2.png";
 import s3 from "../Components/Assets/Carousal/slide-3.png";
 import hand from "../Components/Assets/Home-Header-Footer/handshake.jpg";
 import d1 from "../Components/Assets/Our Levers/digital.jpg";
-import d2 from "../Components/Assets/Our Levers/dig-back.png";
 import staff1 from "../Components/Assets/Our Levers/staff.jpg";
-import staff2 from "../Components/Assets/Our Levers/staff-back.png";
 import c1 from "../Components/Assets/Our Levers/consultation.jpg";
-import c2 from "../Components/Assets/Our Levers/cons-back.png";
 import play1 from "../Components/Assets/Our Levers/our-ser.png";
 import play2 from "../Components/Assets/Our Levers/our-ser-back.png";
 import b1 from "../Components/Assets/Bus-Talent/business-img.jpg";
@@ -127,7 +124,7 @@ export function Home() {
           </div>
           <div className="containers">
             <div className="container-1">
-              <div className="card">
+              {/* <div className="card">
                 <div className="default-content">
                   <div className="card-heading">
                     <h2>Digital Marketing</h2>
@@ -151,6 +148,23 @@ export function Home() {
                     </h4>
                   </div>
                 </div>
+              </div> */}
+              <div class="our-card">
+                <div class="face face1 ">
+                  <div class="content">
+                    <p>
+                      Enhance the website and utilize social platforms
+                      (Facebook, Instagram, X) for branding and generating leads
+                      for business growth.
+                    </p>
+                  </div>
+                </div>
+                <div class="face face2 ddk">
+                  <div className="circle">
+                    <img src={d1} className="img-circle-1" alt="" />
+                  </div>
+                  <h2>Digital Marketing</h2>
+                </div>
               </div>
             </div>
 
@@ -166,32 +180,43 @@ export function Home() {
             </div>
 
             <div className="container-2">
-              <div className="card">
-                <div className="default-content">
-                  <div className="card-heading">
-                    <h2>Staffing Services</h2>
-                  </div>
-                  <div className="default-circle">
-                    <img src={staff1} alt="" />
-                  </div>
-                </div>
-                <div className="hover-content">
-                  <div className="hover-heading">
-                    <h2>Staffing Services</h2>
-                  </div>
-                  <div className="hover-circle">
-                    <img src={staff2} alt="" />
-                  </div>
-                  <div className="hover-describe">
-                    <h4>
+              <div class="our-card">
+                <div class="face face1">
+                  <div class="content">
+                    <p>
                       Innovative on-demand staffing solutions - Hussme Hiring
                       platform for business needs and flexible work schedule for
-                      talents
-                    </h4>
+                      talents.
+                    </p>
                   </div>
                 </div>
+                <div className="face face2 ssk">
+                  <div className="circle">
+                    <img src={staff1} className="img-circle-1" alt="" />
+                  </div>
+                  <h2>Staffing Services</h2>
+                </div>
               </div>
-              <div className="card">
+              <div class="our-card">
+                <div class="face face1 ">
+                  <div class="content">
+                    <p>
+                    Streaming the business process for growth and bring in the
+                    out of the box solution to reduce expenses.
+                    </p>
+                  </div>
+                </div>
+                <div class="face face2 cck">
+                  <div className="circle">
+                    <img src={c1} className="img-circle-1" alt="" />
+                  </div>
+                  <h2>Consultation</h2>
+                </div>
+              </div>
+
+              
+
+              {/* <div className="card">
                 <div className="default-content">
                   <div className="card-heading">
                     <h2>Consultation</h2>
@@ -214,7 +239,7 @@ export function Home() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

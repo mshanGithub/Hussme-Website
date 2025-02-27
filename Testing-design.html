@@ -14,7 +14,7 @@
     align-items: center;
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(45deg, #24006b, #f42f8c);
+    /* background: linear-gradient(45deg, #24006b, #f42f8c); */
   }
   
   .container{
@@ -24,25 +24,18 @@
     grid-gap: 15px;
     margin: 0 auto;
   }
-.icn{
-/*   visibility:visible; */
-  border-radius:100%;
-  background-color:white;
-  height:50px;
-width:50px;
-  display:flex;
-}
-  .card{
+
+  .our-card{
     position: relative;
-    width: 350px;
-    height: 400px;
+    width: 220px;
+    height: 300px;
     margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 15px 60px rgba(0,0,0, .5);
+    /* background: #fff; */
+    box-shadow: rgba(12, 12, 12, 0.1) 0px 10px 10px -10px;
     border-radius: 15px;
   }
   
-  .card .face{
+  .our-card .face{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -51,57 +44,72 @@ width:50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 25px;
   }
   
-  .card .face.face1{
+  .our-card .face.face1{
     box-sizing: border-box;
     padding: 20px;
   }
   
-  .card .face.face1 h2{
+  .our-card .face.face1 h2{
+
     margin: 0;
     padding: 0;
   }
   
-  .card .face.face1 .content{
-    font-size:medium;
+  .our-card .face.face1 .content{
+    /* font-size:medium; */
     margin:0;
-    padding:0 0 1em 0;
+    /* padding:0 0 1em 0; */
     font-weight:500;
   }
   
-  .card .face.face2{
+  .our-card .face.face2{
     background: #111;
     transition: 0.5s;
   }
   
-  .card:nth-child(1) .face.face2{
-    background: linear-gradient(45deg, #3503ad, #f7308c);
+  .our-card:nth-child(1) .face.face2{
+    /* background: linear-gradient(80deg, #000000 1%, #ffffff 95%); */
+/* background-color: rgb(0, 0, 0); */
+background-image: url('./src/Components/Assets/Home-Blog/61769.jpg');
+background-repeat: no-repeat;
+background-position: right;
+background-size: cover;
     border-radius: 15px;
   }
-  
-  .card:nth-child(2) .face.face2{
-    background: linear-gradient(45deg, #ccff00, #09afff);
-    border-radius: 15px;
-  }
-  
-  .card:nth-child(3) .face.face2{
-    background: linear-gradient(45deg, #e91e63, #ffeb3b);
-    border-radius: 15px;
-  }
-
-.card:hover .icn{
+.cicle{
+  display: flex;
+}
+img{
+  height: 130px;
+  width: 130px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.our-card:hover .circle{
+  transition: all 0.5s ease-in-out;
+  display: none;
 height:0px;
   
 /*   display:none; */
 
 }
-  .card:hover .face.face2{
-    height: 60px;
+  .our-card:hover .face.face2{
+    height: 50px;
+    background-image: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     border-radius: 0 0 15px 15px;
+    transition: all 0.5s ease-in-out;
   }
+  .our-card:hover .face.face2 h2{
   
-  .card .face.face2:before{
+    color: white;
+  }
+  .our-card .face.face2:before{
     content:'';
     position: absolute;
     top:0;
@@ -112,31 +120,34 @@ height:0px;
     border-radius: 15px 0 0 15px;
   }
   
-  .card .face.face2 h2{
+  .our-card .face.face2 h2{
+    width: 90%;
+    text-align: center;
     margin: 0;
     padding: 0;
-    font-size: xx-larger;
-    color: #fff;
-    transition: 0.5s;
-    text-shadow: 0 2px 5px rgba(0,0,0, .2);
+    font-size: x-large;
+    line-height: 30px;
+    color: #000000;
+    transition: 0.5s; 
+    text-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
   }
   
-  .card:hover .face.face2 h2{
-    font-size: 2em;
+  .our-card:hover .face.face2 h2{
+    font-size:large;
   }
     </style>
 </head>
 <body>
   <div class="container">
-    <div class="card">
+    <div class="our-card">
       <div class="face face1">
         <div class="content">
-          <h2>Lorem Ipsum</h2> 
+        
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
         </div>
       </div>
       <div class="face face2">
-      <div class="icn"></div>
+      <div class="circle"><img src="../image copy.png" alt="" ></div>
         <h2>Digital Marketing</h2>
       </div>
     </div>
@@ -144,3 +155,52 @@ height:0px;
   </div>
 </body>
 </html> -->
+<div className="card">
+  <div className="default-content">
+    <div className="card-heading">
+      <h2>Staffing Services</h2>
+    </div>
+    <div className="default-circle">
+      <img src={staff1} alt="" />
+    </div>
+  </div>
+  <div className="hover-content">
+    <div className="hover-heading">
+      <h2>Staffing Services</h2>
+    </div>
+    <div className="hover-circle">
+      <img src={staff2} alt="" />
+    </div>
+    <div className="hover-describe">
+      <h4>
+        Innovative on-demand staffing solutions - Hussme Hiring
+        platform for business needs and flexible work schedule for
+        talents
+      </h4>
+    </div>
+  </div>
+</div>
+<div className="card">
+  <div className="default-content">
+    <div className="card-heading">
+      <h2>Consultation</h2>
+    </div>
+    <div className="default-circle">
+      <img src={c1} alt="" />
+    </div>
+  </div>
+  <div className="hover-content">
+    <div className="hover-heading">
+      <h2>Consultation</h2>
+    </div>
+    <div className="hover-circle">
+      <img src={c2} alt="" />
+    </div>
+    <div className="hover-describe">
+      <h4>
+        Streaming the business process for growth and bring in the
+        out of the box solution to reduce expenses
+      </h4>
+    </div>
+  </div>
+</div>
