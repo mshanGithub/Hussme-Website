@@ -1111,7 +1111,7 @@
   border-radius: 10px;
   height: 550px;
   min-width: 30%;
-  background-color: #9747ff;
+  /* background-color: #9747ff; */
   margin: 5px;
   display: flex;
   flex-direction: column;

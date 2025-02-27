@@ -64,7 +64,7 @@
   border-radius: 10px;
   height: 500px;
   width: 450px;
-  background-color: #9747ff;
+  /* background-color: #9747ff; */
   margin: 5px;
   display: flex;
   flex-direction: column;
