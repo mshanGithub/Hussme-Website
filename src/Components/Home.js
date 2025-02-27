@@ -353,7 +353,7 @@ export function Home() {
       <div className="blog-heading">Blog</div>
       <div className="blog-cards-container">
         <div className="blog-card">
-          <div className="background-img cr-1">
+          <div className="background-img cr-1" loading='lazy'>
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
@@ -380,7 +380,7 @@ export function Home() {
           </div>
         </div>
         <div className="blog-card">
-          <div className="background-img cr-2">
+          <div className="background-img cr-2"loading='lazy'>
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
@@ -407,7 +407,7 @@ export function Home() {
           </div>
         </div>
         <div className="blog-card">
-          <div className="background-img cr-3">
+          <div className="background-img cr-3"loading='lazy'>
             <div className="btm-card">
               <div className="date-comment">
                 <div className="date">
