@@ -44,7 +44,7 @@ export function Header() {
             </li>
           </ul>
 
-          <ul>
+          <ul className="desk-navbar">
             <li>
               <div className="logo">
                 <Link to="/">
