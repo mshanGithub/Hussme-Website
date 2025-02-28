@@ -1,4 +1,5 @@
 import "../Components/Footer.css";
+import { Link } from "react-router-dom";
 import logofooter from "../Components/Assets/Home-Header-Footer/hussme Logo-2 2-black.jpg";
 import mobile from "../Components/Assets/Home-Header-Footer/envelope (1).png";
 import mail from "../Components/Assets/Home-Header-Footer/outgoing.png";
@@ -16,39 +17,41 @@ export function Footer() {
         <div className="col-2">
           <ul>
             <li>
-              <a href="">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="">Business</a>
+              <Link to="/business">Business</Link>
             </li>
             <li>
-              <a href="">Talent</a>
+              <Link to="/talent">Talent</Link>
             </li>
             <li>
-              <a href="">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="">Contact US</a>
+              <Link to="/contact">Contact US</Link>
             </li>
           </ul>
         </div>
         <div className="col-3">
           <ul>
             <li>
-              <a href="">Privacy policy</a>
+              <Link to="#">Privacy policy</Link>
             </li>
             <li>
-              <a href="">Terms & Condition</a>
+              <Link to="#">Terms & Condition</Link>
             </li>
             <li>
-              <a href="">Partners</a>
+              <Link to="#">Partners</Link>
             </li>
           </ul>
         </div>
         <div className="col-4">
-          <div className="contact-btn">
-            <a href="">Contact Us</a>
-          </div>
+          <Link to="/contact">
+            <div className="contact-btn">
+            <Link to="/contact">Contact Us</Link> 
+            </div>
+          </Link>
 
           <div className="cen-left">
             <div className="mobile">

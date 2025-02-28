@@ -29,9 +29,13 @@ export function Blog() {
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -57,9 +61,13 @@ export function Blog() {
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -81,14 +89,17 @@ export function Blog() {
                   </div>
                   <div className="blog-title">
                     <Link to="/digital">
-                      {" "}
                       <h2>Get few solution to hire a best candidate </h2>
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -114,9 +125,13 @@ export function Blog() {
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -124,27 +139,31 @@ export function Blog() {
             </div>
 
             <div className="blog-card">
-              <div className="background-img cr-2">
+              <div className="background-img cr-3">
                 <div className="btm-card">
                   <div className="date-comment">
                     <div className="date">
                       <div className="date-icn"></div>
-                      18,Feb, 2024
+                      01,Aug, 2024
                     </div>
                     <div className="comment">
                       <div className="comment-icn"></div>
-                      09 Comments
+                      02 Comments
                     </div>
                   </div>
                   <div className="blog-title">
                     <Link to="/digital">
-                      <h2>Hire easily HR candidates in few seconds</h2>
+                      <h2>Get few solution to hire a best candidate </h2>
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -170,9 +189,13 @@ export function Blog() {
                     </Link>
                   </div>
                   <div className="last-box">
-                    <div className="more-info">Get more info</div>
+                    <div className="more-info">
+                      <Link to="/digital">Get more info</Link>
+                    </div>
                     <div className="arrow arrow-1">
-                      <img src={arrow} alt="" />
+                      <Link to="/digital">
+                        <img src={arrow} alt="" />
+                      </Link>
                     </div>
                   </div>
                 </div>

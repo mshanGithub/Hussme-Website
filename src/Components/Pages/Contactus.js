@@ -28,6 +28,10 @@ export function ContactUs() {
     }
   };
 
+  const handleScroll = () => {
+    document.querySelector('.contact-button').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="contactus-page">
       <div className="contact-title">Contact Us</div>
@@ -45,12 +49,14 @@ export function ContactUs() {
             us for inquiries about franchise opportunities, application support,
             or any other queries. Let’s build your franchise journey together!
           </div>
-          <div className="contact-button">Contact Us</div>
+
+          <div onClick={handleScroll} className="contact-button">Contact Us</div>
         </div>
       </div>
       <div className="contact-detail-container">
         <form className="contact-input-box" onSubmit={onSubmit}>
-          <div className="contact-info-title">Contact Info</div>
+          
+          <div  className="contact-info-title">Contact Info</div>
           <div className="row">
             <div className="input-field">
               <label htmlFor="first-name">

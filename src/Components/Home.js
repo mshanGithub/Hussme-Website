@@ -124,31 +124,6 @@ export function Home() {
           </div>
           <div className="containers">
             <div className="container-1">
-              {/* <div className="card">
-                <div className="default-content">
-                  <div className="card-heading">
-                    <h2>Digital Marketing</h2>
-                  </div>
-                  <div className="default-circle">
-                    <img src={d1} alt="" />
-                  </div>
-                </div>
-                <div className="hover-content">
-                  <div className="hover-heading">
-                    <h2>Digital Marketing</h2>
-                  </div>
-                  <div className="hover-circle">
-                    <img src={d2} alt="" />
-                  </div>
-                  <div className="hover-describe">
-                    <h4>
-                      Enhance the website and utilize social platforms
-                      (Facebook, Instagram, X) for branding and generating leads
-                      for business growth.
-                    </h4>
-                  </div>
-                </div>
-              </div> */}
               <div class="our-card">
                 <div class="face face1 ">
                   <div class="content">
@@ -261,10 +236,12 @@ export function Home() {
                 <li>Website hosting and regular maintenance</li>
                 <li>Facebook, Instagram, and X marketing</li>
               </ul>
-              <button class="button-57" role="button">
-                <span class="text">Package & Pricing</span>
-                <span>Package & Pricing</span>
-              </button>
+              <Link to="/business">
+                <button class="button-57" role="button">
+                  <span class="text">Package & Pricing</span>
+                  <span>Package & Pricing</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -283,10 +260,12 @@ export function Home() {
                 <li>Business reach out with the work request</li>
                 <li>Online trainings and carrier assistance</li>
               </ul>
-              <button class="button-57" role="button">
-                <span class="text">Package & Pricing</span>
-                <span>Package & Pricing</span>
-              </button>
+              <Link to="/talent">
+                <button class="button-57" role="button">
+                  <span class="text">Package & Pricing</span>
+                  <span>Package & Pricing</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
