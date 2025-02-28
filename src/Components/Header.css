@@ -105,7 +105,7 @@ nav li:first-child {
   justify-content: center;
 }
 .sidebar li :first-child {
-  /* padding-left: 20px; */
+
 }
 .menu-button {
   display: none;
