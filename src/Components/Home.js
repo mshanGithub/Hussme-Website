@@ -28,7 +28,7 @@ export function Home() {
       if (counter > 3) {
         counter = 1;
       }
-    }, 3000);
+    }, 6000); // Increased duration
 
     return () => clearInterval(interval);
   }, []);
@@ -125,20 +125,30 @@ export function Home() {
           <div className="containers">
             <div className="container-1">
               <div class="our-card">
-                <div class="face face1 ">
-                  <div class="content">
-                    <p>
-                      Enhance the website and utilize social platforms
-                      (Facebook, Instagram, X) for branding and generating leads
-                      for business growth.
-                    </p>
+                <div class="card-inner">
+                  <div class="card-front ddk">
+                    <div class="circle">
+                      <img
+                        src={d1}
+                        class="img-circle-1"
+                        alt="Digital Marketing"
+                      />
+                    </div>
+                    <h2 className="our-card-h2-front">Digital Marketing</h2>
                   </div>
-                </div>
-                <div class="face face2 ddk">
-                  <div className="circle">
-                    <img src={d1} className="img-circle-1" alt="" />
+
+                  <div class="card-back">
+                    <div class="content">
+                      <p>
+                        Enhance the website and utilize social platforms
+                        (Facebook, Instagram, X) for branding and generating
+                        leads for business growth.
+                      </p>
+                    </div>
+                    <div className="bottom-title">
+                      <h2 className="our-card-h2-back">Digital Marketing</h2>
+                    </div>
                   </div>
-                  <h2>Digital Marketing</h2>
                 </div>
               </div>
             </div>
@@ -156,63 +166,59 @@ export function Home() {
 
             <div className="container-2">
               <div class="our-card">
-                <div class="face face1">
-                  <div class="content">
-                    <p>
-                      Innovative on-demand staffing solutions - Hussme Hiring
-                      platform for business needs and flexible work schedule for
-                      talents.
-                    </p>
+                <div class="card-inner">
+                  <div class="card-front ssk">
+                    <div class="circle">
+                      <img
+                        src={staff1}
+                        class="img-circle-1"
+                        alt="Staffing Services"
+                      />
+                    </div>
+                    <h2 className="our-card-h2-front">Staffing Services</h2>
                   </div>
-                </div>
-                <div className="face face2 ssk">
-                  <div className="circle">
-                    <img src={staff1} className="img-circle-1" alt="" />
+
+                  <div class="card-back">
+                    <div class="content">
+                      <p>
+                        Innovative on-demand staffing solutions - Hussme Hiring
+                        platform for business needs and flexible work schedule
+                        for talents.
+                      </p>
+                    </div>
+                    <div className="bottom-title">
+                      <h2 className="our-card-h2-back">Staffing Services</h2>
+                    </div>
                   </div>
-                  <h2>Staffing Services</h2>
-                </div>
-              </div>
-              <div class="our-card">
-                <div class="face face1 ">
-                  <div class="content">
-                    <p>
-                      Streaming the business process for growth and bring in the
-                      out of the box solution to reduce expenses.
-                    </p>
-                  </div>
-                </div>
-                <div class="face face2 cck">
-                  <div className="circle">
-                    <img src={c1} className="img-circle-1" alt="" />
-                  </div>
-                  <h2>Consultation</h2>
                 </div>
               </div>
 
-              {/* <div className="card">
-                <div className="default-content">
-                  <div className="card-heading">
-                    <h2>Consultation</h2>
+              <div class="our-card">
+                <div class="card-inner">
+                  <div class="card-front cck">
+                    <div class="circle">
+                      <img
+                        src={c1}
+                        class="img-circle-1"
+                        alt="Digital Marketing"
+                      />
+                    </div>
+                    <h2 className="our-card-h2-front">Consultation</h2>
                   </div>
-                  <div className="default-circle">
-                    <img src={c1} alt="" />
+
+                  <div class="card-back">
+                    <div class="content">
+                      <p>
+                        Streaming the business process for growth and bring in
+                        the out of the box solution to reduce expenses.
+                      </p>
+                    </div>
+                    <div className="bottom-title">
+                      <h2 className="our-card-h2-back">Consultation</h2>
+                    </div>
                   </div>
                 </div>
-                <div className="hover-content">
-                  <div className="hover-heading">
-                    <h2>Consultation</h2>
-                  </div>
-                  <div className="hover-circle">
-                    <img src={c2} alt="" />
-                  </div>
-                  <div className="hover-describe">
-                    <h4>
-                      Streaming the business process for growth and bring in the
-                      out of the box solution to reduce expenses
-                    </h4>
-                  </div>
-                </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@
 }
 .slides {
   display: flex;
-  transition: 10s;
+  transition: all 3s ease-in-out; /* Increased from 2s */
 }
 
 .slides input {
@@ -36,7 +36,6 @@
 
 .slide img {
   width: 100%;
-  /* height: 100%; */
   object-fit: contain;
 }
 
@@ -93,7 +92,7 @@
   .slide-text {
     top: 75%;
   }
-  .slide img{
+  .slide img {
     border-radius: 0px 0px 10px 0px;
   }
 }
@@ -145,11 +144,12 @@
 }
 #radio2:checked ~ .first {
   margin-left: -100%;
-  transition: all 2s ease-in-out;
+  transition: all 3s ease-in-out;
 }
+
 #radio3:checked ~ .first {
   margin-left: -200%;
-  transition: all 2s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .navigation-auto {
@@ -169,7 +169,7 @@
   border: 2.1px solid rgb(255, 255, 255);
   padding: 2px;
   border-radius: 1%;
-  transition: background-color 0.3s ease;
+  transition: background-color 3s ease;
 }
 .navigation-auto div:not(:last-child) {
   margin-right: 15px;
@@ -406,12 +406,9 @@
     min-height: 430px;
     min-width: 70%;
   }
-  .our-card .face {
-    gap: 50px !important;
-  }
-  .our-card:hover .face.face2 {
-    min-height: 100px;
-  }
+.card-isdnner{
+  gap:55px
+}
   .circle {
     min-height: 150px;
     min-width: 150px;
@@ -420,181 +417,148 @@
     min-height: 150px;
     min-width: 150px;
   }
-  .our-card:hover .face.face2 h2 {
-    font-size: 30px !important;
+  .our-card-h2-front{
+    width: 70%;
+    font-size: 35px;
   }
-  .content {
-    width: 100%;
-    max-height: 55%;
-    display: flex;
-    align-items: center;
-    /* background-color: #523232; */
-    /* justify-content: center; */
-    /* display: flex; */
-    align-items: top !important;
+  .our-card-h2-back{
+    font-size: 25px !important;
   }
-  .content p {
-    text-align: top;
-    width: fit-content;
-    min-height: 95%;
-    /* background-color: #d3bdbd; */
+  .content{
+    width: 95%;
+  }
+  .content p{
+    width: 90%;
     font-size: x-large;
-    line-height: 30px;
   }
 }
-@media screen and (max-width: 700px) {
-  .content {
-    min-height: 80%;
-    align-items: center !important;
-  }
-}
-@media screen and (max-width: 500px) {
-  .content {
-    min-height: 90%;
-    align-items: center !important;
-  }
-}
+
 /* s test */
 .our-card {
   position: relative;
   width: 220px;
   height: 300px;
   margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.556) 0px 0px 5px;
+  perspective: 1000px; /* Enables 3D effect */
+  cursor: pointer;
   border-radius: 15px;
 }
 
-.our-card .face {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.our-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.card-front,
+.card-back {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  border-radius: 15px;
 }
 
-.our-card .face.face1 {
-  box-sizing: border-box;
-  padding: 20px;
+/* Back Side */
+.card-back {
+  background: #ffffff;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
 }
-
-.our-card .face.face1 h2 {
-  margin: 0;
+.content {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content p {
+  text-align: center;
+  color: #000000;
+  font-weight: 550;
   padding: 0;
-}
-
-.our-card .face.face1 .content {
   margin: 0;
-  font-weight: 500;
+}
+.bottom-title {
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(45deg, #9747ff,  #f08143);
+  border-radius: 0 0px 10px 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-title h2 {
+  font-family: "poppins";
+  font-size: large;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 
-.our-card .face.face2 {
-  background: #51515100;
-  transition: 1s ease-in-out;
-}
-
-.our-card:nth-child(1) .face.ddk {
-  background-image: url("./Assets/Home-Blog/61769.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  border-radius: 15px;
-}
-.our-card:nth-child(1) .face.ssk {
-  background-image: url("./Assets/Our Levers/kkki.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-}
-.our-card:nth-child(2) .face.cck {
-  /* background-image: url("./Assets/Home-Blog/61769.jpg"); */
-  background-image: url("./Assets/Our Levers/image\ copy.png");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  background-size: cover;
-  border-radius: 15px;
-}
-.cicle {
+/* Circle Image */
+.circle {
   display: flex;
   height: 120px;
   width: 120px;
   background: white;
   align-items: center;
   justify-content: center;
-  /* transition: all 2s; */
+  border-radius: 50%;
 }
+
 .img-circle-1 {
   height: 120px;
   width: 120px;
   border-radius: 100%;
-  object-position: center;
   object-fit: cover;
-  box-shadow: 0px 0 5px 1px #363636;
-  background-color: black;
-  /* transition: all 2s; */
-}
-.our-card:hover .circle {
-  /* transition: all 0.5s ease-in-out; */
-  display: none;
-  height: 0px;
-  /* transition: all 2s; */
+  box-shadow: 0px 0 5px 1px #a0a0a0;
+  background-color: rgba(85, 85, 85, 0.61);
 }
 
-.our-card:hover .face.face2 {
-  height: 50px;
-  background-image: none;
-  background-color: rgb(0, 0, 0);
-  border-radius: 0 0 15px 15px;
-  transition: all 1s ease-in-out;
+.ddk {
+  background-image: url("./Assets/Home-Blog/61769.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  border-radius: 15px;
 }
-.our-card:hover .face.face2 h2 {
-  transition: all 1s ease-in-out;
-  font-size: 20px;
-  color: white;
+.ssk {
+  background-image: url("./Assets/Our Levers/kkki.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
 }
-.our-card .face.face2:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 15px 0 0 15px;
-}
-
-.our-card .face.face2 h2 {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 33px;
-  line-height: 37px;
-  color: #000000;
-  transition: 3s ease-out;
-  text-shadow: 0 2px 5px rgba(16, 16, 16, 0.2);
+.cck {
+  background-image: url("./Assets/Our Levers/image\ copy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
 }
 
-.content {
-  /* background-color: #111; */
-  width: 100%;
-  height: 80%;
-  display: flex;
-  align-items: top;
-  /* justify-content: center; */
-}
-.content p {
-  text-align: center;
-  font-weight: 550;
-  padding: 0;
-  margin: 0;
-}
 /* E test */
 
 /* End of Our Levers Section */
