@@ -65,18 +65,18 @@ export function Footer() {
           </div>
 
           <div className="social-media">
-            <a href="">
+            <Link href="">
               <div className="x-icn"></div>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <div className="insta-icn"></div>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <div className="fb-icn"></div>
-            </a>
-            <a href="">
+            </Link>
+            <Link href="">
               <div className="linkedin-icn"></div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

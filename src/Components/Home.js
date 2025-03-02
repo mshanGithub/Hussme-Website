@@ -237,7 +237,7 @@ export function Home() {
                 <li>Facebook, Instagram, and X marketing</li>
               </ul>
               <Link to="/business">
-                <button class="button-57" role="button">
+                <button class="button-57">
                   <span class="text">Package & Pricing</span>
                   <span>Package & Pricing</span>
                 </button>
@@ -261,7 +261,7 @@ export function Home() {
                 <li>Online trainings and carrier assistance</li>
               </ul>
               <Link to="/talent">
-                <button class="button-57" role="button">
+                <button class="button-57">
                   <span class="text">Package & Pricing</span>
                   <span>Package & Pricing</span>
                 </button>
