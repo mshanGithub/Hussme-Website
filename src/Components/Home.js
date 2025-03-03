@@ -14,8 +14,19 @@ import t1 from "../Components/Assets/Bus-Talent/talent-img.png";
 import arrow from "./Assets/For-status/Arrow.svg";
 import mes from "./Assets/Home-Header-Footer/message-color.png";
 import { Link } from "react-router-dom";
-
+import { useRef } from "react";
 export function Home() {
+  const scrollRef = useRef(null);
+
+  const scrollBlog = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 500;
+      scrollRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
   // Function For Carousal auto slide change
   useEffect(() => {
     let counter = 1;
@@ -334,127 +345,145 @@ export function Home() {
 
       {/*Start of Home Blog */}
       <div className="blog-heading">Blog</div>
-      <div className="blog-cards-container">
-        <div className="blog-card">
-          <div className="background-img cr-1" loading="lazy">
-            <div className="btm-card">
-              <div className="date-comment">
-                <div className="date">
-                  <div className="date-icn"></div>
-                  15,Feb, 2024
+      <div className="home-blog-section">
+        <div className="home-blog-cards-container" ref={scrollRef}>
+          <div className="home-blog-card">
+            <div className="background-img cr-1" loading="lazy">
+              <div className="btm-card">
+                <div className="date-comment">
+                  <div className="date">
+                    <div className="date-icn"></div>
+                    15,Feb, 2024
+                  </div>
+                  <div className="comment">
+                    <div className="comment-icn"></div>
+                    05, Comments
+                  </div>
                 </div>
-                <div className="comment">
-                  <div className="comment-icn"></div>
-                  05, Comments
-                </div>
-              </div>
-              <div className="blog-title">
-                <Link to="/digital">
-                  <h2>Digital Marketing</h2>
-                </Link>
-              </div>
-              <div className="last-box">
-                <div className="more-info">
-                  <Link to="/digital">Get more info</Link>
-                </div>
-                <div className="arrow arrow-1">
+                <div className="blog-title">
                   <Link to="/digital">
-                    <img src={arrow} alt="" />
+                    <h2>Digital Marketing</h2>
                   </Link>
+                </div>
+                <div className="last-box">
+                  <div className="more-info">
+                    <Link to="/digital">Get more info</Link>
+                  </div>
+                  <div className="arrow arrow-1">
+                    <Link to="/digital">
+                      <img src={arrow} alt="" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="home-blog-card">
+            <div className="background-img cr-2" loading="lazy">
+              <div className="btm-card">
+                <div className="date-comment">
+                  <div className="date">
+                    <div className="date-icn"></div>
+                    18,Feb, 2024
+                  </div>
+                  <div className="comment">
+                    <div className="comment-icn"></div>
+                    09 Comments
+                  </div>
+                </div>
+                <div className="blog-title">
+                  <Link to="/digital">
+                    <h2>Hire easily HR candidates in few seconds</h2>
+                  </Link>
+                </div>
+                <div className="last-box">
+                  <div className="more-info">
+                    <Link to="/digital">Get more info</Link>
+                  </div>
+                  <div className="arrow arrow-1">
+                    <Link to="/digital">
+                      <img src={arrow} alt="" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="home-blog-card">
+            <div className="background-img cr-3">
+              <div className="btm-card">
+                <div className="date-comment">
+                  <div className="date">
+                    <div className="date-icn"></div>
+                    01,Aug, 2024
+                  </div>
+                  <div className="comment">
+                    <div className="comment-icn"></div>
+                    02 Comments
+                  </div>
+                </div>
+                <div className="blog-title">
+                  <Link to="/digital">
+                    <h2>Get few solution to hire a best candidate </h2>
+                  </Link>
+                </div>
+                <div className="last-box">
+                  <div className="more-info">
+                    <Link to="/digital">Get more info</Link>
+                  </div>
+                  <div className="arrow arrow-1">
+                    <Link to="/digital">
+                      <img src={arrow} alt="" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="home-blog-card">
+            <div className="background-img cr-4">
+              <div className="btm-card">
+                <div className="date-comment">
+                  <div className="date">
+                    <div className="date-icn"></div>
+                    18,Mar, 2024
+                  </div>
+                  <div className="comment">
+                    <div className="comment-icn"></div>
+                    05 Comments
+                  </div>
+                </div>
+                <div className="blog-title">
+                  <Link to="/digital">
+                    <h2>Capitalize on low hanging fruit</h2>
+                  </Link>
+                </div>
+                <div className="last-box">
+                  <div className="more-info">
+                    <Link to="/digital">Get more info</Link>
+                  </div>
+                  <div className="arrow arrow-1">
+                    <Link to="/digital">
+                      <img src={arrow} alt="" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="blog-card">
-          <div className="background-img cr-2" loading="lazy">
-            <div className="btm-card">
-              <div className="date-comment">
-                <div className="date">
-                  <div className="date-icn"></div>
-                  18,Feb, 2024
-                </div>
-                <div className="comment">
-                  <div className="comment-icn"></div>
-                  09 Comments
-                </div>
-              </div>
-              <div className="blog-title">
-                <Link to="/digital">
-                  <h2>Hire easily HR candidates in few seconds</h2>
-                </Link>
-              </div>
-              <div className="last-box">
-                <div className="more-info">
-                  <Link to="/digital">Get more info</Link>
-                </div>
-                <div className="arrow arrow-1">
-                  <Link to="/digital">
-                    <img src={arrow} alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="blog-card">
-          <div className="background-img cr-3">
-            <div className="btm-card">
-              <div className="date-comment">
-                <div className="date">
-                  <div className="date-icn"></div>
-                  01,Aug, 2024
-                </div>
-                <div className="comment">
-                  <div className="comment-icn"></div>
-                  02 Comments
-                </div>
-              </div>
-              <div className="blog-title">
-                <Link to="/digital">
-                  <h2>Get few solution to hire a best candidate </h2>
-                </Link>
-              </div>
-              <div className="last-box">
-                <div className="more-info">
-                  <Link to="/digital">Get more info</Link>
-                </div>
-                <div className="arrow arrow-1">
-                  <Link to="/digital">
-                    <img src={arrow} alt="" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <div className="blog-card">
-          <div className="background-img cr-4">
-            <div className="btm-card">
-              <div className="date-comment">
-                <div className="date">
-                  <div className="date-icn"></div>
-                  18,Mar, 2024
-                </div>
-                <div className="comment">
-                  <div className="comment-icn"></div>
-                  05 Comments
-                </div>
-              </div>
-              <div className="blog-title">
-                <Link to="/digital">
-                  <h2>Capitalize on low hanging fruit</h2>
-                </Link>
-              </div>
-              <div className="last-box">
-                <div className="more-info">Get more info</div>
-                <div className="arrow arrow-1">
-                  <img src={arrow} alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        <button
+          className="home-scroll-nav home-scroll-left"
+          onClick={() => scrollBlog("left")}
+        >
+          ‹
+        </button>
+        <button
+          className="home-scroll-nav home-scroll-right"
+          onClick={() => scrollBlog("right")}
+        >
+          ›
+        </button>
       </div>
 
       {/*End of Home Blog */}
