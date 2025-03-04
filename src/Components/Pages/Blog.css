@@ -132,7 +132,8 @@
 .blog-card {
   color: #b6afaf;
 }
-.date-comment {
+.blog-card .date-comment {
+  margin-top:5px;
   width: 90%;
   height: fit-content;
   color: #666464;
@@ -187,7 +188,7 @@
   display: flex;
   flex-direction: row;
 }
-.more-info {
+.blog-card .more-info {
   width: auto;
   text-align: left;
   font-size: large;
@@ -196,6 +197,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 20px;
+  margin-bottom:5px;
 }
 .blog-card .arrow {
   width: 50%;

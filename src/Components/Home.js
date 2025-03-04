@@ -372,7 +372,7 @@ export function Home() {
                   <div className="more-info">
                     <Link to="/digital">Get more info</Link>
                   </div>
-                  <div className="arrow arrow-1">
+                  <div className="arrow">
                     <Link to="/digital">
                       <img src={arrow} alt="" />
                     </Link>
@@ -403,7 +403,7 @@ export function Home() {
                   <div className="more-info">
                     <Link to="/digital">Get more info</Link>
                   </div>
-                  <div className="arrow arrow-1">
+                  <div className="arrow ">
                     <Link to="/digital">
                       <img src={arrow} alt="" />
                     </Link>
@@ -434,7 +434,7 @@ export function Home() {
                   <div className="more-info">
                     <Link to="/digital">Get more info</Link>
                   </div>
-                  <div className="arrow arrow-1">
+                  <div className="arrow">
                     <Link to="/digital">
                       <img src={arrow} alt="" />
                     </Link>
@@ -465,7 +465,7 @@ export function Home() {
                   <div className="more-info">
                     <Link to="/digital">Get more info</Link>
                   </div>
-                  <div className="arrow arrow-1">
+                  <div className="arrow">
                     <Link to="/digital">
                       <img src={arrow} alt="" />
                     </Link>

@@ -12,7 +12,7 @@ export function Business() {
       <div className="img-content">
         <div className="blog-slogan">
           <div className="blog-text-box">
-            <div className="blog-line-1"> Leverage us</div>
+            <div className="blog-line-1">Leverage us</div>
             <div className="blog-line-2">for your</div>
             <div className="blog-line-3">Growth</div>
           </div>
@@ -77,7 +77,7 @@ export function Business() {
       {/* End of Business Content Section */}
       {/* Start of Package and pricing */}
       <div className="package-pricing">
-        <div className="package-title">Package and Pricing</div>
+        <div className="b-package-title">Package and Pricing</div>
         <div className="package-cards">
           <div className="price-card-1">
             <div className="cat-tag">
