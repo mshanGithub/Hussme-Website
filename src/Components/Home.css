@@ -310,6 +310,7 @@
   width: 130px;
   height: 130px;
   perspective: 1000px;
+  display: flex;
 }
 
 .play-button-inner {
@@ -393,7 +394,11 @@
     width: 100%;
     height: fit-content;
   }
+  .container-1{
+    margin-bottom: 15px;
+  }
   .play-button {
+    display: none;
     width: 200px;
     height: 200px;
     margin: 25px auto;
@@ -878,23 +883,23 @@
 .icon-1 {
   background-image: url("../Components/Assets/For-status/prjp.svg");
 }
-.icon-1:hover {
-  background-image: url("../Components/Assets/For-status/prjw.svg");
-}
 .icon-2 {
   background-image: url("../Components/Assets/For-status/empp.svg");
-}
-.icon-2:hover {
-  background-image: url("../Components/Assets/For-status/empw.svg");
 }
 .icon-3 {
   background-image: url("../Components/Assets/For-status/jobp.svg");
 }
-.icon-3:hover {
-  background-image: url("../Components/Assets/For-status/jobw.svg");
-}
 .icon-4 {
   background-image: url("../Components/Assets/For-status/happyp.svg");
+}
+.icon-1:hover {
+  background-image: url("../Components/Assets/For-status/prjw.svg");
+}
+.icon-2:hover {
+  background-image: url("../Components/Assets/For-status/empw.svg");
+}
+.icon-3:hover {
+  background-image: url("../Components/Assets/For-status/jobw.svg");
 }
 .icon-4:hover {
   background-image: url("../Components/Assets/For-status/happyw.svg");
@@ -927,9 +932,26 @@
   }
 
   .icon {
+
     background-size: 50%;
     height: 150px;
     width: 150px;
+  }
+  .icon-1,.icon-2,.icon-3,.icon-4{
+    background-color: #9747ff;
+  }
+  .icon-1{
+    background-image: url("../Components/Assets/For-status/prjw.svg");
+  }
+  .icon-2{
+    background-image: url("../Components/Assets/For-status/empw.svg");
+  }
+  .icon-3{
+    background-image: url("../Components/Assets/For-status/jobw.svg");
+  }
+  .icon-4{
+    background-image: url("../Components/Assets/For-status/happyw.svg");
+    background-size: 50%;
   }
   .work-status-container:focus {
     background-color: #b6afaf;
@@ -1286,7 +1308,7 @@
     display: none;
   }
   .home-blog-card {
-    max-height:500px ;
+    max-height:520px ;
     min-width: 100% !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
