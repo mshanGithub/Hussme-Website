@@ -1,10 +1,7 @@
 import "./Blog-Detail.css";
-// import bg from/src/Components/Assets";
-// import hj from '../Assest/svg/Carousal/slide-1.jpg'
 export function Digital() {
   return (
     <div className="des-container">
-      {/* <div className="des-title">Blog</div> */}
       <div className="des-heading">
         Mastering Digital Marketing: Strategies for Success
       </div>

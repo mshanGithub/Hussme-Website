@@ -94,9 +94,14 @@
     flex-direction: column;
   }
   .details-container {
-    width: 92% !important;
+    width: 100% !important;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
   }
-
+  .des-sec-1,
+  .des-sec-2 {
+    width: 95% !important;
+  }
   .point-des {
     margin-left: 25px !important;
   }
