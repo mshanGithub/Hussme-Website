@@ -31,20 +31,23 @@ export function Home() {
   // Function For Carousal auto slide change
   useEffect(() => {
     let counter = 1;
+    
+    // Immediately change to the first slide
+    document.getElementById("radio" + counter).checked = true;
+    
     const interval = setInterval(() => {
+      counter++;
+      if (counter > 3) counter = 1;
+      
       const radio = document.getElementById("radio" + counter);
       if (radio) {
         radio.checked = true;
       }
-      counter++;
-      if (counter > 3) {
-        counter = 1;
-      }
-    }, 6000); // Increased duration
-
+    }, 6000); // Keep interval duration
+  
     return () => clearInterval(interval);
   }, []);
-
+  
   // Function for work status count increase
   window.onload = () => {
     const nums = document.querySelectorAll(".count");
