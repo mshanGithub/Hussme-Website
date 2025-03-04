@@ -30,7 +30,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
 }
-.des-img {
+/* .des-img {
   margin-top: 10px;
   width: 90%;
   height: 650px;
@@ -41,7 +41,36 @@
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   filter: drop-shadow(1px 2px 4px hsl(0, 0%, 8%));
+} */
+.des-img {
+  margin-top: 10px;
+  width: 90%;
+  height: 650px;
+  background-image: url("/src/Components/Assets/Home-Blog/digital-back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 15px 0px 0px 0px;
+  box-shadow: #9747ff5d 5px 5px, #9747ff4d 10px 10px, #9747ff33 15px 15px,
+    #9747ff1a 20px 20px;
+
+  /* Chamfered Top-Right Corner without Clipping Box Shadow */
+  -webkit-mask-image: polygon(
+    0% 0%,
+    calc(100% - 50px) 0%,
+    100% 50px,
+    100% 100%,
+    0% 100%
+  );
+  mask-image: polygon(
+    0% 0%,
+    calc(100% - 50px) 0%,
+    100% 50px,
+    100% 100%,
+    0% 100%
+  );
 }
+
 @media screen and (max-width: 1200px) {
   .des-img {
     max-height: 350px;
