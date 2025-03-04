@@ -149,7 +149,7 @@
 
 #radio3:checked ~ .first {
   margin-left: -200%;
-  transition: all 3s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .navigation-auto {

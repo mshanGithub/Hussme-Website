@@ -308,19 +308,20 @@
 }
 .cat-label {
   width: 70%;
-  height: 70%;
+  height: 100%;
   background-position: left;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .l-1 {
-  background-image: url("../Assets/Business-page/Icn/basic.png");
+  /* background-image: url("../Assets/Business-page/Icn/basic.png"); */
+  background-image: url("../Assets/Business-page/Icn/label-1.png");
 }
 .l-2 {
-  background-image: url("../Assets/Business-page/Icn/pro.png");
+  background-image: url("../Assets/Business-page/Icn/label-2\ copy\ 2.png");
 }
 .l-3 {
-  background-image: url("../Assets/Business-page/Icn/elite.png");
+  background-image: url("../Assets/Business-page/Icn/label-3.jpg");
 }
 .cat-icn {
   width: 70%;
@@ -441,10 +442,10 @@
   background-image: url("../Assets/Business-page/Icn/tick-1.png");
 }
 .t-2 {
-  background-image: url("../Assets/Business-page/Icn/tick-2.png");
+  background-image: url("../Assets/Business-page/Icn/tick-1.png");
 }
 .t-3 {
-  background-image: url("../Assets/Business-page/Icn/tick-3.png");
+  background-image: url("../Assets/Business-page/Icn/tick-1.png");
 }
 .tick-icn-e {
   width: 20px;
