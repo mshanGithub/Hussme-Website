@@ -1,8 +1,10 @@
 import "./Blog-Detail.css";
+// import bg from/src/Components/Assets";
+// import hj from '../Assest/svg/Carousal/slide-1.jpg'
 export function Digital() {
   return (
     <div className="des-container">
-      <div className="des-title">Blog</div>
+      {/* <div className="des-title">Blog</div> */}
       <div className="des-heading">
         Mastering Digital Marketing: Strategies for Success
       </div>
@@ -11,7 +13,6 @@ export function Digital() {
       <div className="details-container">
         <div className="des-sec-1">
           <div className="des-blog-title">
-            <div className="t-line"></div>
             <div className="des-intro">Introduction</div>
           </div>
           <div className="intro-description">
@@ -27,8 +28,7 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point">1. Understanding Your Audience</div>
+            <div className="des-point">1.Understanding Your Audience</div>
           </div>
           <div className="point-des">
             To effectively reach your audience, you need to understand who they
@@ -36,7 +36,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Creating Buyer Personas:</div>
             </div>
             <div className="spl-point-des">
@@ -46,7 +48,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Conducting Market Research:</div>
             </div>
             <div className="spl-point-des">
@@ -58,10 +62,7 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point">
-              2. Building a Strong Online Presence
-            </div>
+            <div className="des-point">2.Building a Strong Online Presence</div>
           </div>
           <div className="point-des">
             Your online presence is crucial for visibility and credibility. Key
@@ -70,7 +71,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title">Optimizing Your Website: </div>
             </div>
             <div className="spl-point-des">
@@ -81,7 +84,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Leveraging Social Media: </div>
             </div>
             <div className="spl-point-des">
@@ -92,7 +97,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Content Marketing:</div>
             </div>
             <div className="spl-point-des">
@@ -105,8 +112,7 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point">3. Search Engine Optimization (SEO)</div>
+            <div className="des-point">3.Search Engine Optimization (SEO)</div>
           </div>
           <div className="point-des">
             SEO is essential for driving organic traffic to your website. Key
@@ -115,7 +121,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Keyword Research: </div>
             </div>
             <div className="spl-point-des">
@@ -126,7 +134,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Off-Page SEO:</div>
             </div>
             <div className="spl-point-des">
@@ -137,7 +147,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Off-Page SEO:</div>
             </div>
             <div className="spl-point-des">
@@ -149,8 +161,7 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point">4. Pay-Per-Click Advertising (PPC)</div>
+            <div className="des-point">4.Pay-Per-Click Advertising (PPC)</div>
           </div>
           <div className="point-des">
             PPC advertising can provide immediate visibility and traffic.
@@ -159,7 +170,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Choosing the Right Platforms: </div>
             </div>
             <div className="spl-point-des">
@@ -170,7 +183,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Crafting Compelling Ads: </div>
             </div>
             <div className="spl-point-des">
@@ -181,7 +196,9 @@ export function Digital() {
 
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Monitoring and Optimization: </div>
             </div>
             <div className="spl-point-des">
@@ -193,8 +210,7 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point"> 5. Email Marketing </div>
+            <div className="des-point"> 5.Email Marketing </div>
           </div>
           <div className="point-des">
             Email marketing remains one of the most effective channels for
@@ -202,7 +218,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Building a Quality Email List: </div>
             </div>
             <div className="spl-point-des">
@@ -212,7 +230,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Segmenting Your Audience: </div>
             </div>
             <div className="spl-point-des">
@@ -222,7 +242,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Crafting Engaging Emails:</div>
             </div>
             <div className="spl-point-des">
@@ -234,9 +256,8 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
             <div className="des-point">
-              6. Analytics and Data-Driven Decisions
+              6.Analytics and Data-Driven Decisions
             </div>
           </div>
           <div className="point-des">
@@ -244,7 +265,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title">Tracking Key Metrics:</div>
             </div>
             <div className="spl-point-des">
@@ -254,7 +277,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Using Analytics Tools: </div>
             </div>
             <div className="spl-point-des">
@@ -264,8 +289,10 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
-              <div className="bold-title"> Making Data-Driven Adjustments:</div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
+              <div className="bold-title">Making Data-Driven Adjustments:</div>
             </div>
             <div className="spl-point-des">
               Use insights from your data to refine your strategies and improve
@@ -276,15 +303,16 @@ export function Digital() {
 
         <div className="des-sec-2">
           <div className="point-container">
-            <div className="t-line"></div>
-            <div className="des-point">7. Staying Up-to-Date with Trends</div>
+            <div className="des-point">7.Staying Up-to-Date with Trends</div>
           </div>
           <div className="point-des">
             Digital marketing is constantly evolving. Stay ahead by:
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Following Industry News:</div>
             </div>
             <div className="spl-point-des">
@@ -294,9 +322,10 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title">
-                {" "}
                 Attending Conferences and Webinars:
               </div>
             </div>
@@ -307,7 +336,9 @@ export function Digital() {
           </div>
           <div className="spl-point">
             <div className="icn-bold-title">
-              <div className="spl-icn"></div>
+              <div className="point">
+                <img src="" alt="" />
+              </div>
               <div className="bold-title"> Continuous Learning:</div>
             </div>
             <div className="spl-point-des">
@@ -319,8 +350,7 @@ export function Digital() {
 
         <div className="des-sec-1">
           <div className="des-blog-title">
-            <div className="t-line"></div>
-            <div className="des-conclusion">Conclusion</div>
+            <div className="des-intro">Conclusion</div>
           </div>
           <div className="intro-description">
             Mastering digital marketing requires a comprehensive approach that

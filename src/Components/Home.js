@@ -15,6 +15,7 @@ import arrow from "./Assets/For-status/Arrow.svg";
 import mes from "./Assets/Home-Header-Footer/message-color.png";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
+import { AdvancedImage } from "@cloudinary/react";
 export function Home() {
   const scrollRef = useRef(null);
 
@@ -123,7 +124,6 @@ export function Home() {
         </div>
       </div>
       {/* End of Carousal Section  */}
-
       {/* Start of Our Levers Section  */}
       <div className="our-levers">
         <div className="levers">
