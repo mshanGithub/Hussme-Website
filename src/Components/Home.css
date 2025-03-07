@@ -16,6 +16,7 @@
   max-width: 1200px;
   height: auto;
   max-height: 700px;
+  /* max-height: 100vh; */
   border-radius: 10px 0px 10px 0px;
   overflow: hidden;
   position: relative;
@@ -205,6 +206,7 @@
   .slider {
     max-width: 900px;
     max-height: 500px;
+    
   }
   .manual-btn {
     padding: 4px;
@@ -250,6 +252,8 @@
     padding: 2px;
   }
 }
+
+
 /* !<--End of Carousal Section-->! */
 
 /* !<--Start of Our Levers Section-->! */
