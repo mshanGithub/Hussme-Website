@@ -39,7 +39,7 @@ export function Header() {
             </li>
             <li onClick={hideSidebar}>
               <div className="login-button">
-                <Link to="#">Login</Link>
+                <Link to="/login">Login</Link>
               </div>
             </li>
           </ul>
@@ -69,7 +69,7 @@ export function Header() {
             </li>
             <li className="hideWhileMobileOn">
               <div className="login-button ">
-                <Link to="#">Login</Link>
+                <Link to="/login">Login</Link>
               </div>
             </li>
             <li className="menu-button" onClick={showSidebar}>
