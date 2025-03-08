@@ -1,0 +1,295 @@
+.login-page {
+  margin-top: 70px;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.ibb.co/LDYsk9vQ/juyt-6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: top; */
+}
+.login-container {
+  position: relative;
+  height: 550px;
+  width: 850px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  overflow: hidden;
+}
+
+.form-box {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  /* background-color: palevioletred; */
+  right: 0;
+  text-align: center;
+  z-index: 1;
+  transition: 0.6s ease-in-out 1.2s;
+}
+
+.login-container.active .form-box {
+  right: 50%;
+}
+.form-box.signup {
+  transition: 0s;
+  visibility: hidden;
+}
+.login-container.active .form-box.signup {
+  visibility: visible;
+  transition: 1.2s;
+}
+.login-container.active .form-box.login {
+  visibility: hidden;
+  transition: 0s;
+}
+form {
+  width: 100%;
+  padding: 30px;
+}
+.login-container h1 {
+  font-size: 36px;
+  margin: -10px 0;
+  font-family: "poppins";
+}
+.forgot-link a {
+  font-weight: 500 !important;
+  font-size: 17px !important;
+}
+.input-box {
+  position: relative;
+  margin: 30px 0;
+}
+.input-box input {
+  min-width: 80%;
+  /* padding; */
+
+  padding: 13px 50px 13px 13px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.input-box input::placeholder {
+  font-weight: 300;
+  color: #888;
+}
+.input-box i {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #888;
+}
+.forgot-link {
+  margin: -15px 0 15px;
+}
+.forgot-link a {
+  text-decoration: none;
+  font-size: 14.5px;
+  color: #333;
+}
+.login-btn {
+  width: 45%;
+  height: 48px;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+  background-color: #4275ce;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    0 0,
+    100% 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 15px) 100%,
+    15px 100%,
+    0 100%
+  );
+  /* height: 40px; */
+  /* font-size: 0.7rem; */
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: 0.2s 0.1s;
+  background-image: linear-gradient(90deg, #020202b8, #9747ff);
+  border: 0 solid;
+  overflow: hidden;
+}
+.login-btn:hover {
+  width: 52%;
+  transition: all 0.3s ease-in;
+}
+.toggle-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+.toggle-box p {
+  font-weight: 500 !important;
+  font-size: 17px !important;
+}
+.toggle-box::before {
+  content: " ";
+  position: absolute;
+  width: 300%;
+  left: -250%;
+  /* background-color: aqua; */
+  background-color: yellowgreen;
+  background-image: linear-gradient(to bottom right, #f08143, #9747ff);
+  /* border: 2px solid red; */
+  height: 100%;
+  z-index: 2;
+  border-radius: 80px;
+  transition: 1.8s ease-in-out;
+}
+.login-container.active .toggle-box::before {
+  left: 50%;
+}
+
+.toggle-panel {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(113, 122, 95); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+  transition: 0.6s ease-in-out;
+}
+.toggle-panel.toggle-left {
+  left: 0;
+  transition-delay: 1.2s;
+}
+.login-container.active .toggle-panel.toggle-left {
+  left: -50%;
+  transition-delay: 0.6s;
+}
+.toggle-panel.toggle-right {
+  right: -50%;
+  transition-delay: 0.6s;
+}
+.login-container.active .toggle-panel.toggle-right {
+  right: 0;
+  transition-delay: 1.2s;
+}
+.toggle-panel p {
+  margin-bottom: 20px;
+}
+.toggle-signup-btn,
+.toggle-login-btn {
+  height: 46px;
+  width: 130px;
+  color: white;
+  font-size: x-large;
+  font-weight: 500;
+  font-family: "M PLUS Rounded 1c";
+  border-radius: 10px;
+  border: 2px solid white;
+  box-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  background: transparent;
+}
+@media screen and (max-width: 700px) {
+  .login-page{
+    background-size:contain !important;
+    /* background-position-x: center; */
+    background-image: url('https://i.ibb.co/JFmx9Sb7/port.jpg');
+    background-position: top;
+  }
+  .login-container {
+    /* height: calc(100vh - 100px); */
+    max-height: 60vh;
+    width: 90%;
+    border-radius: 10px;
+  }
+  .form-box {
+    /* background-color: pink; */
+    width: 100%;
+    height: fit-content;
+    /* background-color: #333; */
+    bottom: 0;
+  }
+  .form-box.signup{
+    /* min-height: fit-content; */
+  }
+  .toggle-box::before {
+    left: 0;
+    top: -260%;
+    width: 100%;
+    height: 300%;
+    border-radius: 15vw;
+  }
+  .login-container.active .form-box {
+    right: 0;
+    bottom: 30%;
+  }
+  .login-container.active .toggle-box::before {
+    left: 0;
+    top: 70%;
+  }
+  .toggle-panel {
+    width: 100%;
+    height: 30%;
+  }
+  .toggle-panel.toggle-left {
+    top: 5%;
+  }
+  .toggle-panel.toggle-right {
+    right: 0;
+    bottom: -30%;
+  }
+  .login-container.active .toggle-panel.toggle-left {
+    left: 0;
+    top: -30%;
+  }
+  .login-container.active .toggle-panel.toggle-right {
+    bottom: 0;
+  }
+  .toggle-panel p{
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-box {
+    /* padding: 40px; */
+  }
+  .toggle-panel h1 {
+    font-size: 30px;
+  }
+}

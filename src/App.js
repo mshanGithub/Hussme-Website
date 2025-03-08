@@ -8,6 +8,7 @@ import { Talent } from "./Components/Pages/Talent";
 import { Blog } from "./Components/Pages/Blog";
 import { ContactUs } from "./Components/Pages/Contactus";
 import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
+import { Login } from "./Components/Login";
 import ScrollToTop from "./ScrollToTop";
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/digital" element={<Digital />} />
+            <Route path="/login" element={<Login/>}/>
             
           </Routes>
         <Footer />
