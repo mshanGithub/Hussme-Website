@@ -234,7 +234,7 @@ form {
   }
   .login-container {
     /* height: calc(100vh - 100px); */
-    max-height: 60vh;
+    min-height: 40vh;
     width: 90%;
     border-radius: 10px;
   }
