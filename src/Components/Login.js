@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../Components/Login.css";
 import { useEffect } from "react";
-  
+
 export function Login() {
   useEffect(() => {
     const container = document.querySelector(".login-container");
@@ -68,7 +68,7 @@ export function Login() {
                 <i class="bx bxs-lock-alt"></i>
               </div>
 
-              <button type="submit" className="login-btn">
+              <button type="submit" className="signup-btn">
                 Signup
               </button>
             </form>

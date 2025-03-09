@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://i.ibb.co/LDYsk9vQ/juyt-6.jpg');
+  background-image: url("https://i.ibb.co/LDYsk9vQ/juyt-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: top; */
@@ -99,7 +99,8 @@ form {
   font-size: 14.5px;
   color: #333;
 }
-.login-btn {
+.login-btn,
+.signup-btn {
   width: 45%;
   height: 48px;
   text-align: center;
@@ -145,6 +146,9 @@ form {
   background-image: linear-gradient(90deg, #020202b8, #9747ff);
   border: 0 solid;
   overflow: hidden;
+}
+.signup-btn {
+  background-image: linear-gradient(to bottom right, #f08143, #9747ff);
 }
 .login-btn:hover {
   width: 52%;
@@ -226,10 +230,10 @@ form {
   background: transparent;
 }
 @media screen and (max-width: 700px) {
-  .login-page{
-    background-size:contain !important;
+  .login-page {
+    background-size: contain !important;
     /* background-position-x: center; */
-    background-image: url('https://i.ibb.co/JFmx9Sb7/port.jpg');
+    background-image: url("https://i.ibb.co/JFmx9Sb7/port.jpg");
     background-position: top;
   }
   .login-container {
@@ -245,7 +249,7 @@ form {
     /* background-color: #333; */
     bottom: 0;
   }
-  .form-box.signup{
+  .form-box.signup {
     /* min-height: fit-content; */
   }
   .toggle-box::before {
@@ -281,7 +285,7 @@ form {
   .login-container.active .toggle-panel.toggle-right {
     bottom: 0;
   }
-  .toggle-panel p{
+  .toggle-panel p {
     margin-bottom: 15px;
   }
 }
