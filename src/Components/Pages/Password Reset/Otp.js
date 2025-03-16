@@ -88,7 +88,7 @@ export function Otp() {
       // Get token from session storage
       const token = sessionStorage.getItem("resetToken");
 
-      const response = await fetch(`http://localhost:8000/api/reset-password/${token}`, {
+      const response = await fetch(process.env.REACT_APP_API_URL +`/reset-password/${token}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

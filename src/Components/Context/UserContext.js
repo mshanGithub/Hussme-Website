@@ -10,7 +10,7 @@ export const UserProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       // Fetch user data using the token
-      fetch("http://localhost:8000/api/me", {
+      fetch(process.env.REACT_APP_API_URL +"/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -39,7 +39,7 @@ export const UserProvider = ({ children }) => {
   const login = (token) => {
     localStorage.setItem("token", token);
     // Fetch user data after login
-    fetch("http://localhost:8000/api/me", {
+    fetch(process.env.REACT_APP_API_URL +"/me", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
