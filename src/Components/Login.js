@@ -2,16 +2,53 @@ import { Link, useNavigate } from "react-router-dom";
 import "../Components/Login.css";
 import { useEffect, useState } from "react";
 import { useUser } from "../Components/Context/UserContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export function Login() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordValid, setPasswordValid] = useState(false);
+  const [passwordFocused, setPasswordFocused] = useState(false);
   const { login } = useUser();
   const navigate = useNavigate();
 
+  // Password validation criteria
+  const minLength = password.length >= 8;
+  const hasUppercase = /[A-Z]/.test(password);
+  const hasLowercase = /[a-z]/.test(password);
+  const hasNumber = /\d/.test(password);
+  const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(password);
+
+  // Email validation
+  const isValidEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Validate password
+  useEffect(() => {
+    setPasswordValid(
+      minLength && hasUppercase && hasLowercase && hasNumber && hasSpecialChar
+    );
+  }, [password, minLength, hasUppercase, hasLowercase, hasNumber, hasSpecialChar]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate email
+    if (!isValidEmail(email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+
+    // Validate password
+    if (!passwordValid) {
+      toast.error('Password does not meet security requirements');
+      return;
+    }
+
     try {
       const response = await fetch("http://localhost:8000/api/user", {
         method: "POST",
@@ -23,17 +60,27 @@ export function Login() {
 
       const result = await response.json();
       if (response.ok) {
-        alert('Login Sussfull');
+        toast.success('Account created successfully!');
+        // Switch to login form after successful signup
+        document.querySelector(".login-container").classList.remove("active");
       } else {
-        alert(result.message);
+        toast.error(result.message || 'Signup failed. Please try again.');
       }
     } catch (error) {
       console.error(error);
+      toast.error('An error occurred during signup. Please try again.');
     }
   };
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate email
+    if (!isValidEmail(email)) {
+      toast.error('Please enter a valid email address');
+      return;
+    }
+
     try {
       const response = await fetch("http://localhost:8000/api/auth", {
         method: "POST",
@@ -46,14 +93,17 @@ export function Login() {
       const result = await response.json();
       if (response.ok) {
         login(result.Token);
-        alert("Login Successful!");
-        navigate("/"); // Redirect to home after login
+        toast.success("Login Successful!");
+        // Redirect to home after a short delay to allow user to see the toast
+        setTimeout(() => {
+          navigate("/");
+        }, 1500);
       } else {
-        alert(result.message);
+        toast.error(result.message || 'Login failed. Please check your credentials.');
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Login Failed!");
+      toast.error('An error occurred during login. Please try again.');
     }
   };
 
@@ -79,6 +129,7 @@ export function Login() {
   return (
     <>
       <div className="login-page">
+        <ToastContainer position="top-right" autoClose={3000} />
         <div className="login-container">
           {/* Login Form */}
           <div className="form-box login">
@@ -103,7 +154,7 @@ export function Login() {
                 <i className="bx bxs-lock-alt"></i>
               </div>
               <div className="forgot-link">
-                <Link to="#">Forgot the password?</Link>
+                <Link to="/reset-password">Forgot the password?</Link>
               </div>
               <button type="submit" className="login-btn">
                 Login
@@ -138,12 +189,47 @@ export function Login() {
                   type="password"
                   placeholder="Password"
                   onChange={(e) => setPassword(e.target.value)}
+                  onFocus={() => setPasswordFocused(true)}
+                  onBlur={() => setPasswordFocused(false)}
                   required
                 />
                 <i className="bx bxs-lock-alt"></i>
               </div>
 
-              <button type="submit" className="signup-btn">
+              {/* Password Requirements */}
+              {passwordFocused && (
+                <div className="password-requirements">
+                  <p>Password must:</p>
+                  <ul>
+                    <li className={minLength ? "valid" : "invalid"}>
+                      <i className={`bx ${minLength ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
+                      Be at least 8 characters
+                    </li>
+                    <li className={hasUppercase ? "valid" : "invalid"}>
+                      <i className={`bx ${hasUppercase ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
+                      Include uppercase letter
+                    </li>
+                    <li className={hasLowercase ? "valid" : "invalid"}>
+                      <i className={`bx ${hasLowercase ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
+                      Include lowercase letter
+                    </li>
+                    <li className={hasNumber ? "valid" : "invalid"}>
+                      <i className={`bx ${hasNumber ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
+                      Include number
+                    </li>
+                    <li className={hasSpecialChar ? "valid" : "invalid"}>
+                      <i className={`bx ${hasSpecialChar ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
+                      Include special character
+                    </li>
+                  </ul>
+                </div>
+              )}
+
+              <button 
+                type="submit" 
+                className={`signup-btn ${passwordValid ? "" : "disabled"}`}
+                disabled={!passwordValid}
+              >
                 Signup
               </button>
             </form>

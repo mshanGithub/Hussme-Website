@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../Components/Assets/Home-Header-Footer/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
 import cross from "../Components/Assets/Home-Header-Footer/cross.png";
@@ -8,6 +8,7 @@ import { useState } from "react"; // Import useState
 export function Header() {
   const { user, logout } = useUser(); // Get user and logout from context
   const [showLogout, setShowLogout] = useState(false); // State to toggle logout button visibility
+  const navigate = useNavigate();
 
   function showSidebar(event) {
     event.preventDefault();
@@ -31,6 +32,13 @@ export function Header() {
     e.preventDefault();
     logout();
     setShowLogout(false); // Hide the logout button after logging out
+  };
+
+  // Function to navigate to change password page
+  const handleChangePassword = (e) => {
+    e.preventDefault();
+    setShowLogout(false); // Hide the dropdown
+    navigate("/reset-password");
   };
 
   // Function to close dropdown when clicking outside
@@ -64,12 +72,33 @@ export function Header() {
             <li onClick={hideSidebar}>
               <div className="username-logout-buttons">
                 {user ? (
-                  <>
-                    <span className="mobile-username">{user.username}</span>
-                    <Link className="logout-button" onClick={handleLogout}>
-                      Logout
-                    </Link>
-                  </>
+                  <div className="mobile-user-menu">
+                    <span 
+                      className="mobile-username"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleLogout();
+                      }}
+                    >
+                      {user.username}
+                    </span>
+                    {showLogout && (
+                      <div className="mobile-user-dropdown">
+                        <Link 
+                          className="change-password-button" 
+                          onClick={handleChangePassword}
+                        >
+                          Change Password
+                        </Link>
+                        <Link 
+                          className="logout-button" 
+                          onClick={handleLogout}
+                        >
+                          Logout
+                        </Link>
+                      </div>
+                    )}
+                  </div>
                 ) : (
                   <>
                     <Link className='login-button' to="/login">Login</Link>
@@ -113,7 +142,16 @@ export function Header() {
                   </span>
                   {showLogout && (
                     <div className="logout-dropdown">
-                      <Link className="logout-button" onClick={handleLogout}>
+                      <Link 
+                        className="change-password-button" 
+                        onClick={handleChangePassword}
+                      >
+                        Change Password
+                      </Link>
+                      <Link 
+                        className="logout-button" 
+                        onClick={handleLogout}
+                      >
                         Logout
                       </Link>
                     </div>

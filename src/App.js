@@ -29,7 +29,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/digital" element={<Digital />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/reset" element={<Reset/>} />
+            <Route path="/reset-password" element={<Reset/>} />
             <Route path="/otp" element={<Otp/>}/>
           </Routes>
           <Footer />
