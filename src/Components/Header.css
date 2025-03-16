@@ -1,5 +1,5 @@
 .nav-bar {
-  width: 100%;
+  min-width: 100%;
   height: fit-content;
 }
 .logo {
@@ -15,6 +15,7 @@
 
 header {
   margin: 0;
+  /* margin-left: -10px; */
   padding: 0;
   width: 100%;
   position: fixed;
@@ -24,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  box-shadow: #282829 0px 0px 5px 0px;
+  box-shadow: #282829 5px 0px 5px 0px;
 }
 nav {
   min-width: 95%;
@@ -51,7 +52,6 @@ nav ul li {
   align-items: center;
 }
 nav ul li a {
-
   height: 100%;
   max-width: 186px;
   padding: 0 30px;
@@ -95,7 +95,7 @@ nav li:first-child {
   font-family: "poppins";
   font-size: 20px;
   gap: 15px;
-    text-shadow: #b3b3b3 0px 0.0px 0.1px;
+  text-shadow: #b3b3b3 0px 0px 0.1px;
 }
 .sidebar a {
   width: 100%;
@@ -104,9 +104,7 @@ nav li:first-child {
   display: flex;
   justify-content: center;
 }
-.sidebar li :first-child {
 
-}
 .menu-button {
   display: none;
 }
@@ -118,30 +116,148 @@ nav li:first-child {
     display: block;
   }
 }
+.sidebar li:last-child {
+  width: 100%;
+  padding-left: 0 !important;
+}
+.username-logout-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 
+  /* padding-left: 60px; */
+}
+.username-logout-buttons {
+  color: white !important;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.username-logout-buttons .login-button {
+  margin-left: 0px !important;
+}
 .sidebar li:last-child {
   padding-left: 60px;
 }
-.login-button {
+.desk-username {
+  font-size: x-large;
+  font-weight: 600;
+  background: #f08143;
+  background: linear-gradient(to top right, #f08143 26%, #9747ff 78%);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific property */
+  -webkit-text-fill-color: transparent; /* Ensures the text remains transparent */
+  color: transparent; /* Fallback for non-supporting browsers */
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  /* padding: 5px 10px; */
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.desk-username:hover {
+  opacity: 0.8;
+}
+
+.login-button,
+.logout-button {
+  margin-left: 10px;
   display: flex;
   align-content: center;
   justify-content: center;
   height: 45px;
-  width: 120px;
+  max-width: fit-content;
+  color: white;
   border-radius: 15px;
   background-color: rgb(0, 0, 0);
-}
-.login-button:hover {
-  background-color: rgb(31, 31, 31);
-}
-.login-button a {
-  display: flex;
-  justify-content: center;
-  color: rgb(242, 242, 242);
   transition: 0.3s;
   font-size: large;
   font-weight: 600;
 }
-.login-button a:hover {
-  color: rgb(0, 0, 0);
+
+.mobile-username {
+  margin: 0;
+  font-size: larger;
+  font-style: italic;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #9747ff,  
+               1px -1px 0 #9747ff,
+               -1px 1px 0 #9747ff,
+               0.5px 0.5px 0 #9747ff;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  transition: all 0.3s ease;
+}
+
+.mobile-username:hover {
+  opacity: 0.8;
+}
+
+/* User dropdown container styles */
+.user-dropdown-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Logout dropdown styles */
+.logout-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 1000;
+  min-width: 120px;
+  margin-top: 5px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile specific styles */
+.sidebar .user-dropdown-container {
+  width: 100%;
+}
+
+.sidebar .logout-dropdown {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar .logout-button {
+  margin-left: 0;
+}
+
+/* Improve mobile username and logout display in sidebar */
+.sidebar .username-logout-buttons {
+  gap: 1px;
+  /* padding: 0 20px; */
+}
+
+.sidebar .mobile-username {
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.sidebar .logout-button {
+  width: 100%;
+  margin: 0;
 }

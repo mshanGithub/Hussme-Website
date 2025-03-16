@@ -9,6 +9,8 @@ import { Blog } from "./Components/Pages/Blog";
 import { ContactUs } from "./Components/Pages/Contactus";
 import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
 import { Login } from "./Components/Login";
+import { Reset } from "./Components/Pages/Password Reset/Reset-Password";
+import { Otp } from "./Components/Pages/Password Reset/Otp";
 import ScrollToTop from "./ScrollToTop";
 import { UserProvider } from "./Components/Context/UserContext";
 
@@ -27,6 +29,8 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/digital" element={<Digital />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/reset" element={<Reset/>} />
+            <Route path="/otp" element={<Otp/>}/>
           </Routes>
           <Footer />
         </BrowserRouter>

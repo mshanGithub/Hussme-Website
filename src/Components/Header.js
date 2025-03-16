@@ -3,9 +3,11 @@ import logo from "../Components/Assets/Home-Header-Footer/hussme Logo-2 1-white.
 import "../Components/Header.css";
 import cross from "../Components/Assets/Home-Header-Footer/cross.png";
 import { useUser } from "../Components/Context/UserContext"; // Import UserContext
+import { useState } from "react"; // Import useState
 
 export function Header() {
   const { user, logout } = useUser(); // Get user and logout from context
+  const [showLogout, setShowLogout] = useState(false); // State to toggle logout button visibility
 
   function showSidebar(event) {
     event.preventDefault();
@@ -19,8 +21,25 @@ export function Header() {
     sidebar.style.display = "none";
   }
 
+  // Function to toggle the logout dropdown
+  const toggleLogout = () => {
+    setShowLogout(!showLogout);
+  };
+
+  // Function to handle logout click
+  const handleLogout = (e) => {
+    e.preventDefault();
+    logout();
+    setShowLogout(false); // Hide the logout button after logging out
+  };
+
+  // Function to close dropdown when clicking outside
+  const closeDropdown = () => {
+    setShowLogout(false);
+  };
+
   return (
-    <div className="nav-bar">
+    <div className="nav-bar" onClick={closeDropdown}>
       <header>
         <nav>
           <ul className="sidebar">
@@ -43,16 +62,17 @@ export function Header() {
               <Link to="/contact">Contact US</Link>
             </li>
             <li onClick={hideSidebar}>
-              <div className="login-button">
+              <div className="username-logout-buttons">
                 {user ? (
                   <>
-                    <span>Welcome, {user.username}</span>
-                    <button onClick={logout}>Logout</button>
+                    <span className="mobile-username">{user.username}</span>
+                    <Link className="logout-button" onClick={handleLogout}>
+                      Logout
+                    </Link>
                   </>
                 ) : (
                   <>
-                    <Link to="/login">Login</Link>
-                    <Link to="/signup">Signup</Link>
+                    <Link className='login-button' to="/login">Login</Link>
                   </>
                 )}
               </div>
@@ -84,14 +104,26 @@ export function Header() {
             </li>
             <li className="hideWhileMobileOn">
               {user ? (
-                <>
-                  <span>Welcome, {user.username}</span>
-                  <button onClick={logout}>Logout</button>
-                </>
+                <div className="user-dropdown-container" onClick={(e) => e.stopPropagation()}>
+                  <span 
+                    className="desk-username" 
+                    onClick={toggleLogout}
+                  >
+                    {user.username}
+                  </span>
+                  {showLogout && (
+                    <div className="logout-dropdown">
+                      <Link className="logout-button" onClick={handleLogout}>
+                        Logout
+                      </Link>
+                    </div>
+                  )}
+                </div>
               ) : (
                 <>
-                  <Link to="/login">Login</Link>
-                  <Link to="/signup">Signup</Link>
+                  <Link className="login-button" to="/login">
+                    Login
+                  </Link>
                 </>
               )}
             </li>

@@ -23,7 +23,7 @@ export function Login() {
 
       const result = await response.json();
       if (response.ok) {
-        alert(result.message);
+        alert('Login Sussfull');
       } else {
         alert(result.message);
       }
