@@ -10,11 +10,11 @@ import { ContactUs } from "./Components/Pages/Contactus";
 import { Digital } from "./Components/Pages/Blogs/Digital-Detail";
 import { Login } from "./Components/Login";
 import ScrollToTop from "./ScrollToTop";
-
+import { UserProvider } from "./Components/Context/UserContext";
 
 function App() {
   return (
-    <>
+    <UserProvider>
       <div className="container">
         <BrowserRouter>
           <Header />
@@ -26,13 +26,12 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/digital" element={<Digital />} />
-            <Route path="/login" element={<Login/>}/>
-            
+            <Route path="/login" element={<Login />} />
           </Routes>
-        <Footer />
+          <Footer />
         </BrowserRouter>
       </div>
-    </>
+    </UserProvider>
   );
 }
 

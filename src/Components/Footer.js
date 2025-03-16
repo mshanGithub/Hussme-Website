@@ -48,19 +48,21 @@ export function Footer() {
         </div>
         <div className="col-4">
           <Link to="/contact">
-            <div className="contact-btn">
-            <Link to="/contact">Contact Us</Link> 
-            </div>
+            <div className="contact-btn">Contact Us</div>
           </Link>
 
           <div className="cen-left">
             <div className="mobile">
-              <img src={mobile} alt="" />
-              <a href="tel:+1 803 803 9889">+1 803 803 9889</a>
+              <img src={mobile} alt="Mobile" />
+              <a href="tel:+18038039889" rel="noopener noreferrer">
+                +1 803 803 9889
+              </a>
             </div>
             <div className="mail">
-              <img src={mail} alt="" />
-              <a href="mailto:support@hussme.com"> support@hussme.com</a>
+              <img src={mail} alt="Mail" />
+              <a href="mailto:support@hussme.com" rel="noopener noreferrer">
+                support@hussme.com
+              </a>
             </div>
           </div>
 

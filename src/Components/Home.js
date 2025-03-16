@@ -15,7 +15,7 @@ import arrow from "./Assets/For-status/Arrow.svg";
 import mes from "./Assets/Home-Header-Footer/message-color.png";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import { AdvancedImage } from "@cloudinary/react";
+
 export function Home() {
   const scrollRef = useRef(null);
 
@@ -31,23 +31,23 @@ export function Home() {
   // Function For Carousal auto slide change
   useEffect(() => {
     let counter = 1;
-    
+
     // Immediately change to the first slide
     document.getElementById("radio" + counter).checked = true;
-    
+
     const interval = setInterval(() => {
       counter++;
       if (counter > 3) counter = 1;
-      
+
       const radio = document.getElementById("radio" + counter);
       if (radio) {
         radio.checked = true;
       }
     }, 6000); // Keep interval duration
-  
+
     return () => clearInterval(interval);
   }, []);
-  
+
   // Function for work status count increase
   window.onload = () => {
     const nums = document.querySelectorAll(".count");
@@ -138,21 +138,21 @@ export function Home() {
           </div>
           <div className="containers">
             <div className="container-1">
-              <div class="our-card">
-                <div class="card-inner">
-                  <div class="card-front ddk">
-                    <div class="circle">
+              <div className="our-card">
+                <div className="card-inner">
+                  <div className="card-front ddk">
+                    <div className="circle">
                       <img
                         src={d1}
-                        class="img-circle-1"
+                        className="img-circle-1"
                         alt="Digital Marketing"
                       />
                     </div>
                     <h2 className="our-card-h2-front">Digital Marketing</h2>
                   </div>
 
-                  <div class="card-back">
-                    <div class="content">
+                  <div className="card-back">
+                    <div className="content">
                       <p>
                         Enhance the website and utilize social platforms
                         (Facebook, Instagram, X) for branding and generating
@@ -179,21 +179,21 @@ export function Home() {
             </div>
 
             <div className="container-2">
-              <div class="our-card">
-                <div class="card-inner">
-                  <div class="card-front ssk">
-                    <div class="circle">
+              <div className="our-card">
+                <div className="card-inner">
+                  <div className="card-front ssk">
+                    <div className="circle">
                       <img
                         src={staff1}
-                        class="img-circle-1"
+                        className="img-circle-1"
                         alt="Staffing Services"
                       />
                     </div>
                     <h2 className="our-card-h2-front">Staffing Services</h2>
                   </div>
 
-                  <div class="card-back">
-                    <div class="content">
+                  <div className="card-back">
+                    <div className="content">
                       <p>
                         Innovative on-demand staffing solutions - Hussme Hiring
                         platform for business needs and flexible work schedule
@@ -207,21 +207,21 @@ export function Home() {
                 </div>
               </div>
 
-              <div class="our-card">
-                <div class="card-inner">
-                  <div class="card-front cck">
-                    <div class="circle">
+              <div className="our-card">
+                <div className="card-inner">
+                  <div className="card-front cck">
+                    <div className="circle">
                       <img
                         src={c1}
-                        class="img-circle-1"
+                        className="img-circle-1"
                         alt="Digital Marketing"
                       />
                     </div>
                     <h2 className="our-card-h2-front">Consultation</h2>
                   </div>
 
-                  <div class="card-back">
-                    <div class="content">
+                  <div className="card-back">
+                    <div className="content">
                       <p>
                         Streaming the business process for growth and bring in
                         the out of the box solution to reduce expenses.
@@ -257,8 +257,8 @@ export function Home() {
                 <li>Facebook, Instagram, and X marketing</li>
               </ul>
               <Link to="/business">
-                <button class="button-57">
-                  <span class="text">Package & Pricing</span>
+                <button className="button-57">
+                  <span className="text">Package & Pricing</span>
                   <span>Package & Pricing</span>
                 </button>
               </Link>
@@ -281,8 +281,8 @@ export function Home() {
                 <li>Online trainings and carrier assistance</li>
               </ul>
               <Link to="/talent">
-                <button class="button-57">
-                  <span class="text">Package & Pricing</span>
+                <button className="button-57">
+                  <span className="text">Package & Pricing</span>
                   <span>Package & Pricing</span>
                 </button>
               </Link>

@@ -2,12 +2,17 @@ import { Link } from "react-router-dom";
 import logo from "../Components/Assets/Home-Header-Footer/hussme Logo-2 1-white.jpg";
 import "../Components/Header.css";
 import cross from "../Components/Assets/Home-Header-Footer/cross.png";
+import { useUser } from "../Components/Context/UserContext"; // Import UserContext
+
 export function Header() {
+  const { user, logout } = useUser(); // Get user and logout from context
+
   function showSidebar(event) {
     event.preventDefault();
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = "flex";
   }
+
   function hideSidebar(event) {
     event.preventDefault();
     const sidebar = document.querySelector(".sidebar");
@@ -39,7 +44,17 @@ export function Header() {
             </li>
             <li onClick={hideSidebar}>
               <div className="login-button">
-                <Link to="/login">Login</Link>
+                {user ? (
+                  <>
+                    <span>Welcome, {user.username}</span>
+                    <button onClick={logout}>Logout</button>
+                  </>
+                ) : (
+                  <>
+                    <Link to="/login">Login</Link>
+                    <Link to="/signup">Signup</Link>
+                  </>
+                )}
               </div>
             </li>
           </ul>
@@ -68,12 +83,20 @@ export function Header() {
               <Link to="/contact">Contact US</Link>
             </li>
             <li className="hideWhileMobileOn">
-              <div className="login-button ">
-                <Link to="/login">Login</Link>
-              </div>
+              {user ? (
+                <>
+                  <span>Welcome, {user.username}</span>
+                  <button onClick={logout}>Logout</button>
+                </>
+              ) : (
+                <>
+                  <Link to="/login">Login</Link>
+                  <Link to="/signup">Signup</Link>
+                </>
+              )}
             </li>
             <li className="menu-button" onClick={showSidebar}>
-              <a href="">
+              <Link to="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="40px"
@@ -83,7 +106,7 @@ export function Header() {
                 >
                   <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
