@@ -375,17 +375,20 @@ form {
   }
 
   .login-page {
-    min-height: 80vh;
+    min-height: 100vh;
     background-size: contain !important;
   }
 
   .login-container {
-    min-height: 600px !important;
+    min-height: 500px !important;
     width: 100% !important;
     margin-top: 0px !important;
   }
-  .signup form .input-box {
-    margin-top: 10px;
+.signup form{
+  padding: 30px 30px 10px 30px; 
+}
+  .signup .input-box {
+    margin:10px  0px;
   }
   .login-container {
     top: 3vw;
@@ -457,9 +460,7 @@ form {
   .toggle-panel p {
     margin-bottom: 15px;
   }
-  .signup .input-box {
-    margin:20px  0px;
-  }
+  
 }
 
 /* @media screen and (max-width: 400px) {
