@@ -2,8 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import "../Components/Login.css";
 import { useEffect, useState } from "react";
 import { useUser } from "../Components/Context/UserContext";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export function Login() {
   const [username, setUsername] = useState("");
@@ -32,25 +32,32 @@ export function Login() {
     setPasswordValid(
       minLength && hasUppercase && hasLowercase && hasNumber && hasSpecialChar
     );
-  }, [password, minLength, hasUppercase, hasLowercase, hasNumber, hasSpecialChar]);
+  }, [
+    password,
+    minLength,
+    hasUppercase,
+    hasLowercase,
+    hasNumber,
+    hasSpecialChar,
+  ]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validate email
     if (!isValidEmail(email)) {
-      toast.error('Please enter a valid email address');
+      toast.error("Please enter a valid email address");
       return;
     }
 
     // Validate password
     if (!passwordValid) {
-      toast.error('Password does not meet security requirements');
+      toast.error("Password does not meet security requirements");
       return;
     }
 
     try {
-      const response = await fetch(process.env.REACT_APP_API_URL +"/user", {
+      const response = await fetch(process.env.REACT_APP_API_URL + "/user", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,15 +67,15 @@ export function Login() {
 
       const result = await response.json();
       if (response.ok) {
-        toast.success('Account created successfully!');
+        toast.success("Account created successfully!");
         // Switch to login form after successful signup
         document.querySelector(".login-container").classList.remove("active");
       } else {
-        toast.error(result.message || 'Signup failed. Please try again.');
+        toast.error(result.message || "Signup failed. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      toast.error('An error occurred during signup. Please try again.');
+      toast.error("An error occurred during signup. Please try again.");
     }
   };
 
@@ -77,12 +84,12 @@ export function Login() {
 
     // Validate email
     if (!isValidEmail(email)) {
-      toast.error('Please enter a valid email address');
+      toast.error("Please enter a valid email address");
       return;
     }
 
     try {
-      const response = await fetch(process.env.REACT_APP_API_URL +"/auth", {
+      const response = await fetch(process.env.REACT_APP_API_URL + "/auth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -99,11 +106,13 @@ export function Login() {
           navigate("/");
         }, 1500);
       } else {
-        toast.error(result.message || 'Login failed. Please check your credentials.');
+        toast.error(
+          result.message || "Login failed. Please check your credentials."
+        );
       }
     } catch (error) {
       console.error("Error:", error);
-      toast.error('An error occurred during login. Please try again.');
+      toast.error("An error occurred during login. Please try again.");
     }
   };
 
@@ -202,31 +211,51 @@ export function Login() {
                   <p>Password must:</p>
                   <ul>
                     <li className={minLength ? "valid" : "invalid"}>
-                      <i className={`bx ${minLength ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
-                      Be at least 8 characters
+                      <i
+                        className={`bx ${
+                          minLength ? "bxs-check-circle" : "bxs-x-circle"
+                        }`}
+                      ></i>
+                      Must 8 chars
                     </li>
                     <li className={hasUppercase ? "valid" : "invalid"}>
-                      <i className={`bx ${hasUppercase ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
-                      Include uppercase letter
+                      <i
+                        className={`bx ${
+                          hasUppercase ? "bxs-check-circle" : "bxs-x-circle"
+                        }`}
+                      ></i>
+                      A-Z
                     </li>
                     <li className={hasLowercase ? "valid" : "invalid"}>
-                      <i className={`bx ${hasLowercase ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
-                      Include lowercase letter
+                      <i
+                        className={`bx ${
+                          hasLowercase ? "bxs-check-circle" : "bxs-x-circle"
+                        }`}
+                      ></i>
+                      a-z
                     </li>
                     <li className={hasNumber ? "valid" : "invalid"}>
-                      <i className={`bx ${hasNumber ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
-                      Include number
+                      <i
+                        className={`bx ${
+                          hasNumber ? "bxs-check-circle" : "bxs-x-circle"
+                        }`}
+                      ></i>
+                      0-9
                     </li>
                     <li className={hasSpecialChar ? "valid" : "invalid"}>
-                      <i className={`bx ${hasSpecialChar ? "bxs-check-circle" : "bxs-x-circle"}`}></i>
-                      Include special character
+                      <i
+                        className={`bx ${
+                          hasSpecialChar ? "bxs-check-circle" : "bxs-x-circle"
+                        }`}
+                      ></i>
+                      !@#
                     </li>
                   </ul>
                 </div>
               )}
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className={`signup-btn ${passwordValid ? "" : "disabled"}`}
                 disabled={!passwordValid}
               >

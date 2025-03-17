@@ -168,7 +168,7 @@ export function Otp() {
             required
           />
           {passwordFocused && (
-            <div className="password-requirements">
+            <div className="reset-password-requirements">
               <p>Password must:</p>
               <ul>
                 <li className={minLength ? "valid" : "invalid"}>

@@ -7,6 +7,7 @@
   background-image: url("https://i.ibb.co/LDYsk9vQ/juyt-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-color: #28a745; */
   /* background-position: top; */
 }
 
@@ -14,7 +15,7 @@
   position: relative;
   height: 550px;
   width: 850px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 30px;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -30,6 +31,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  background-color: white;
   justify-content: center;
   color: black;
   /* background-color: palevioletred; */
@@ -290,6 +292,9 @@ form {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Two items per row */
+  gap: 0px;
 }
 
 .password-requirements li {
@@ -297,6 +302,9 @@ form {
   align-items: center;
   margin-bottom: 5px;
   transition: color 0.3s ease;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+ 
 }
 
 .password-requirements li i {
@@ -343,50 +351,42 @@ form {
   min-height: 650px; /* Increased minimum height to accommodate password requirements */
 }
 
-/* Email suggestions dropdown */
-.email-suggestions {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  max-height: 150px;
-  overflow-y: auto;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 10;
-  margin-top: 5px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
-.email-suggestions::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-.email-suggestion-item {
-  padding: 8px 15px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: #333;
-  transition: background-color 0.2s;
-}
-
-.email-suggestion-item:hover {
-  background-color: #f0f0f0;
-  color: #051e54;
-}
-
 @media screen and (max-width: 700px) {
+  @media screen and (max-width: 700px) {
+    .password-requirements ul {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Two items per row */
+      gap: 0px;
+    }
+
+    .password-requirements li {
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    .password-requirements li i {
+      font-size: 0.9rem;
+      min-width: fit-content;
+      margin-right: 3px !important;
+    }
+  }
+
   .login-page {
+    min-height: 80vh;
     background-size: contain !important;
   }
 
   .login-container {
+    min-height: 600px !important;
     width: 100% !important;
-    margin-top: 30px !important;
+    margin-top: 0px !important;
   }
-
+  .signup form .input-box {
+    margin-top: 10px;
+  }
   .login-container {
     top: 3vw;
   }
@@ -457,16 +457,53 @@ form {
   .toggle-panel p {
     margin-bottom: 15px;
   }
+  .signup .input-box {
+    margin:20px  0px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .form-box {
-    padding: 40px;
+/* @media screen and (max-width: 400px) {
+  .signup {
+    padding: 0px 0px 0px 0px !important;
+  }
+  .signup form {
+    height: max-content;
   }
 
   .toggle-panel h1 {
     font-size: 30px;
   }
+} */
+@media screen and (max-width: 400px) {
+  .password-requirements {
+    font-size: 0.7rem;
+    padding: 5px 8px;
+    margin: 5px 0;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+
+  .password-requirements p {
+    font-size: 0.75rem;
+  }
+
+  .password-requirements li {
+    margin-bottom: 3px;
+    font-size: 0.7rem;
+  }
+
+  .password-requirements li i {
+    font-size: 0.8rem;
+    margin-right: 4px;
+  }
+  .login-page {
+    margin-top: 0px;
+  }
+
+  .login-container.active.password-focused {
+    min-height: 500px;
+  }
+ 
 }
 
 /* Responsive password requirements for mobile */

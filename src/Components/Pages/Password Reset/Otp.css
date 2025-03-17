@@ -5,6 +5,9 @@
   align-items: center;
   justify-content: center;
   height: 80vh;
+  background-image: url('https://i.ibb.co/Fk2MMqFj/46755.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 .otp-input-box {
@@ -170,4 +173,52 @@
 
 .invalid-input {
   border: 1px solid #dc3545 !important;
+}
+/* Password Requirements Styles */
+.reset-password-requirements {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin: 10px 0 20px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.reset-password-requirements p {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.reset-password-requirements ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Two items per row */
+  gap: 0px;
+}
+
+.reset-password-requirements li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  transition: color 0.3s ease;
+  margin-bottom: 4px;
+  font-size: 0.8rem;
+ 
+}
+
+.reset-password-requirements li i {
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+.reset-password-requirements .valid {
+  color: #28a745;
+}
+
+.reset-password-requirements .invalid {
+  color: #dc3545;
 }
