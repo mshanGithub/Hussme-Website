@@ -7,8 +7,6 @@
   background-image: url("https://i.ibb.co/LDYsk9vQ/juyt-6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: #28a745; */
-  /* background-position: top; */
 }
 
 .login-container {
@@ -21,7 +19,6 @@
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   overflow: hidden;
   display: flex;
-  align-items: center;
 }
 
 .form-box {
@@ -34,7 +31,6 @@
   background-color: white;
   justify-content: center;
   color: black;
-  /* background-color: palevioletred; */
   right: 0;
   text-align: center;
   z-index: 1;
@@ -93,8 +89,6 @@ form {
 
 .input-box input {
   min-width: 80%;
-  /* padding; */
-
   padding: 13px 50px 13px 13px;
   background-color: rgb(226, 226, 226);
   border-radius: 8px;
@@ -167,8 +161,6 @@ form {
     15px 100%,
     0 100%
   );
-  /* height: 40px; */
-  /* font-size: 0.7rem; */
   line-height: 14px;
   letter-spacing: 1.2px;
   transition: 0.2s 0.1s;
@@ -190,7 +182,6 @@ form {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-color: blueviolet; */
 }
 
 .toggle-box p {
@@ -203,10 +194,8 @@ form {
   position: absolute;
   width: 300%;
   left: -250%;
-  /* background-color: aqua; */
   background-color: yellowgreen;
   background-image: linear-gradient(to bottom right, #f08143, #9747ff);
-  /* border: 2px solid red; */
   height: 100%;
   z-index: 2;
   border-radius: 80px;
@@ -221,7 +210,6 @@ form {
   position: absolute;
   width: 50%;
   height: 100%;
-  /* background-color: rgb(113, 122, 95); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -304,7 +292,6 @@ form {
   transition: color 0.3s ease;
   margin-bottom: 4px;
   font-size: 0.8rem;
- 
 }
 
 .password-requirements li i {
@@ -376,6 +363,7 @@ form {
 
   .login-page {
     min-height: 100vh;
+    align-items: flex-start !important;
     background-size: contain !important;
   }
 
@@ -383,12 +371,18 @@ form {
     min-height: 500px !important;
     width: 100% !important;
     margin-top: 0px !important;
+    background-color: #ffffff00;
+    box-shadow: rgba(136, 165, 191, 0.48) 0px 0px 0px 0px,
+      rgba(255, 255, 255, 0.8) 0px 0px 0px 0px;
   }
-.signup form{
-  padding: 30px 30px 10px 30px; 
-}
+  .signup {
+    border-radius: 10px;
+  }
+  .signup form {
+    padding: 30px 30px 10px 30px;
+  }
   .signup .input-box {
-    margin:10px  0px;
+    margin: 10px 0px;
   }
   .login-container {
     top: 3vw;
@@ -460,66 +454,10 @@ form {
   .toggle-panel p {
     margin-bottom: 15px;
   }
-  
 }
 
-/* @media screen and (max-width: 400px) {
-  .signup {
-    padding: 0px 0px 0px 0px !important;
-  }
-  .signup form {
-    height: max-content;
-  }
-
-  .toggle-panel h1 {
-    font-size: 30px;
-  }
-} */
 @media screen and (max-width: 400px) {
   .password-requirements {
-    font-size: 0.7rem;
-    padding: 5px 8px;
-    margin: 5px 0;
-    max-height: 80px;
-    overflow-y: auto;
-  }
-
-  .password-requirements p {
-    font-size: 0.75rem;
-  }
-
-  .password-requirements li {
-    margin-bottom: 3px;
-    font-size: 0.7rem;
-  }
-
-  .password-requirements li i {
-    font-size: 0.8rem;
-    margin-right: 4px;
-  }
-  .login-page {
-    margin-top: 0px;
-  }
-
-  .login-container.active.password-focused {
-    min-height: 500px;
-  }
- 
-}
-
-/* Responsive password requirements for mobile */
-@media screen and (max-width: 700px) {
-  .password-requirements {
-    font-size: 0.8rem;
-    padding: 8px 12px;
-  }
-
-  .password-requirements li {
-    margin-bottom: 4px;
-  }
-
-  .password-requirements li i {
-    font-size: 0.9rem;
-    margin-right: 6px;
+    margin: 5px;
   }
 }
