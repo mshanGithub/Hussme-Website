@@ -191,10 +191,10 @@ nav li:first-child {
   font-style: italic;
   font-weight: 500;
   color: #ffffff;
-  text-shadow: -1px -1px 0 #9747ff,  
-               1px -1px 0 #9747ff,
-               -1px 1px 0 #9747ff,
-               0.5px 0.5px 0 #9747ff;
+  text-shadow: -1px -1px 0 #000000,  
+               1px -1px 0 #000000,
+               -1px 1px 0 #000000,
+               0.5px 0.5px 0 #000000;
   cursor: pointer; /* Add cursor pointer to indicate it's clickable */
   transition: all 0.3s ease;
 }
